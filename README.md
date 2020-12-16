@@ -9,10 +9,15 @@
 git https://github.com/sweetkco/NIA2020PhotoWakeUpService.git
 ```
 
-## Installation
+## Installation and running
 라이브러리 설치
 ```sh
 pip install -r requirements.txt
+```
+모델 다운로드 및 배치<br>
+[다운로드](https://sweetkco-my.sharepoint.com/:u:/g/personal/hanjoon_choe_sweetk_co_kr/ESOFCB7y40JPqKs3v6Z8RuIB7XFnBrApyTjN2KAAXTo5aA?e=41568g)
+```
+다운 받은 모델들을 /photowakeup/checkpoints로 이동시킨다.
 ```
 장고 세팅 및 서버 실행
 ```sh
@@ -20,12 +25,24 @@ python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver 0.0.0.0:{Port} --noreload
 ```
+이미지 업로드
+```
+http://{ip}:{port}/input_images로 이미지 앞면과 뒷면을 각각 업로드
+이미지 형식은 {name}_front.jpeg/{name}_back.jpeg로 각각 앞면 뒷면을 마킹
+```
+산출물 다운로드
+```
+http://{ip}:{port}/photo_wake_up에 접속하면 산출물이 photowakeup.zip으로 다운 받아짐
+```
 
+추후 나머지 프로세스 업데이트 예정
+```
+```
 ## Inputs
-- T포즈에 가까운 1024x1024 이상 사이즈의 고해상도 사람 이미지 앞 뒤(.jpeg)
-> 완전히 T포즈의 이미지를 넣을 경우 3d mesh가 불완전하게 형성 될 수 있음.
-> 인물 주변에 옷가지들이 들어 있으면 안됨
-> 배경은 깨끗할 수록 좋음 
+- T포즈에 가까운 1024x1024 이상 사이즈의 고해상도 사람 이미지 앞 뒤(.jpeg)<br>
+> 완전히 T포즈의 이미지를 넣을 경우 3d mesh가 불완전하게 형성 될 수 있음.<br>
+> 인물 주변에 옷가지들이 들어 있으면 안됨<br>
+> 배경은 깨끗할 수록 좋음
 
 ## Outputs
 - 3D 인체 mesh(.obj)

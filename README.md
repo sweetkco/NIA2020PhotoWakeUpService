@@ -1,4 +1,5 @@
 # NIA2020PhotoWakeUpService
+![title](asset/sweetk_photo_wake_up.gif)
 
 ## Introduction
 한국지능정보사회진흥원(NIA)의 시범서비스 과제로 구축한 Photo wake-up 서비스입니다.

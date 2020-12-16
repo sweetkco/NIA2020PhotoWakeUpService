@@ -14,7 +14,7 @@ git https://github.com/sweetkco/NIA2020PhotoWakeUpService.git
 ```sh
 pip install -r requirements.txt
 ```
-모델 다운로드 및 배치
+모델 다운로드 및 배치<br>
 [다운로드](https://sweetkco-my.sharepoint.com/:u:/g/personal/hanjoon_choe_sweetk_co_kr/ESOFCB7y40JPqKs3v6Z8RuIB7XFnBrApyTjN2KAAXTo5aA?e=41568g)
 ```
 다운 받은 모델의 압축을 해제한 후 /photowakeup/checkpoints 경로안에 모델들을 이동시킨다.

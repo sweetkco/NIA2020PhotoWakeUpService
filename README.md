@@ -14,6 +14,11 @@ git https://github.com/sweetkco/NIA2020PhotoWakeUpService.git
 ```sh
 pip install -r requirements.txt
 ```
+모델 다운로드 및 배치
+[다운로드](https://sweetkco-my.sharepoint.com/:u:/g/personal/hanjoon_choe_sweetk_co_kr/ESOFCB7y40JPqKs3v6Z8RuIB7XFnBrApyTjN2KAAXTo5aA?e=41568g)
+```
+다운 받은 모델의 압축을 해제한 후 /photowakeup/checkpoints 경로안에 모델들을 이동시킨다.
+```
 장고 세팅 및 서버 실행
 ```sh
 python manage.py makemigrations
@@ -34,10 +39,10 @@ http://{ip}:{port}/photo_wake_up에 접속하면 산출물이 photowakeup.zip으
 ```
 ```
 ## Inputs
-- T포즈에 가까운 1024x1024 이상 사이즈의 고해상도 사람 이미지 앞 뒤(.jpeg)
-> 완전히 T포즈의 이미지를 넣을 경우 3d mesh가 불완전하게 형성 될 수 있음.
-> 인물 주변에 옷가지들이 들어 있으면 안됨
-> 배경은 깨끗할 수록 좋음 
+- T포즈에 가까운 1024x1024 이상 사이즈의 고해상도 사람 이미지 앞 뒤(.jpeg)<br>
+> 완전히 T포즈의 이미지를 넣을 경우 3d mesh가 불완전하게 형성 될 수 있음.<br>
+> 인물 주변에 옷가지들이 들어 있으면 안됨<br>
+> 배경은 깨끗할 수록 좋음
 
 ## Outputs
 - 3D 인체 mesh(.obj)

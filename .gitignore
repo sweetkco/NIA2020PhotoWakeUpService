@@ -1,0 +1,11 @@
+**/venv
+/photowakeup/checkpoints
+**/checkpoints
+
+*.jpg
+*.obj
+*.jpeg
+*.png
+*.csv
+*.pth
+*.zip

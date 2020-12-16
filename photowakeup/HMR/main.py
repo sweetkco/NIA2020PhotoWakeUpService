@@ -4,7 +4,7 @@ from smpl import SMPL
 
 
 model = HMR()
-smpl = SMPL('/Users/choehanjoon/PycharmProjects/HMR/neutral_smpl_with_cocoplus_reg.pkl')#SMPL('neutral_smpl_with_cocoplus_reg.pkl')
+smpl = SMPL('/Users/choehanjoon/PycharmProjects/HMR/neutral_smpl_with_cocoplus_reg.pkl')
 
 
 pic = 'result_7_512.jpg'

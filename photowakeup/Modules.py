@@ -104,24 +104,8 @@ class PhotoWakeUp(object):
             file_path = os.path.join(config.input_folder, file)
             if 'front' in file:
                 pred1 = self.HMR.predict(file_path)[0]
-                #pred = pred1['theta']
-                print("joints",pred1['joints'].shape)
-                print("joints 3d" , pred1['joints3d'].shape)
-                #poses = pred[:,3:(3+72)][0]
-                #shapes = pred[:,(3+72):][0]
                 joints3d = np.dot(pred1['joints3d'].reshape(-1,3), np.array([[1, 0, 0], [0, 1, 0], [0, 0, 1]]))
                 np.save(os.path.join(config.out_path, '{}_joints.npy'.format(file.split('.')[0])), joints3d)
-                #self.smpl.set_params(beta=shapes,pose=poses,trans=np.array([0, 0, 0]))
-                #self.smpl.save_to_obj(os.path.join(config.out_path, 'test_smpl.obj'))
-                #mesh = trimesh.load(os.path.join(config.out_path, 'test_smpl.obj'))
-                #print(os.path.join(config.out_path, 'test_smpl.obj'))
-                #scale_matrix = trimesh.transformations.scale_matrix(100)
-                #change_axis = [[1, 0, 0, 0], [0, 0, -1, 0], [0, 1, 0, 0], [0, 0, 0, 1]]
-                #mesh = mesh.apply_transform(scale_matrix)
-                #mesh = mesh.apply_transform(change_axis)
-
-                #self.save_obj(mesh.vertices, mesh.faces,file_name=os.path.join(config.out_path, 'test_smpl.obj'))
-                #self.smpl.save_keypoints(file.split('.')[0])
             else:
                 continue
     def Segmentation(self):
@@ -135,9 +119,3 @@ class PhotoWakeUp(object):
             obj_file.write('f ' + str(f[i][0] + 1) + '/' + str(f[i][0] + 1) + ' ' + str(f[i][1] + 1) + '/' + str(
                 f[i][1] + 1) + ' ' + str(f[i][2] + 1) + '/' + str(f[i][2] + 1) + '\n')
         obj_file.close()
-
-#pwu=PhotoWakeUp()
-#pwu.PoseEstimation()
-#pwu.Reconstruction()
-#pwu.KeyPoints()
-#pwu.Segmentation()

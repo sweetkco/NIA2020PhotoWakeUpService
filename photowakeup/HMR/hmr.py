@@ -74,9 +74,6 @@ class HMR:
             shapes = theta[:, (3 + 72):]
 
             verts, Js, weights = self.smpl(shapes, poses)
-            print("-"*80)
-            print(Js)
-            print("-" * 80)
 
 
             pred_kp = batch_orth_proj_idrot(Js,cams)
@@ -119,9 +116,6 @@ class HMR:
         }
 
         results = self.sess.run(fetch_dict,feed_dict)
-
-        #joints = results['joints']
-        #results['joints'] = ((joints + 1) * 0.5) * self.img_size
 
         return results
 

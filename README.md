@@ -28,7 +28,9 @@ python manage.py runserver 0.0.0.0:{Port} --noreload
 이미지 업로드
 ```
 http://{ip}:{port}/input_images로 이미지 앞면과 뒷면을 각각 업로드
-이미지 형식은 {name}_front.jpeg/{name}_back.jpeg로 각각 앞면 뒷면을 마킹
+이미지 형식은 
+{name}_front.jpeg
+{name}_back.jpeg로 각각 앞면 뒷면을 마킹
 ```
 산출물 다운로드
 ```
@@ -42,7 +44,7 @@ http://{ip}:{port}/photo_wake_up에 접속하면 산출물이 photowakeup.zip으
 - T포즈에 가까운 1024x1024 이상 사이즈의 고해상도 사람 이미지 앞 뒤(.jpeg)<br>
 > 완전히 T포즈의 이미지를 넣을 경우 3d mesh가 불완전하게 형성 될 수 있음.<br>
 > 인물 주변에 옷가지들이 들어 있으면 안됨<br>
-> 배경은 깨끗할 수록 좋음
+> 배경은 깨끗할수록 좋음
 
 ## Outputs
 - 3D 인체 mesh(.obj)

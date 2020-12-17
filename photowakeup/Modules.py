@@ -1,8 +1,6 @@
-import argparse
 import os
 from hpe import get_rect
 from hpe.models.with_mobilenet import PoseEstimationWithMobileNet
-from hpe.modules.keypoints import extract_keypoints, group_keypoints
 from hpe.modules.load_state import load_state
 import torch
 from hpe.get_rect import get_rect
@@ -11,11 +9,9 @@ from pifuhd.apps.clean_mesh import meshcleaning
 from HMR.hmr import HMR
 from HMR.smpl import SMPL
 import numpy as np
-from pifuhd.lib.options import BaseOptions
 from image_proc import image_processing,blurring
 import cv2
 from segmentation import segmentation
-import trimesh
 
 class Options(object):
     def __init__(self):

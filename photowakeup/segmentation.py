@@ -89,6 +89,7 @@ def segmentation():
     print("Evaluating total class number {} with {}".format(num_classes, label))
 
     model = networks.init_model(args.arch, num_classes=args.num_classes,pretrained=None)
+    print("S1dsd")
     state_dict = torch.load(args.model_restore)['state_dict']
     from collections import OrderedDict
     new_state_dict = OrderedDict()
@@ -146,10 +147,6 @@ def segmentation():
             rgba[:, :, 3] = a
             rgb = cv2.cvtColor(img, cv2.COLOR_RGBA2RGB)
 
-            #rgb = blurring(rgb)
             cv2.imwrite(os.path.join(args.output_dir, img_name[:-4] + '.png'),rgb)
 
             gaussianBlur.main(rgb, rgba, img_path, os.path.join(args.output_dir, img_name[:-4] + '.png'))
-
-
-#segmentation()

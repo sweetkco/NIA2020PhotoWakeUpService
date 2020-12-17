@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/photowakeup.iml" filepath="$PROJECT_DIR$/.idea/photowakeup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/HMR.iml" filepath="$PROJECT_DIR$/.idea/HMR.iml" />
     </modules>
   </component>
 </project>

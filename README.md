@@ -44,7 +44,7 @@ photowakeup_ui 폴더 안에서
 ai_upload_url=http://"ip_address from model part":19020/input_images/
 ai_download_url=http://"ip_address from model part:19020/photo_wake_up/
 ui_exec_path=C:\\your directory\\photowakeup_ui\\sweek_test_03.bat
-download_dir=C:\\your directory\\Desktop\\photowakeup_ui\\verge3d_blender
+download_dir=C:\\your directory\\photowakeup_ui\\verge3d_blender
 ```
 
 ### war 파일 실행

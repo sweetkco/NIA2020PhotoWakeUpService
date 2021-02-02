@@ -15,7 +15,7 @@ git https://github.com/sweetkco/NIA2020PhotoWakeUpService.git
 
 photowakeup 폴더 안에서
 
-라이브러리 설치
+### 라이브러리 설치
 ```sh
 pip install -r requirements.txt
 ```
@@ -24,23 +24,12 @@ pip install -r requirements.txt
 ```
 다운 받은 모델들을 /photowakeup/checkpoints로 이동시킨다.
 ```
-장고 세팅 및 서버 실행
+### 장고 세팅 및 서버 실행
 ```sh
 python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver 0.0.0.0:{Port} --noreload
 ```
-
-## Inputs
-- T포즈에 가까운 1024x1024 이상 사이즈의 고해상도 사람 이미지 앞 뒤(.jpeg)<br>
-> 완전히 T포즈의 이미지를 넣을 경우 3d mesh가 불완전하게 형성 될 수 있음.<br>
-> 인물 주변에 옷가지들이 들어 있으면 안됨<br>
-> 배경은 깨끗할수록 좋음
-
-## Outputs
-- 3D 인체 mesh(.obj)
-- 3d상의 24개 keypoints(.npy)
-- 512x512 사이즈의 사람이미지 앞 뒤(.png)
 
 # User Interface Part (only Windows)
 
@@ -48,7 +37,7 @@ python manage.py runserver 0.0.0.0:{Port} --noreload
 
 photowakeup_ui 폴더 안에서
 
-app.properties 수정 
+### app.properties 수정 
 
 내용을 다음과 같이 해당 경로 수정
 ```sh
@@ -58,7 +47,7 @@ ui_exec_path=C:\\your directory\\photowakeup_ui\\sweek_test_03.bat
 download_dir=C:\\your directory\\Desktop\\photowakeup_ui\\verge3d_blender
 ```
 
-war 파일 실행
+### war 파일 실행
 
 커맨드 창에서
 ```sh
@@ -66,23 +55,25 @@ java -jar photowakeup-1.0.jar
 ```
 실행
 
-웹페이지 접속
+### 웹페이지 접속
 ```sh
 http://해당 윈도우 아이피:8668/applications/Sweetk/index.html
 ```
 
-이미지 업로드
+### 이미지 업로드
 ```
 이미지 업로드 버튼을 누른후 
 hyeokmin_front.jpeg
 로 명명한 정면 이미지 사진을 업로드
 ```
 
-### 이밎 업로드 시 주의사항
-- T포즈에 가까운 1024x1024 이상 사이즈의 고해상도 사람 이미지 앞 뒤(.jpeg)<br>
+#### 이미지 업로드 시 주의사항
+
+> T포즈에 가까운 1024x1024 이상 사이즈의 고해상도 사람 이미지 앞 뒤(.jpeg)<br>
 > 완전히 T포즈의 이미지를 넣을 경우 3d mesh가 불완전하게 형성 될 수 있음.<br>
 > 인물 주변에 옷가지들이 들어 있으면 안됨<br>
 > 배경은 깨끗할수록 좋음
+
 
 ## Citations
 ```

@@ -19,7 +19,7 @@ photowakeup 폴더 안에서
 ```sh
 pip install -r requirements.txt
 ```
-모델 다운로드 및 배치<br>
+### 모델 다운로드 및 배치<br>
 [다운로드](https://sweetkco-my.sharepoint.com/:u:/g/personal/hanjoon_choe_sweetk_co_kr/ESOFCB7y40JPqKs3v6Z8RuIB7XFnBrApyTjN2KAAXTo5aA?e=41568g)
 ```
 다운 받은 모델들을 /photowakeup/checkpoints로 이동시킨다.

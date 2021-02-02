@@ -28,9 +28,9 @@ python manage.py runserver 0.0.0.0:{Port} --noreload
 이미지 업로드
 ```
 http://{ip}:{port}/input_images로 이미지 앞면과 뒷면을 각각 업로드
-이미지 형식은 
-{name}_front.jpeg
-{name}_back.jpeg로 각각 앞면 뒷면을 마킹
+이미지 이름과 형식은
+hyeokmin_front.jpeg
+로 해주세요.
 ```
 산출물 다운로드
 ```

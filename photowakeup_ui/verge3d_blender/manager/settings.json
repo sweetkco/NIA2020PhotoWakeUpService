@@ -1,0 +1,24 @@
+{
+    "appTemplates": [
+        {
+            "description": "Create a generic Puzzles-enabled app suitable for most users (light theme)", 
+            "name": "Standard Light"
+        }, 
+        {
+            "description": "Create a generic Puzzles-enabled app suitable for most users (dark theme)", 
+            "name": "Standard Dark"
+        }, 
+        {
+            "description": "Create a starter set of HTML/CSS/JavaScript files for use by web developers", 
+            "name": "Code-Based"
+        }
+    ], 
+    "cacheMaxAge": 15, 
+    "checkForUpdates": true, 
+    "extAppsDirectory": "", 
+    "externalInterface": true, 
+    "licenseKey": "6cacd32fc350e095bb60ec9db4ed000e05e574f3005fcdbea60e90", 
+    "licenseKeyVersion": "3.5.0", 
+    "theme": "light", 
+    "uploadSources": false
+}

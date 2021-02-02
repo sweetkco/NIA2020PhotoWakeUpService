@@ -1,0 +1,48 @@
+<script>
+function wrapStatements(statementsDo, arg) {
+    arg = arg || '';
+    if (statementsDo.length)
+        return 'function(' + arg + ') {\n' + statementsDo + '}';
+    else
+        return 'function(' + arg + ') {}';
+}
+
+function template(block) {
+    block.appendDummyInput()
+    .appendField('connect to WooCommerce');
+
+    block.appendStatementInput('WHEN_READY')
+    .appendField('once product updated do:')
+    .setCheck(null);
+
+    block.setInputsInline(true);
+    block.setPreviousStatement(true);
+    block.setNextStatement(true);
+    block.setColour('#d4af37');
+    block.setTooltip(`Connect to WooCommerce system to start receiving product information.`);
+    block.setHelpUrl('https://www.soft8soft.com/docs/manual/en/puzzles/ECommerce.html#woo_connect');
+}
+
+function code(block) {
+    var whenReadyCb = Blockly.JavaScript.statementToCode(block, 'WHEN_READY');
+
+    var fun = Blockly.JavaScript.provideFunction_('wooGetProductInfo', [`
+// wooGetProductInfo puzzle
+function ${Blockly.JavaScript.FUNCTION_NAME_PLACEHOLDER_}(whenReadyCb) {
+
+    var woo_fun = window.parent.v3d_woo_get_product_info || window.parent.parent.v3d_woo_get_product_info || null;
+
+    if (woo_fun) {
+        woo_fun(function(info) {
+            _pGlob.wooProductInfo = info;
+            whenReadyCb();
+        });
+    } else {
+        console.error('wooGetProductInfo: WooCommerce not found.');
+    }
+}
+`]);
+
+    return `${fun}(${wrapStatements(whenReadyCb)});\n`;
+}
+</script>

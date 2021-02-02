@@ -1,0 +1,10 @@
+/venv
+/.idea
+/model
+/models
+
+
+*.jpg
+*.obj
+*.jpeg
+*.png

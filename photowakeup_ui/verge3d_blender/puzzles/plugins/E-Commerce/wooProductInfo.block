@@ -1,0 +1,15 @@
+<script>
+function template(block) {
+    block.appendDummyInput()
+    .appendField('product info');
+
+    block.setColour('#d4af37');
+    block.setOutput(true, 'Dictionary');
+    block.setTooltip(`Returns the product info dictionary retrieved by the "connect to WooCommerce" puzzle.`);
+    block.setHelpUrl('https://www.soft8soft.com/docs/manual/en/puzzles/ECommerce.html#woo_product_info');
+}
+
+function code() {
+    return ['_pGlob.wooProductInfo', Blockly.JavaScript.ORDER_ATOMIC];
+}
+</script>

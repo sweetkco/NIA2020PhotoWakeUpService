@@ -1,0 +1,688 @@
+<!DOCTYPE html><html lang="en"><head>
+                <title>DeprecatedList - Verge3D User Manual - Soft8Soft</title>
+                <meta name="description" content="Learn how to use DeprecatedList in your interactive 3D apps made with Verge3D or Three.js">
+            
+    <meta charset="utf-8">
+    <base href="../../../">
+    <script src="list.js"></script>
+    <script src="page.js"></script>
+    <link type="text/css" rel="stylesheet" href="page.css">
+  
+            <link rel="canonical" href="https://www.soft8soft.com/docs/api/zh/deprecated/DeprecatedList.html">
+
+            <meta property="og:type" content="article">
+            <meta property="og:title" content="DeprecatedList - Verge3D User Manual - Soft8Soft">
+            <meta property="og:description" content="Learn how to use DeprecatedList in your interactive 3D apps made with Verge3D or Three.js">
+            <meta property="og:image" content="https://cdn.soft8soft.com/images/manual.jpg">
+            <meta property="og:image:width" content="1200">
+            <meta property="og:image:height" content="630">
+            <meta property="og:url" content="https://www.soft8soft.com/docs/api/zh/deprecated/DeprecatedList.html">
+            <meta property="og:site_name" content="Soft8Soft">
+            <meta property="og:locale" content="en_US">
+
+            <meta property="article:author" content="https://www.facebook.com/soft8soft">
+
+            <meta property="article:tag" content="Verge3D">
+            <meta property="article:tag" content="WebGL">
+            <meta property="article:tag" content="3D">
+            <meta property="article:tag" content="ThreeJS">
+            <meta property="article:tag" content="interactive">
+            <meta property="article:tag" content="realtime">
+            <meta property="article:tag" content="3dweb">
+            <meta property="article:tag" content="web3d">
+
+            <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:title" content="DeprecatedList - Verge3D User Manual - Soft8Soft">
+            <meta name="twitter:description" content="Learn how to use DeprecatedList in your interactive 3D apps made with Verge3D or Three.js">
+            <meta name="twitter:image" content="https://cdn.soft8soft.com/images/manual.jpg">
+            <meta name="twitter:creator" content="@soft8soft">
+        
+            <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+            <!-- favicons from realfavicongenerator.net -->
+            <link rel="apple-touch-icon" sizes="180x180" href="files/icons/apple-touch-icon.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="files/icons/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="files/icons/favicon-16x16.png">
+            <link rel="manifest" href="files/icons/manifest.json">
+            <link rel="mask-icon" href="files/icons/safari-pinned-tab.svg" color="#5bbad5 ">
+        </head>
+  <body><nav id="panel" class="collapsed">
+          <h1><a href="api/zh/index.html">参考</a></h1>
+
+          <a id="expandButton" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+
+          <div class="filterBlock">
+            <input type="text" id="filterInput" placeholder="Type to filter" autocapitalize="off" spellcheck="false">
+            <a href="#" id="clearFilterButton">x</a>
+          </div>
+
+          <div id="content"><div><h2>程序员指南</h2><ul id="程序员指南"><li><a href="manual/zh/programmers_guide/Developer-Kit.html" id="程序员指南_Developer_Kit">Developer Kit</a></li><li><a href="manual/zh/programmers_guide/Programming-basics.html" id="程序员指南_Programming_Basics">Programming Basics</a></li><li><a href="manual/zh/programmers_guide/Matrix-transformations.html" id="程序员指南_矩阵变换">矩阵变换</a></li><li><a href="manual/zh/programmers_guide/Animation-system.html" id="程序员指南_动画系统">动画系统</a></li><li><a href="manual/zh/programmers_guide/Creating-text.html" id="程序员指南_创建一个场景">创建一个场景</a></li><li><a href="manual/zh/programmers_guide/Drawing-lines.html" id="程序员指南_画线">画线</a></li><li><a href="manual/zh/programmers_guide/How-to-update-things.html" id="程序员指南_如何更新场景">如何更新场景</a></li><li><a href="manual/zh/programmers_guide/How-to-obtain-Verge3D-sources.html" id="程序员指南_How_to_Obtain_Sources">How to Obtain Sources</a></li><li><a href="manual/zh/programmers_guide/Integration-with-Reactjs-Vuejs.html" id="程序员指南_Integration_with_React.js/Vue.js">Integration with React.js/Vue.js</a></li></ul></div><div><h2>动画</h2><ul id="动画"><li><a href="api/zh/animation/AnimationAction.html" id="动画_AnimationAction">AnimationAction</a></li><li><a href="api/zh/animation/AnimationClip.html" id="动画_AnimationClip">AnimationClip</a></li><li><a href="api/zh/animation/AnimationMixer.html" id="动画_AnimationMixer">AnimationMixer</a></li><li><a href="api/zh/animation/AnimationObjectGroup.html" id="动画_AnimationObjectGroup">AnimationObjectGroup</a></li><li><a href="api/zh/animation/AnimationUtils.html" id="动画_AnimationUtils">AnimationUtils</a></li><li><a href="api/zh/animation/KeyframeTrack.html" id="动画_KeyframeTrack">KeyframeTrack</a></li><li><a href="api/zh/animation/PropertyBinding.html" id="动画_PropertyBinding">PropertyBinding</a></li><li><a href="api/zh/animation/PropertyMixer.html" id="动画_PropertyMixer">PropertyMixer</a></li></ul></div><div><h2>动画 / 轨道</h2><ul id="动画_/_轨道"><li><a href="api/zh/animation/tracks/BooleanKeyframeTrack.html" id="动画_/_轨道_BooleanKeyframeTrack">BooleanKeyframeTrack</a></li><li><a href="api/zh/animation/tracks/ColorKeyframeTrack.html" id="动画_/_轨道_ColorKeyframeTrack">ColorKeyframeTrack</a></li><li><a href="api/zh/animation/tracks/NumberKeyframeTrack.html" id="动画_/_轨道_NumberKeyframeTrack">NumberKeyframeTrack</a></li><li><a href="api/zh/animation/tracks/QuaternionKeyframeTrack.html" id="动画_/_轨道_QuaternionKeyframeTrack">QuaternionKeyframeTrack</a></li><li><a href="api/zh/animation/tracks/StringKeyframeTrack.html" id="动画_/_轨道_StringKeyframeTrack">StringKeyframeTrack</a></li><li><a href="api/zh/animation/tracks/VectorKeyframeTrack.html" id="动画_/_轨道_VectorKeyframeTrack">VectorKeyframeTrack</a></li></ul></div><div><h2>音频</h2><ul id="音频"><li><a href="api/zh/audio/Audio.html" id="音频_Audio">Audio</a></li><li><a href="api/zh/audio/AudioAnalyser.html" id="音频_AudioAnalyser">AudioAnalyser</a></li><li><a href="api/zh/audio/AudioContext.html" id="音频_AudioContext">AudioContext</a></li><li><a href="api/zh/audio/AudioListener.html" id="音频_AudioListener">AudioListener</a></li><li><a href="api/zh/audio/PositionalAudio.html" id="音频_PositionalAudio">PositionalAudio</a></li></ul></div><div><h2>摄像机</h2><ul id="摄像机"><li><a href="api/zh/cameras/ArrayCamera.html" id="摄像机_ArrayCamera">ArrayCamera</a></li><li><a href="api/zh/cameras/Camera.html" id="摄像机_Camera">Camera</a></li><li><a href="api/zh/cameras/CubeCamera.html" id="摄像机_CubeCamera">CubeCamera</a></li><li><a href="api/zh/cameras/OrthographicCamera.html" id="摄像机_OrthographicCamera">OrthographicCamera</a></li><li><a href="api/zh/cameras/PerspectiveCamera.html" id="摄像机_PerspectiveCamera">PerspectiveCamera</a></li><li><a href="api/zh/cameras/StereoCamera.html" id="摄像机_StereoCamera">StereoCamera</a></li></ul></div><div><h2>常量</h2><ul id="常量"><li><a href="api/zh/constants/Animation.html" id="常量_Animation">Animation</a></li><li><a href="api/zh/constants/Core.html" id="常量_Core">Core</a></li><li><a href="api/zh/constants/CustomBlendingEquations.html" id="常量_CustomBlendingEquation">CustomBlendingEquation</a></li><li><a href="api/zh/constants/Materials.html" id="常量_Materials">Materials</a></li><li><a href="api/zh/constants/Renderer.html" id="常量_Renderer">Renderer</a></li><li><a href="api/zh/constants/Textures.html" id="常量_Textures">Textures</a></li></ul></div><div><h2>核心</h2><ul id="核心"><li><a href="api/zh/core/BufferAttribute.html" id="核心_BufferAttribute">BufferAttribute</a></li><li><a href="api/zh/core/BufferGeometry.html" id="核心_BufferGeometry">BufferGeometry</a></li><li><a href="api/zh/core/Clock.html" id="核心_Clock">Clock</a></li><li><a href="api/zh/core/DirectGeometry.html" id="核心_DirectGeometry">DirectGeometry</a></li><li><a href="api/zh/core/EventDispatcher.html" id="核心_EventDispatcher">EventDispatcher</a></li><li><a href="api/zh/core/Face3.html" id="核心_Face3">Face3</a></li><li><a href="api/zh/core/Geometry.html" id="核心_Geometry">Geometry</a></li><li><a href="api/zh/core/InstancedBufferAttribute.html" id="核心_InstancedBufferAttribute">InstancedBufferAttribute</a></li><li><a href="api/zh/core/InstancedBufferGeometry.html" id="核心_InstancedBufferGeometry">InstancedBufferGeometry</a></li><li><a href="api/zh/core/InstancedInterleavedBuffer.html" id="核心_InstancedInterleavedBuffer">InstancedInterleavedBuffer</a></li><li><a href="api/zh/core/InterleavedBuffer.html" id="核心_InterleavedBuffer">InterleavedBuffer</a></li><li><a href="api/zh/core/InterleavedBufferAttribute.html" id="核心_InterleavedBufferAttribute">InterleavedBufferAttribute</a></li><li><a href="api/zh/core/Layers.html" id="核心_Layers">Layers</a></li><li><a href="api/zh/core/Object3D.html" id="核心_Object3D">Object3D</a></li><li><a href="api/zh/core/Raycaster.html" id="核心_Raycaster">Raycaster</a></li><li><a href="api/zh/core/Uniform.html" id="核心_Uniform">Uniform</a></li></ul></div><div><h2>核心 / BufferAttributes</h2><ul id="核心_/_BufferAttributes"><li><a href="api/zh/core/bufferAttributeTypes/BufferAttributeTypes.html" id="核心_/_BufferAttributes_BufferAttribute_Types">BufferAttribute Types</a></li></ul></div><div><h2>弃用列表</h2><ul id="弃用列表"><li><a href="api/zh/deprecated/DeprecatedList.html" id="弃用列表_DeprecatedList">DeprecatedList</a></li></ul></div><div><h2>附件</h2><ul id="附件"><li><a href="api/zh/extras/Earcut.html" id="附件_Earcut">Earcut</a></li><li><a href="api/zh/extras/ImageUtils.html" id="附件_ImageUtils">ImageUtils</a></li><li><a href="api/zh/extras/PMREMGenerator.html" id="附件_PMREMGenerator">PMREMGenerator</a></li><li><a href="api/zh/extras/ShapeUtils.html" id="附件_ShapeUtils">ShapeUtils</a></li></ul></div><div><h2>附件 / 核心</h2><ul id="附件_/_核心"><li><a href="api/zh/extras/core/Curve.html" id="附件_/_核心_Curve">Curve</a></li><li><a href="api/zh/extras/core/CurvePath.html" id="附件_/_核心_CurvePath">CurvePath</a></li><li><a href="api/zh/extras/core/Font.html" id="附件_/_核心_Font">Font</a></li><li><a href="api/zh/extras/core/Interpolations.html" id="附件_/_核心_Interpolations">Interpolations</a></li><li><a href="api/zh/extras/core/Path.html" id="附件_/_核心_Path">Path</a></li><li><a href="api/zh/extras/core/Shape.html" id="附件_/_核心_Shape">Shape</a></li><li><a href="api/zh/extras/core/ShapePath.html" id="附件_/_核心_ShapePath">ShapePath</a></li></ul></div><div><h2>附件 / 曲线</h2><ul id="附件_/_曲线"><li><a href="api/zh/extras/curves/ArcCurve.html" id="附件_/_曲线_ArcCurve">ArcCurve</a></li><li><a href="api/zh/extras/curves/CatmullRomCurve3.html" id="附件_/_曲线_CatmullRomCurve3">CatmullRomCurve3</a></li><li><a href="api/zh/extras/curves/CubicBezierCurve.html" id="附件_/_曲线_CubicBezierCurve">CubicBezierCurve</a></li><li><a href="api/zh/extras/curves/CubicBezierCurve3.html" id="附件_/_曲线_CubicBezierCurve3">CubicBezierCurve3</a></li><li><a href="api/zh/extras/curves/EllipseCurve.html" id="附件_/_曲线_EllipseCurve">EllipseCurve</a></li><li><a href="api/zh/extras/curves/LineCurve.html" id="附件_/_曲线_LineCurve">LineCurve</a></li><li><a href="api/zh/extras/curves/LineCurve3.html" id="附件_/_曲线_LineCurve3">LineCurve3</a></li><li><a href="api/zh/extras/curves/QuadraticBezierCurve.html" id="附件_/_曲线_QuadraticBezierCurve">QuadraticBezierCurve</a></li><li><a href="api/zh/extras/curves/QuadraticBezierCurve3.html" id="附件_/_曲线_QuadraticBezierCurve3">QuadraticBezierCurve3</a></li><li><a href="api/zh/extras/curves/SplineCurve.html" id="附件_/_曲线_SplineCurve">SplineCurve</a></li></ul></div><div><h2>附件 / 物体</h2><ul id="附件_/_物体"><li><a href="api/zh/extras/objects/ImmediateRenderObject.html" id="附件_/_物体_ImmediateRenderObject">ImmediateRenderObject</a></li></ul></div><div><h2>几何体</h2><ul id="几何体"><li><a href="api/zh/geometries/BoxBufferGeometry.html" id="几何体_BoxBufferGeometry">BoxBufferGeometry</a></li><li><a href="api/zh/geometries/BoxGeometry.html" id="几何体_BoxGeometry">BoxGeometry</a></li><li><a href="api/zh/geometries/CircleBufferGeometry.html" id="几何体_CircleBufferGeometry">CircleBufferGeometry</a></li><li><a href="api/zh/geometries/CircleGeometry.html" id="几何体_CircleGeometry">CircleGeometry</a></li><li><a href="api/zh/geometries/ConeBufferGeometry.html" id="几何体_ConeBufferGeometry">ConeBufferGeometry</a></li><li><a href="api/zh/geometries/ConeGeometry.html" id="几何体_ConeGeometry">ConeGeometry</a></li><li><a href="api/zh/geometries/CylinderBufferGeometry.html" id="几何体_CylinderBufferGeometry">CylinderBufferGeometry</a></li><li><a href="api/zh/geometries/CylinderGeometry.html" id="几何体_CylinderGeometry">CylinderGeometry</a></li><li><a href="api/zh/geometries/DodecahedronBufferGeometry.html" id="几何体_DodecahedronBufferGeometry">DodecahedronBufferGeometry</a></li><li><a href="api/zh/geometries/DodecahedronGeometry.html" id="几何体_DodecahedronGeometry">DodecahedronGeometry</a></li><li><a href="api/zh/geometries/EdgesGeometry.html" id="几何体_EdgesGeometry">EdgesGeometry</a></li><li><a href="api/zh/geometries/ExtrudeBufferGeometry.html" id="几何体_ExtrudeBufferGeometry">ExtrudeBufferGeometry</a></li><li><a href="api/zh/geometries/ExtrudeGeometry.html" id="几何体_ExtrudeGeometry">ExtrudeGeometry</a></li><li><a href="api/zh/geometries/IcosahedronBufferGeometry.html" id="几何体_IcosahedronBufferGeometry">IcosahedronBufferGeometry</a></li><li><a href="api/zh/geometries/IcosahedronGeometry.html" id="几何体_IcosahedronGeometry">IcosahedronGeometry</a></li><li><a href="api/zh/geometries/LatheBufferGeometry.html" id="几何体_LatheBufferGeometry">LatheBufferGeometry</a></li><li><a href="api/zh/geometries/LatheGeometry.html" id="几何体_LatheGeometry">LatheGeometry</a></li><li><a href="api/zh/geometries/OctahedronBufferGeometry.html" id="几何体_OctahedronBufferGeometry">OctahedronBufferGeometry</a></li><li><a href="api/zh/geometries/OctahedronGeometry.html" id="几何体_OctahedronGeometry">OctahedronGeometry</a></li><li><a href="api/zh/geometries/ParametricBufferGeometry.html" id="几何体_ParametricBufferGeometry">ParametricBufferGeometry</a></li><li><a href="api/zh/geometries/ParametricGeometry.html" id="几何体_ParametricGeometry">ParametricGeometry</a></li><li><a href="api/zh/geometries/PlaneBufferGeometry.html" id="几何体_PlaneBufferGeometry">PlaneBufferGeometry</a></li><li><a href="api/zh/geometries/PlaneGeometry.html" id="几何体_PlaneGeometry">PlaneGeometry</a></li><li><a href="api/zh/geometries/PolyhedronBufferGeometry.html" id="几何体_PolyhedronBufferGeometry">PolyhedronBufferGeometry</a></li><li><a href="api/zh/geometries/PolyhedronGeometry.html" id="几何体_PolyhedronGeometry">PolyhedronGeometry</a></li><li><a href="api/zh/geometries/RingBufferGeometry.html" id="几何体_RingBufferGeometry">RingBufferGeometry</a></li><li><a href="api/zh/geometries/RingGeometry.html" id="几何体_RingGeometry">RingGeometry</a></li><li><a href="api/zh/geometries/ShapeBufferGeometry.html" id="几何体_ShapeBufferGeometry">ShapeBufferGeometry</a></li><li><a href="api/zh/geometries/ShapeGeometry.html" id="几何体_ShapeGeometry">ShapeGeometry</a></li><li><a href="api/zh/geometries/SphereBufferGeometry.html" id="几何体_SphereBufferGeometry">SphereBufferGeometry</a></li><li><a href="api/zh/geometries/SphereGeometry.html" id="几何体_SphereGeometry">SphereGeometry</a></li><li><a href="api/zh/geometries/TetrahedronBufferGeometry.html" id="几何体_TetrahedronBufferGeometry">TetrahedronBufferGeometry</a></li><li><a href="api/zh/geometries/TetrahedronGeometry.html" id="几何体_TetrahedronGeometry">TetrahedronGeometry</a></li><li><a href="api/zh/geometries/TextBufferGeometry.html" id="几何体_TextBufferGeometry">TextBufferGeometry</a></li><li><a href="api/zh/geometries/TextGeometry.html" id="几何体_TextGeometry">TextGeometry</a></li><li><a href="api/zh/geometries/TorusBufferGeometry.html" id="几何体_TorusBufferGeometry">TorusBufferGeometry</a></li><li><a href="api/zh/geometries/TorusGeometry.html" id="几何体_TorusGeometry">TorusGeometry</a></li><li><a href="api/zh/geometries/TorusKnotBufferGeometry.html" id="几何体_TorusKnotBufferGeometry">TorusKnotBufferGeometry</a></li><li><a href="api/zh/geometries/TorusKnotGeometry.html" id="几何体_TorusKnotGeometry">TorusKnotGeometry</a></li><li><a href="api/zh/geometries/TubeBufferGeometry.html" id="几何体_TubeBufferGeometry">TubeBufferGeometry</a></li><li><a href="api/zh/geometries/TubeGeometry.html" id="几何体_TubeGeometry">TubeGeometry</a></li><li><a href="api/zh/geometries/WireframeGeometry.html" id="几何体_WireframeGeometry">WireframeGeometry</a></li></ul></div><div><h2>辅助对象</h2><ul id="辅助对象"><li><a href="api/zh/helpers/ArrowHelper.html" id="辅助对象_ArrowHelper">ArrowHelper</a></li><li><a href="api/zh/helpers/AxesHelper.html" id="辅助对象_AxesHelper">AxesHelper</a></li><li><a href="api/zh/helpers/BoxHelper.html" id="辅助对象_BoxHelper">BoxHelper</a></li><li><a href="api/zh/helpers/Box3Helper.html" id="辅助对象_Box3Helper">Box3Helper</a></li><li><a href="api/zh/helpers/CameraHelper.html" id="辅助对象_CameraHelper">CameraHelper</a></li><li><a href="api/zh/helpers/DirectionalLightHelper.html" id="辅助对象_DirectionalLightHelper">DirectionalLightHelper</a></li><li><a href="api/zh/helpers/GridHelper.html" id="辅助对象_GridHelper">GridHelper</a></li><li><a href="api/zh/helpers/PolarGridHelper.html" id="辅助对象_PolarGridHelper">PolarGridHelper</a></li><li><a href="api/zh/helpers/HemisphereLightHelper.html" id="辅助对象_HemisphereLightHelper">HemisphereLightHelper</a></li><li><a href="api/zh/helpers/PlaneHelper.html" id="辅助对象_PlaneHelper">PlaneHelper</a></li><li><a href="api/zh/helpers/PointLightHelper.html" id="辅助对象_PointLightHelper">PointLightHelper</a></li><li><a href="api/zh/helpers/SkeletonHelper.html" id="辅助对象_SkeletonHelper">SkeletonHelper</a></li><li><a href="api/zh/helpers/SpotLightHelper.html" id="辅助对象_SpotLightHelper">SpotLightHelper</a></li></ul></div><div><h2>灯光</h2><ul id="灯光"><li><a href="api/zh/lights/AmbientLight.html" id="灯光_AmbientLight">AmbientLight</a></li><li><a href="api/zh/lights/DirectionalLight.html" id="灯光_DirectionalLight">DirectionalLight</a></li><li><a href="api/zh/lights/HemisphereLight.html" id="灯光_HemisphereLight">HemisphereLight</a></li><li><a href="api/zh/lights/Light.html" id="灯光_Light">Light</a></li><li><a href="api/zh/lights/PointLight.html" id="灯光_PointLight">PointLight</a></li><li><a href="api/zh/lights/RectAreaLight.html" id="灯光_RectAreaLight">RectAreaLight</a></li><li><a href="api/zh/lights/SpotLight.html" id="灯光_SpotLight">SpotLight</a></li></ul></div><div><h2>灯光 / 阴影</h2><ul id="灯光_/_阴影"><li><a href="api/zh/lights/shadows/LightShadow.html" id="灯光_/_阴影_LightShadow">LightShadow</a></li><li><a href="api/zh/lights/shadows/PointLightShadow.html" id="灯光_/_阴影_PointLightShadow">PointLightShadow</a></li><li><a href="api/zh/lights/shadows/DirectionalLightShadow.html" id="灯光_/_阴影_DirectionalLightShadow">DirectionalLightShadow</a></li><li><a href="api/zh/lights/shadows/SpotLightShadow.html" id="灯光_/_阴影_SpotLightShadow">SpotLightShadow</a></li></ul></div><div><h2>加载器</h2><ul id="加载器"><li><a href="api/zh/loaders/AnimationLoader.html" id="加载器_AnimationLoader">AnimationLoader</a></li><li><a href="api/zh/loaders/AudioLoader.html" id="加载器_AudioLoader">AudioLoader</a></li><li><a href="api/zh/loaders/BufferGeometryLoader.html" id="加载器_BufferGeometryLoader">BufferGeometryLoader</a></li><li><a href="api/zh/loaders/Cache.html" id="加载器_Cache">Cache</a></li><li><a href="api/zh/loaders/CompressedTextureLoader.html" id="加载器_CompressedTextureLoader">CompressedTextureLoader</a></li><li><a href="api/zh/loaders/CubeTextureLoader.html" id="加载器_CubeTextureLoader">CubeTextureLoader</a></li><li><a href="api/zh/loaders/DataTextureLoader.html" id="加载器_DataTextureLoader">DataTextureLoader</a></li><li><a href="api/zh/loaders/FileLoader.html" id="加载器_FileLoader">FileLoader</a></li><li><a href="api/zh/loaders/FontLoader.html" id="加载器_FontLoader">FontLoader</a></li><li><a href="api/zh/loaders/ImageBitmapLoader.html" id="加载器_ImageBitmapLoader">ImageBitmapLoader</a></li><li><a href="api/zh/loaders/ImageLoader.html" id="加载器_ImageLoader">ImageLoader</a></li><li><a href="api/zh/loaders/Loader.html" id="加载器_Loader">Loader</a></li><li><a href="api/zh/loaders/LoaderUtils.html" id="加载器_LoaderUtils">LoaderUtils</a></li><li><a href="api/zh/loaders/MaterialLoader.html" id="加载器_MaterialLoader">MaterialLoader</a></li><li><a href="api/zh/loaders/ObjectLoader.html" id="加载器_ObjectLoader">ObjectLoader</a></li><li><a href="api/zh/loaders/TextureLoader.html" id="加载器_TextureLoader">TextureLoader</a></li></ul></div><div><h2>加载器 / 管理器</h2><ul id="加载器_/_管理器"><li><a href="api/zh/loaders/managers/DefaultLoadingManager.html" id="加载器_/_管理器_DefaultLoadingManager">DefaultLoadingManager</a></li><li><a href="api/zh/loaders/managers/LoadingManager.html" id="加载器_/_管理器_LoadingManager">LoadingManager</a></li></ul></div><div><h2>材质</h2><ul id="材质"><li><a href="api/zh/materials/LineBasicMaterial.html" id="材质_LineBasicMaterial">LineBasicMaterial</a></li><li><a href="api/zh/materials/LineDashedMaterial.html" id="材质_LineDashedMaterial">LineDashedMaterial</a></li><li><a href="api/zh/materials/Material.html" id="材质_Material">Material</a></li><li><a href="api/zh/materials/MeshBasicMaterial.html" id="材质_MeshBasicMaterial">MeshBasicMaterial</a></li><li><a href="api/zh/materials/MeshDepthMaterial.html" id="材质_MeshDepthMaterial">MeshDepthMaterial</a></li><li><a href="api/zh/materials/MeshDistanceMaterial.html" id="材质_MeshDistanceMaterial">MeshDistanceMaterial</a></li><li><a href="api/zh/materials/MeshLambertMaterial.html" id="材质_MeshLambertMaterial">MeshLambertMaterial</a></li><li><a href="api/zh/materials/MeshMatcapMaterial.html" id="材质_MeshMatcapMaterial">MeshMatcapMaterial</a></li><li><a href="api/zh/materials/MeshNormalMaterial.html" id="材质_MeshNormalMaterial">MeshNormalMaterial</a></li><li><a href="api/zh/materials/MeshPhongMaterial.html" id="材质_MeshPhongMaterial">MeshPhongMaterial</a></li><li><a href="api/zh/materials/MeshPhysicalMaterial.html" id="材质_MeshPhysicalMaterial">MeshPhysicalMaterial</a></li><li><a href="api/zh/materials/MeshStandardMaterial.html" id="材质_MeshStandardMaterial">MeshStandardMaterial</a></li><li><a href="api/zh/materials/MeshToonMaterial.html" id="材质_MeshToonMaterial">MeshToonMaterial</a></li><li><a href="api/zh/materials/PointsMaterial.html" id="材质_PointsMaterial">PointsMaterial</a></li><li><a href="api/zh/materials/RawShaderMaterial.html" id="材质_RawShaderMaterial">RawShaderMaterial</a></li><li><a href="api/zh/materials/ShaderMaterial.html" id="材质_ShaderMaterial">ShaderMaterial</a></li><li><a href="api/zh/materials/ShadowMaterial.html" id="材质_ShadowMaterial">ShadowMaterial</a></li><li><a href="api/zh/materials/SpriteMaterial.html" id="材质_SpriteMaterial">SpriteMaterial</a></li></ul></div><div><h2>数学库</h2><ul id="数学库"><li><a href="api/zh/math/Box2.html" id="数学库_Box2">Box2</a></li><li><a href="api/zh/math/Box3.html" id="数学库_Box3">Box3</a></li><li><a href="api/zh/math/Color.html" id="数学库_Color">Color</a></li><li><a href="api/zh/math/Cylindrical.html" id="数学库_Cylindrical">Cylindrical</a></li><li><a href="api/zh/math/Euler.html" id="数学库_Euler">Euler</a></li><li><a href="api/zh/math/Frustum.html" id="数学库_Frustum">Frustum</a></li><li><a href="api/zh/math/Interpolant.html" id="数学库_Interpolant">Interpolant</a></li><li><a href="api/zh/math/Line3.html" id="数学库_Line3">Line3</a></li><li><a href="api/zh/math/MathUtils.html" id="数学库_MathUtils">MathUtils</a></li><li><a href="api/zh/math/Matrix3.html" id="数学库_Matrix3">Matrix3</a></li><li><a href="api/zh/math/Matrix4.html" id="数学库_Matrix4">Matrix4</a></li><li><a href="api/zh/math/Plane.html" id="数学库_Plane">Plane</a></li><li><a href="api/zh/math/Quaternion.html" id="数学库_Quaternion">Quaternion</a></li><li><a href="api/zh/math/Ray.html" id="数学库_Ray">Ray</a></li><li><a href="api/zh/math/Sphere.html" id="数学库_Sphere">Sphere</a></li><li><a href="api/zh/math/Spherical.html" id="数学库_Spherical">Spherical</a></li><li><a href="api/zh/math/Triangle.html" id="数学库_Triangle">Triangle</a></li><li><a href="api/zh/math/Vector2.html" id="数学库_Vector2">Vector2</a></li><li><a href="api/zh/math/Vector3.html" id="数学库_Vector3">Vector3</a></li><li><a href="api/zh/math/Vector4.html" id="数学库_Vector4">Vector4</a></li></ul></div><div><h2>数学库 / 插值</h2><ul id="数学库_/_插值"><li><a href="api/zh/math/interpolants/CubicInterpolant.html" id="数学库_/_插值_CubicInterpolant">CubicInterpolant</a></li><li><a href="api/zh/math/interpolants/DiscreteInterpolant.html" id="数学库_/_插值_DiscreteInterpolant">DiscreteInterpolant</a></li><li><a href="api/zh/math/interpolants/LinearInterpolant.html" id="数学库_/_插值_LinearInterpolant">LinearInterpolant</a></li><li><a href="api/zh/math/interpolants/QuaternionLinearInterpolant.html" id="数学库_/_插值_QuaternionLinearInterpolant">QuaternionLinearInterpolant</a></li></ul></div><div><h2>物体</h2><ul id="物体"><li><a href="api/zh/objects/Bone.html" id="物体_Bone">Bone</a></li><li><a href="api/zh/objects/Group.html" id="物体_Group">Group</a></li><li><a href="api/zh/objects/InstancedMesh.html" id="物体_InstancedMesh">InstancedMesh</a></li><li><a href="api/zh/objects/Line.html" id="物体_Line">Line</a></li><li><a href="api/zh/objects/LineLoop.html" id="物体_LineLoop">LineLoop</a></li><li><a href="api/zh/objects/LineSegments.html" id="物体_LineSegments">LineSegments</a></li><li><a href="api/zh/objects/LOD.html" id="物体_LOD">LOD</a></li><li><a href="api/zh/objects/Mesh.html" id="物体_Mesh">Mesh</a></li><li><a href="api/zh/objects/Points.html" id="物体_Points">Points</a></li><li><a href="api/zh/objects/Skeleton.html" id="物体_Skeleton">Skeleton</a></li><li><a href="api/zh/objects/SkinnedMesh.html" id="物体_SkinnedMesh">SkinnedMesh</a></li><li><a href="api/zh/objects/Sprite.html" id="物体_Sprite">Sprite</a></li></ul></div><div><h2>渲染器</h2><ul id="渲染器"><li><a href="api/zh/renderers/WebGLMultisampleRenderTarget.html" id="渲染器_WebGLMultisampleRenderTarget">WebGLMultisampleRenderTarget</a></li><li><a href="api/zh/renderers/WebGLRenderer.html" id="渲染器_WebGLRenderer">WebGLRenderer</a></li><li><a href="api/zh/renderers/WebGLRenderTarget.html" id="渲染器_WebGLRenderTarget">WebGLRenderTarget</a></li><li><a href="api/zh/renderers/WebGLCubeRenderTarget.html" id="渲染器_WebGLCubeRenderTarget">WebGLCubeRenderTarget</a></li></ul></div><div><h2>渲染器 / 着色器</h2><ul id="渲染器_/_着色器"><li><a href="api/zh/renderers/shaders/ShaderChunk.html" id="渲染器_/_着色器_ShaderChunk">ShaderChunk</a></li><li><a href="api/zh/renderers/shaders/ShaderLib.html" id="渲染器_/_着色器_ShaderLib">ShaderLib</a></li><li><a href="api/zh/renderers/shaders/UniformsLib.html" id="渲染器_/_着色器_UniformsLib">UniformsLib</a></li><li><a href="api/zh/renderers/shaders/UniformsUtils.html" id="渲染器_/_着色器_UniformsUtils">UniformsUtils</a></li></ul></div><div><h2>场景</h2><ul id="场景"><li><a href="api/zh/scenes/Fog.html" id="场景_Fog">Fog</a></li><li><a href="api/zh/scenes/FogExp2.html" id="场景_FogExp2">FogExp2</a></li><li><a href="api/zh/scenes/Scene.html" id="场景_Scene">Scene</a></li></ul></div><div><h2>纹理贴图</h2><ul id="纹理贴图"><li><a href="api/zh/textures/CanvasTexture.html" id="纹理贴图_CanvasTexture">CanvasTexture</a></li><li><a href="api/zh/textures/CompressedTexture.html" id="纹理贴图_CompressedTexture">CompressedTexture</a></li><li><a href="api/zh/textures/CubeTexture.html" id="纹理贴图_CubeTexture">CubeTexture</a></li><li><a href="api/zh/textures/DataTexture.html" id="纹理贴图_DataTexture">DataTexture</a></li><li><a href="api/zh/textures/DataTexture3D.html" id="纹理贴图_DataTexture3D">DataTexture3D</a></li><li><a href="api/zh/textures/DepthTexture.html" id="纹理贴图_DepthTexture">DepthTexture</a></li><li><a href="api/zh/textures/Texture.html" id="纹理贴图_Texture">Texture</a></li><li><a href="api/zh/textures/VideoTexture.html" id="纹理贴图_VideoTexture">VideoTexture</a></li></ul></div></div>
+        </nav>
+    <h1>已被弃用API列表（Deprecated API List）</h1>
+
+    <p>
+      由于Verge3D具有一个快速发展的接口，你可能会遇上类似“提示你当前所调用的API元素不再是Verge3D核心的一部分”的提示。<br><br>
+      下面就列举出了这些API元素，以及一些关于他们的替代信息。
+    </p>
+
+    <h2>音频（Audio）</h2>
+
+    <h3><a href="api/zh/audio/Audio.html">Audio</a></h3>
+    <p>Audio.load 已被弃用。 请使用 <a href="api/zh/loaders/AudioLoader.html">AudioLoader</a>。</p>
+
+    <h3><a href="api/zh/audio/AudioAnalyser.html">AudioAnalyser</a></h3>
+    <p>AudioAnalyser.getData() 已被重命名为 <a href="api/zh/audio/AudioAnalyser.html#getFrequencyData">AudioAnalyser.getFrequencyData</a>()。</p>
+
+    <h3><a href="javascript:;">BinaryTextureLoader</a></h3>
+    <p>BinaryTextureLoader 已被重命名为 <a href="api/zh/loaders/DataTextureLoader.html">DataTextureLoader</a>。</p>
+
+
+    <h2>缓冲器（Buffers）</h2>
+
+    <h3><a href="api/zh/core/BufferAttribute.html">BufferAttribute</a></h3>
+    <p>BufferAttribute.length 已被重命名为 <a href="api/zh/core/BufferAttribute.html#count">BufferAttribute.count</a>。</p>
+    <p>BufferAttribute.copyIndicesArray() 已被删除。</p>
+
+
+    <h3><a href="javascript:;">DynamicBufferAttribute</a></h3>
+    <p>DynamicBufferAttribute 已被删除。 请使用<a href="api/zh/core/BufferAttribute.html#setDynamic">BufferAttribute.setDynamic</a>(true)。</p>
+
+    <h3><a href="javascript:;">Int8Attribute</a></h3>
+    <p>Int8Attribute 已被删除。 请使用<a href="javascript:;">Int8BufferAttribute</a>。</p>
+
+    <h3><a href="javascript:;">Uint8Attribute</a></h3>
+    <p>Uint8Attribute 已被删除。 请使用<a href="javascript:;">Uint8BufferAttribute</a>。</p>
+
+    <h3><a href="javascript:;">Uint8ClampedAttribute</a></h3>
+    <p>Uint8ClampedAttribute 已被删除。 请使用<a href="javascript:;">Uint8ClampedBufferAttribute</a>。</p>
+
+    <h3><a href="javascript:;">Int16Attribute</a></h3>
+    <p>Int16Attribute 已被删除。 请使用<a href="javascript:;">Int16BufferAttribute</a>。</p>
+
+    <h3><a href="javascript:;">Uint16Attribute</a></h3>
+    <p>Uint16Attribute 已被删除。 请使用<a href="javascript:;">Uint16BufferAttribute</a>。</p>
+
+    <h3><a href="javascript:;">Int32Attribute</a></h3>
+    <p>Int32Attribute 已被删除。 请使用<a href="javascript:;">Int32BufferAttribute</a>。</p>
+
+    <h3><a href="javascript:;">Uint32Attribute</a></h3>
+    <p>Uint32Attribute 已被删除。 请使用<a href="javascript:;">Uint32BufferAttribute</a>。</p>
+
+    <h3><a href="javascript:;">Float32Attribute</a></h3>
+    <p>Float32Attribute 已被删除。 请使用<a href="javascript:;">Float32BufferAttribute</a>。</p>
+
+    <h3><a href="javascript:;">Float64Attribute</a></h3>
+    <p>Float64Attribute 已被删除。 请使用<a href="javascript:;">Float64BufferAttribute</a>。</p>
+
+
+
+
+
+
+
+    <h2>摄像机（Cameras）</h2>
+
+    <h3><a href="api/zh/cameras/PerspectiveCamera.html">PerspectiveCamera</a></h3>
+    <p>
+    PerspectiveCamera.setLens() 已被弃用。 请使用<a href="api/zh/cameras/PerspectiveCamera.html#setFocalLength">PerspectiveCamera.setFocalLength</a>()
+     和 <a href="api/zh/cameras/PerspectiveCamera.html#filmGauge">PerspectiveCamera.filmGauge</a>() 来对摄像机拍摄进行设置。
+    </p>
+
+
+
+
+
+
+
+    <h2>常量（Constants）</h2>
+
+    <h3><a href="javascript:;">LineStrip</a></h3>
+
+    <h3><a href="javascript:;">LinePieces</a></h3>
+    <p>
+    LinePieces mode 已经不再对 <a href="api/zh/objects/Line.html">Line</a>s 进行支持。 请创建一个 <a href="api/zh/objects/LineSegments.html">LineSegments</a> 。
+    </p>
+
+
+
+
+
+    <h2>核心（Core）</h2>
+
+    <h3><a href="api/zh/core/EventDispatcher.html">EventDispatcher</a></h3>
+    <p>EventDispatcher.apply 已被删除。 请继承或者Object.assign其原型来“混合”。Inherit or Object.assign the prototype to mix-in。</p>
+
+    <h3><a href="api/zh/core/Raycaster.html">Raycaster</a></h3>
+    <p>Raycaster.params.PointCloud 已被重命名为 <a href="api/zh/core/Raycaster.html#params">Raycaster.params.Points</a>。</p>
+
+
+    <h3><a href="api/zh/core/Uniform.html">Uniform</a></h3>
+    <p>
+      Uniform.dynamic 已被删除。 请使用object.onBeforeRender()。<br><br>
+
+      Uniform.onUpdate 已被删除。 请使用object.onBeforeRender() 。
+    </p>
+
+
+
+
+
+
+    <h2>附件（Extras）</h2>
+
+    <h3><a href="javascript:;">ClosedSplineCurve3</a></h3>
+    <p>ClosedSplineCurve3 已被弃用。 请使用<a href="api/zh/extras/curves/CatmullRomCurve3.html">CatmullRomCurve3</a>。</p>
+
+    <h3><a href="javascript:;">SplineCurve3</a></h3>
+    <p>SplineCurve3 已被弃用。 请使用<a href="api/zh/extras/curves/CatmullRomCurve3.html">CatmullRomCurve3</a>。</p>
+
+
+
+
+
+    <h3><a href="api/zh/core/BufferGeometry.html">BufferGeometry</a></h3>
+    <p>
+      BufferGeometry.addIndex 已被重命名为 <a href="api/zh/core/BufferGeometry.html#setIndex">BufferGeometry.setIndex</a>。<br><br>
+
+      BufferGeometry.addDrawCall 现在是 <a href="api/zh/core/BufferGeometry.html#addGroup">BufferGeometry.addGroup</a>。<br><br>
+
+      BufferGeometry.clearDrawCalls 现在是 <a href="api/zh/core/BufferGeometry.html#clearGroups">BufferGeometry.clearGroups</a>。<br><br>
+
+      BufferGeometry.computeTangents 已被删除。<br><br>
+
+      BufferGeometry.computeOffsets 已被删除。<br><br>
+
+      BufferGeometry.drawcalls 已被重命名为 <a href="api/zh/core/BufferGeometry.html#groups">BufferGeometry.groups</a>。<br><br>
+
+      BufferGeometry.offsets 已被重命名为 <a href="api/zh/core/BufferGeometry.html#groups">BufferGeometry.groups</a>。<br><br>
+
+      BufferGeometry.applyMatrix() has been renamed to <a href="api/zh/core/BufferGeometry.html#applyMatrix4">BufferGeometry.applyMatrix4</a>().
+
+    </p>
+
+
+
+
+    <h3><a href="javascript:;">CubeGeometry</a></h3>
+    <p>CubeGeometry 已被重命名为 <a href="api/zh/geometries/BoxGeometry.html">BoxGeometry</a>。</p>
+
+
+
+
+    <h3><a href="api/zh/core/Geometry.html">Geometry</a></h3>
+    <p>
+      Geometry.computeTangents() 已被删除。<br><br>
+
+      Geometry.computeLineDistances() 已被删除。 请使用<a href="api/zh/objects/Line.html#computeLineDistances">Line.computeLineDistances</a>。<br><br>
+
+      Geometry.applyMatrix() has been renamed to <a href="api/zh/core/Geometry.html#applyMatrix4">Geometry.applyMatrix4</a>().
+    </p>
+
+
+    <h3><a href="javascript:;">GeometryUtils</a></h3>
+    <p>
+      GeometryUtils.merge 已被移动到了 <a href="api/zh/core/Geometry.html">Geometry</a>，请使用<a href="api/zh/core/Geometry.html#merge">Geometry.merge</a>(geometry2, matrix, materialIndexOffset)。<br><br>
+
+      GeometryUtils.center 已被移动到了 <a href="api/zh/core/Geometry.html">Geometry</a>，请使用<a href="api/zh/core/Geometry.html#center">Geometry.center</a>() 。
+    </p>
+
+    <h3><a href="api/zh/math/Plane.html">Plane</a></h3>
+    <p>
+      Plane.isIntersectionLine() 已被重命名为  <a href="api/zh/math/Plane.html#intersectsLine">Plane.intersectsLine</a>()。
+    </p>
+
+
+
+
+
+
+
+
+    <h2>辅助工具（Helpers）</h2>
+
+    <h3><a href="javascript:;">BoundingBoxHelper</a></h3>
+    <p>BoundingBoxHelper 已被弃用。 请使用<a href="api/zh/helpers/BoxHelper.html">BoxHelper</a>。</p>
+
+    <h3><a href="javascript:;">EdgesHelper</a></h3>
+    <p>EdgesHelper 已被删除。 请使用<a href="api/zh/geometries/EdgesGeometry.html">EdgesGeometry</a>。</p>
+
+    <h3><a href="api/zh/helpers/GridHelper.html">GridHelper</a></h3>
+    <p>GridHelper.setColors() 已被弃用，请在构造器中传递它们。</p>
+
+    <h3><a href="javascript:;">WireframeHelper</a></h3>
+    <p>WireframeHelper 已被删除。 请使用<a href="api/zh/geometries/WireframeGeometry.html">WireframeGeometry</a>。</p>
+
+
+
+
+    <h2>灯光（Lights）</h2>
+
+    <h3><a href="api/zh/lights/Light.html">Light</a></h3>
+    <p>
+      Light.onlyShadow 已被删除。<br><br>
+
+      Light.shadowCameraLeft 现在是 <a href="api/zh/lights/Light.html#shadow">Light.shadow.camera.left</a>。<br><br>
+
+      Light.shadowCameraRight 现在是 <a href="api/zh/lights/Light.html#shadow">Light.shadow.camera.right</a>。<br><br>
+
+      Light.shadowCameraTop 现在是 <a href="api/zh/lights/Light.html#shadow">Light.shadow.camera.top</a>。<br><br>
+
+      Light.shadowCameraBottom 现在是 <a href="api/zh/lights/Light.html#shadow">Light.shadow.camera.bottom</a>。<br><br>
+
+      Light.shadowCameraNear 现在是 <a href="api/zh/lights/Light.html#shadow">Light.shadow.camera.near</a>。<br><br>
+
+      Light.shadowCameraFar 现在是 <a href="api/zh/lights/Light.html#shadow">Light.shadow.camera.far</a>。<br><br>
+
+      Light.shadowCameraVisible 已被删除。 请使用<a href="api/zh/helpers/CameraHelper.html">CameraHelper</a> (light.shadow.camera)。<br><br>
+
+      Light.shadowMapWidth 现在是 <a href="api/zh/lights/Light.html#shadow">Light.shadow.mapSize.width</a>。<br><br>
+
+      Light.shadowMapHeight 现在是 <a href="api/zh/lights/Light.html#shadow">Light.shadow.mapSize.height</a>。
+    </p>
+
+    <h2>加载器（Loaders）</h2>
+
+    <h3><a href="javascript:;">XHRLoader</a></h3>
+    <p>XHRLoader 已被重命名为 <a href="api/zh/loaders/FileLoader.html">FileLoader</a>。</p>
+
+    <h3><a href="javascript:;">JSONLoader</a></h3>
+    <p>JSONLoader has been removed from core.</p>
+
+    <h2>数学（Maths）</h2>
+
+    <h3><a href="api/zh/math/Box2.html">Box2</a></h3>
+    <p>
+      Box2.center 已被重命名为 <a href="api/zh/math/Box2.html#getCenter">Box2.getCenter</a>()。<br><br>
+
+      Box2.empty 已被重命名为 <a href="api/zh/math/Box2.html#isEmpty">Box2.isEmpty</a>()。<br><br>
+
+      Box2.isIntersectionBox 已被重命名为 <a href="api/zh/math/Box2.html#intersectsBox">Box2.intersectsBox</a>()。<br><br>
+
+      Box2.size 已被重命名为 <a href="api/zh/math/Box2.html#getSize">Box2.getSize</a>()。
+
+    </p>
+
+    <h3><a href="api/zh/math/Box3.html">Box3</a></h3>
+    <p>
+      Box3.center 已被重命名为 <a href="api/zh/math/Box3.html#getCenter">Box3.getCenter</a>()。<br><br>
+
+      Box3.empty 已被重命名为 <a href="api/zh/math/Box3.html#isEmpty">Box3.isEmpty</a>()。<br><br>
+
+      Box3.isIntersectionBox 已被重命名为 <a href="api/zh/math/Box3.html#intersectsBox">Box3.intersectsBox</a>()。<br><br>
+
+      Box3.isIntersectionSphere 已被重命名为 <a href="api/zh/math/Box3.html#intersectsSphere">Box3.intersectsSphere</a>()。<br><br>
+
+      Box3.size 已被重命名为 <a href="api/zh/math/Box3.html#getSize">Box3.getSize</a>()。
+    </p>
+
+    <h3><a href="javascript:;">Face4</a></h3>
+    <p>Face4 已被删除。 请使用<a href="api/zh/core/Face3.html">Face3</a>。</p>
+
+    <h3><a href="api/zh/math/Frustum.html">Frustum</a></h3>
+    <p>Frustum.setFromMatrix() has been renamed to <a href="api/zh/math/Frustum.html#setFromProjectionMatrix">Frustum.setFromProjectionMatrix</a>().</p>
+
+    <h3><a href="api/zh/math/Line3.html">Line3</a></h3>
+    <p>Line3.center 已被重命名为 <a href="api/zh/math/Line3.html#getCenter">Line3.getCenter</a>()。</p>
+
+    <h3><a href="javascript:;">Math</a></h3>
+    <p>
+      Math.random16() 已被弃用。 请使用Math.random() 。
+    </p>
+
+    <h3><a href="api/zh/math/Matrix3.html">Matrix3</a></h3>
+    <p>
+      Matrix3.flattenToArrayOffset 已被弃用。请使用<a href="api/zh/math/Matrix3.html#toArray">Matrix3.toArray</a>()。<br><br>
+
+      Matrix3.multiplyVector3 已被删除。 请使用vector.applyMatrix3(matrix)。<br><br>
+
+      Matrix3.multiplyVector3Array 已被重命名为 <a href="api/zh/math/Matrix3.html#applyToVector3Array">Matrix3.applyToVector3Array</a>(array)。<br><br>
+
+      Matrix3.applyToBuffer 已被删除。 请使用matrix.applyToBufferAttribute(attribute)。<br><br>
+
+      Matrix3.applyToVector3Array 已被删除。
+    </p><p>
+
+    </p><h3><a href="api/zh/math/Matrix4.html">Matrix4</a></h3>
+    <p>
+      Matrix4.flattenToArrayOffset() 已被弃用。请使用<a href="api/zh/math/Matrix4.html#toArray">Matrix4.toArray</a>()。<br><br>
+
+      Matrix4.extractPosition() 已被重命名为 <a href="api/zh/math/Matrix4.html#copyPosition">Matrix4.copyPosition</a>(matrix)。<br><br>
+
+      Matrix4.getPosition() 已被删除。 请使用<a href="api/zh/math/Vector3.html#setFromMatrixPosition">Vector3.setFromMatrixPosition</a>(matrix)。<br><br>
+
+      Matrix4.setRotationFromQuaternion() 已被重命名为 <a href="api/zh/math/Matrix4.html#makeRotationFromQuaternion">Matrix4.makeRotationFromQuaternion</a>(quaternion)。<br><br>
+
+      Matrix4.multiplyVector3() 已被删除。 请使用vector.applyMatrix4(matrix)。<br><br>
+
+      Matrix4.multiplyVector4() 已被删除。 请使用vector.applyMatrix4(matrix)。<br><br>
+
+      Matrix4.multiplyVector3Array() 已被重命名为 <a href="api/zh/math/Matrix4.html#applyToVector3Array">Matrix4.applyToVector3Array</a> (array)。<br><br>
+
+      Matrix4.rotateAxis() 已被删除。 请使用<a href="api/zh/math/Matrix4.html#transformDirection">Matrix4.transformDirection</a>(matrix)。<br><br>
+
+      Matrix4.crossVector() 已被删除。 请使用vector.applyMatrix4(matrix)。<br><br>
+
+      Matrix4.rotateX() 已被删除。<br><br>
+
+      Matrix4.rotateY() 已被删除。<br><br>
+
+      Matrix4.rotateZ() 已被删除。<br><br>
+
+      Matrix4.rotateByAxis() 已被删除。<br><br>
+
+      Matrix4.applyToBuffer() 已被删除。 请使用matrix.applyToBufferAttribute()。<br><br>
+
+      Matrix4.applyToVector3Array() 已被删除。<br><br>
+
+      Matrix4.makeFrustum() 已被删除。 请使用<a href="api/zh/math/Matrix4.html#makePerspective">Matrix4.makePerspective</a>(left, right, top, bottom, near, far) 。
+    </p>
+
+
+    <h3><a href="api/zh/math/Quaternion.html#multiplyVector3">Quaternion.multiplyVector3</a></h3>
+    <p>Quaternion.multiplyVector3() 已被删除。 请使用vector.applyQuaternion(quaternion)。</p>
+
+    <h3><a href="api/zh/math/Ray.html">Ray</a></h3>
+    <p>
+      Ray.isIntersectionBox() 已被重命名为 <a href="api/zh/math/Ray.html#intersectsBox">Ray.intersectsBox</a>()。<br><br>
+
+      Ray.isIntersectionPlane 已被重命名为 <a href="api/zh/math/Ray.html#intersectsPlane">Ray.intersectsPlane</a>。<br><br>
+
+      Ray.isIntersectionSphere 已被重命名为 <a href="api/zh/math/Ray.html#intersectsSphere">Ray.intersectsSphere</a>。
+    </p>
+
+    <h3><a href="api/zh/math/Triangle.html">Triangle</a></h3>
+    <p>
+      Triangle.area() 已被重命名为 <a href="api/zh/math/Triangle.html#getArea">Triangle.getArea</a>()。<br><br>
+      Triangle.barycoordFromPoint() 已被重命名为 <a href="api/zh/math/Triangle.html#getBarycoord">Triangle.getBarycoord</a>()。<br><br>
+      Triangle.midpoint() 已被重命名为 <a href="api/zh/math/Triangle.html#getMidpoint">Triangle.getMidpoint</a>()。<br><br>
+      Triangle.normal() 已被重命名为 <a href="api/zh/math/Triangle.html#getNormal">Triangle.getNormal</a>()。<br><br>
+      Triangle.plane() 已被重命名为 <a href="api/zh/math/Triangle.html#getPlane">Triangle.getPlane</a>()。
+    </p>
+
+    <h3><a href="api/zh/math/Vector2.html">Vector2</a></h3>
+    <p>
+      Vector2.fromAttribute() 已被重命名为 <a href="api/zh/math/Vector2.html#fromBufferAttribute">Vector2.fromBufferAttribute</a>()。
+    </p>
+
+    <h3><a href="api/zh/math/Vector3.html">Vector3</a></h3>
+    <p>
+      Vector3.setEulerFromRotationMatrix() 已被删除。 请使用<a href="api/zh/math/Euler.html#setFromRotationMatrix">Euler.setFromRotationMatrix</a>()。<br><br>
+
+      Vector3.setEulerFromQuaternion() 已被删除。 请使用<a href="api/zh/math/Euler.html#setFromQuaternion">Euler.setFromQuaternion</a>()。<br><br>
+
+      Vector3.getPositionFromMatrix() 已被重命名为 <a href="api/zh/math/Vector3.html#setFromMatrixPosition">Vector3.setFromMatrixPosition</a>()。<br><br>
+
+      Vector3.getScaleFromMatrix() 已被重命名为 <a href="api/zh/math/Vector3.html#setFromMatrixScale">Vector3.setFromMatrixScale</a>()。<br><br>
+
+      Vector3.getColumnFromMatrix() 已被重命名为 <a href="api/zh/math/Vector3.html#setFromMatrixColumn">Vector3.setFromMatrixColumn</a>()。<br><br>
+
+      Vector3.applyProjection() 已被删除。 请使用<a href="api/zh/math/Vector3.html#applyMatrix4">Vector3.applyMatrix4</a>()。<br><br>
+
+      Vector3.fromAttribute() 已被重命名为 <a href="api/zh/math/Vector3.html#fromBufferAttribute">Vector3.fromBufferAttribute</a>()。
+    </p>
+
+    <h3><a href="api/zh/math/Vector4.html">Vector4</a></h3>
+    <p>
+      Vector4.fromAttribute() 已被重命名为 <a href="api/zh/math/Vector4.html#fromBufferAttribute">Vector4.fromBufferAttribute</a>().
+    </p>
+
+    <h3><a href="javascript:;">Vertex</a></h3>
+    <p>Vertex 已被删除。 请使用<a href="api/zh/math/Vector3.html">Vector3</a>。</p>
+
+    <h3><a href="javascript:;">Spline</a></h3>
+    <p>Spline 已被删除。 请使用<a href="api/zh/extras/curves/CatmullRomCurve3.html">CatmullRomCurve3</a>。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+    <h2>材质（Materials）</h2>
+
+    <h3><a href="api/zh/materials/Material.html">Material</a></h3>
+    <p>
+      Material.wrapAround 已被删除。<br><br>
+
+      Material.wrapRGB 已被删除。
+
+    </p>
+
+    <h3><a href="javascript:;">MeshFaceMaterial</a></h3>
+    <p>MeshFaceMaterial 已被删除。 请使用一个材质数组。</p>
+
+    <h3><a href="javascript:;">MultiMaterial</a></h3>
+    <p>MultiMaterial 已被删除。 请使用一个材质数组。</p>
+
+    <h3><a href="api/zh/materials/MeshPhongMaterial.html">MeshPhongMaterial</a></h3>
+    <p>MeshPhongMaterial.metal 已被删除。 请使用<a href="api/zh/materials/MeshStandardMaterial.html">MeshStandardMaterial</a>。</p>
+
+    <h3><a href="javascript:;">ParticleBasicMaterial</a></h3>
+    <p>ParticleBasicMaterial 已被重命名为 <a href="api/zh/materials/PointsMaterial.html">PointsMaterial</a>。</p>
+
+    <h3><a href="javascript:;">ParticleSystemMaterial</a></h3>
+    <p>ParticleBasicMaterial 已被重命名为 <a href="api/zh/materials/PointsMaterial.html">PointsMaterial</a>。</p>
+
+    <h3><a href="javascript:;">PointCloudMaterial</a></h3>
+    <p>PointCloudMaterial 已被重命名为 <a href="api/zh/materials/PointsMaterial.html">PointsMaterial</a>。</p>
+
+    <h3><a href="api/zh/materials/ShaderMaterial.html#derivatives">ShaderMaterial.derivatives</a></h3>
+    <p>ShaderMaterial.derivatives 已被移动到了 <a href="api/zh/materials/ShaderMaterial.html#extensions">ShaderMaterial.extensions.derivatives</a>。</p>
+
+
+
+
+
+
+
+
+    <h2>物体（Objects）</h2>
+
+    <h3><a href="api/zh/objects/LOD.html#objects">LOD.objects</a></h3>
+    <p>LOD.objects 已被重命名为 <a href="api/zh/objects/LOD.html#levels">LOD.levels</a>。</p>
+
+    <h3><a href="api/zh/core/Object3D.html">Object3D</a></h3>
+    <p>
+      Object3D.eulerOrder 现在是 <a href="api/zh/core/Object3D.html#rotation">Object3D.rotation.order</a>。<br><br>
+
+      Object3D.getChildByName() 已被重命名为 <a href="api/zh/core/Object3D.html#getObjectByName">Object3D.getObjectByName</a>()。<br><br>
+
+      Object3D.renderDepth 已被删除。 请使用<a href="api/zh/core/Object3D.html#renderOrder">Object3D.renderOrder</a>。<br><br>
+
+      Object3D.translate() 已被删除。 请使用<a href="api/zh/core/Object3D.html#translateOnAxis">Object3D.translateOnAxis</a>(axis, distance)。<br><br>
+
+      Object3D.useQuaternion 已被删除。 默认情况下，Verge3D库是使用quaternions（四元数）的。<br><br>
+
+      Object3D.applyMatrix() has been renamed to <a href="api/zh/core/Object3D.html#applyMatrix4">Object3D.applyMatrix4</a>().
+
+    </p>
+
+    <h3><a href="javascript:;">LensFlare</a></h3>
+    <p>
+      LensFlare 已被移动到了 <a href="https://github.com/Soft8Soft/verge3d-code-examples/blob/master/js/objects/Lensflare.js"  target="_blank">/examples/js/objects/Lensflare.js</a>.
+    </p>
+
+
+    <h3><a href="javascript:;">Particle</a></h3>
+    <p>Particle 已被重命名为 <a href="api/zh/objects/Sprite.html">Sprite</a>。</p>
+
+    <h3><a href="javascript:;">ParticleSystem</a></h3>
+    <p>ParticleSystem 已被重命名为 <a href="api/zh/objects/Points.html">Points</a>。</p>
+
+    <h3><a href="javascript:;">PointCloud</a></h3>
+    <p>PointCloud 已被重命名为 <a href="api/zh/objects/Points.html">Points</a>。</p>
+
+    <h3><a href="api/zh/extras/core/Shape.html">Shape</a></h3>
+    <p>
+      Shape.extrude 已被删除。 请使用<a href="api/zh/geometries/ExtrudeGeometry.html">ExtrudeGeometry</a>。<br><br>
+
+      Shape.makeGeometry 已被删除。 请使用<a href="api/zh/geometries/ShapeGeometry.html">ShapeGeometry</a> 。
+    </p>
+
+    <h3><a href="api/zh/objects/SkinnedMesh.html">SkinnedMesh</a></h3>
+    <p>
+      SkinnedMesh.initBones() has been removed.
+    </p>
+
+
+    <h2>渲染器（Renderer）</h2>
+
+    <h3><a href="javascript:;">Projector</a></h3>
+    <p>
+      CanvasRenderer 已被移动到了 <a href="https://github.com/Soft8Soft/verge3d-code-examples/blob/master/js/renderers/CanvasRenderer.js"  target="_blank">/examples/js/renderers/CanvasRenderer.js</a>.
+    </p>
+
+    <h3><a href="javascript:;">Projector</a></h3>
+    <p>
+      Projector 已被移动到了
+      <a href="https://github.com/Soft8Soft/verge3d-code-examples/blob/master/js/renderers/Projector.js"  target="_blank">  /examples/js/renderers/Projector.js</a>。<br><br>
+
+      Projector.projectVector() 现在是 <a href="javascript:;">Vector.project</a>()。<br><br>
+
+      Projector.unprojectVector() 现在是 <a href="javascript:;">Vector.unproject</a>()。<br><br>
+
+      Projector:.pickingRay() 现在是 <a href="api/zh/core/Raycaster.html#setFromCamera">Raycaster.setFromCamera</a>()。
+    </p>
+
+    <h3><a href="javascript:;">WebGLProgram</a></h3>
+    <p>
+      WebGLProgram.uniforms 现在是 <a href="javascript:;">WebGLProgram.getUniforms</a>()。<br><br>
+
+      WebGLProgram.attributes 现在是 <a href="javascript:;">WebGLProgram.getAttributes</a>()。
+    </p>
+
+    <h3><a href="api/zh/renderers/WebGLRenderer.html">WebGLRenderer</a></h3>
+    <p>
+      WebGLRenderer.supportsFloatTextures() 现在是 <a href="api/zh/renderers/WebGLRenderer.html#extensions">WebGLRenderer.extensions.get</a>('OES_texture_float')。<br><br>
+
+      WebGLRenderer.supportsHalfFloatTextures() 现在是 <a href="api/zh/renderers/WebGLRenderer.html#extensions">WebGLRenderer.extensions.get</a>('OES_texture_half_float')。<br><br>
+
+      WebGLRenderer.supportsStandardDerivatives() 现在是 <a href="api/zh/renderers/WebGLRenderer.html#extensions">WebGLRenderer.extensions.get</a>('OES_standard_derivatives')。<br><br>
+
+      WebGLRenderer.supportsCompressedTextureS3TC() 现在是 <a href="api/zh/renderers/WebGLRenderer.html#extensions">WebGLRenderer.extensions.get</a>('WEBGL_compressed_texture_s3tc')。<br><br>
+
+      WebGLRenderer.supportsCompressedTexturePVRTC() 现在是 <a href="api/zh/renderers/WebGLRenderer.html#extensions">WebGLRenderer.extensions.get</a>('WEBGL_compressed_texture_pvrtc')。<br><br>
+
+      WebGLRenderer.supportsBlendMinMax() 现在是 <a href="api/zh/renderers/WebGLRenderer.html#extensions">WebGLRenderer.extensions.get</a>('EXT_blend_minmax')。<br><br>
+
+      WebGLRenderer.supportsVertexTextures() 现在是 <a href="api/zh/renderers/WebGLRenderer.html#capabilities">WebGLRenderer.capabilities.vertexTextures</a>。<br><br>
+
+      WebGLRenderer.supportsInstancedArrays() 现在是 <a href="api/zh/renderers/WebGLRenderer.html#extensions">WebGLRenderer.extensions.get</a>('ANGLE_instanced_arrays')。<br><br>
+
+      WebGLRenderer.enableScissorTest() 现在是 <a href="api/zh/renderers/WebGLRenderer.html#setScissorTest">WebGLRenderer.setScissorTest</a>()。<br><br>
+
+      WebGLRenderer.initMaterial() 已被删除。<br><br>
+
+      WebGLRenderer.addPrePlugin() 已被删除。<br><br>
+
+      WebGLRenderer.addPostPlugin() 已被删除。<br><br>
+
+      WebGLRenderer.updateShadowMap() 已被删除。<br><br>
+
+      WebGLRenderer.setFaceCulling() 已被删除。<br><br>
+
+      WebGLRenderer.setTexture is deprecated, 请使用<a href="api/zh/renderers/WebGLRenderer.html#setTexture2D">WebGLRenderer.setTexture2D</a>()。<br><br>
+
+      WebGLRenderer.shadowMapEnabled 现在是 <a href="api/zh/renderers/WebGLRenderer.html#shadowMap">WebGLRenderer.shadowMap.enabled</a>。<br><br>
+
+      WebGLRenderer.shadowMapType 现在是 <a href="api/zh/renderers/WebGLRenderer.html#shadowMap">WebGLRenderer.shadowMap.type</a>。<br><br>
+
+      WebGLRenderer.shadowMapCullFace 已被删除。请设置<a href="api/zh/materials/Material.html#shadowSide">Material.shadowSide</a>。<br><br>
+
+      WebGLRenderer.shadowMap.cullFace 已被删除。请设置<a href="api/zh/materials/Material.html#shadowSide">Material.shadowSide</a>。<br><br>
+
+      WebGLRenderer.shadowMap.renderReverseSided 已被删除。请设置<a href="api/zh/materials/Material.html#shadowSide">Material.shadowSide</a>。<br><br>
+
+      WebGLRenderer.shadowMap.renderSingleSided 已被删除。请设置<a href="api/zh/materials/Material.html#shadowSide">Material.shadowSide</a>。
+
+    </p>
+
+    <h3><a href="api/zh/renderers/WebGLRenderTarget.html">WebGLRenderTarget</a></h3>
+    <p>
+      WebGLRenderTarget.wrapS 现在是 <a href="api/zh/renderers/WebGLRenderTarget.html#texture">WebGLRenderTarget.texture.wrapS</a>。<br><br>
+
+      WebGLRenderTarget.wrapT 现在是 <a href="api/zh/renderers/WebGLRenderTarget.html#texture">WebGLRenderTarget.texture.wrapT</a>。<br><br>
+
+      WebGLRenderTarget.magFilter 现在是 <a href="api/zh/renderers/WebGLRenderTarget.html#texture">WebGLRenderTarget.texture.magFilter</a>。<br><br>
+
+      WebGLRenderTarget.minFilter 现在是 <a href="api/zh/renderers/WebGLRenderTarget.html#texture">WebGLRenderTarget.texture.minFilter</a>。<br><br>
+
+      WebGLRenderTarget.anisotropy 现在是 <a href="api/zh/renderers/WebGLRenderTarget.html#texture">WebGLRenderTarget.texture.anisotropy</a>。<br><br>
+
+      WebGLRenderTarget.offset 现在是 <a href="api/zh/renderers/WebGLRenderTarget.html#texture">WebGLRenderTarget.texture.offset</a>。<br><br>
+
+      WebGLRenderTarget.repeat 现在是 <a href="api/zh/renderers/WebGLRenderTarget.html#texture">WebGLRenderTarget.texture.repeat</a>。<br><br>
+
+      WebGLRenderTarget.format 现在是 <a href="api/zh/renderers/WebGLRenderTarget.html#texture">WebGLRenderTarget.texture.format</a>。<br><br>
+
+      WebGLRenderTarget.type 现在是 <a href="api/zh/renderers/WebGLRenderTarget.html#texture">WebGLRenderTarget.texture.type</a>。<br><br>
+
+      WebGLRenderTarget.generateMipmaps 现在是 <a href="api/zh/renderers/WebGLRenderTarget.html#texture">WebGLRenderTarget.texture.generateMipmaps</a>.
+    </p>
+
+
+    <h2>纹理（Textures）</h2>
+
+    <h3><a href="api/zh/extras/ImageUtils.html">ImageUtils</a></h3>
+    <p>
+      ImageUtils.loadTexture 已被弃用。 请使用<a href="api/zh/loaders/TextureLoader.html">TextureLoader</a>。<br><br>
+
+      ImageUtils.loadTextureCube 已被弃用。 请使用<a href="api/zh/loaders/CubeTextureLoader.html">CubeTextureLoader</a>。<br><br>
+
+      ImageUtils.loadCompressedTexture 已被删除。 请使用<a href="javascript:;">DDSLoader</a>。<br><br>
+
+      ImageUtils.loadCompressedTextureCube 已被删除。 请使用<a href="javascript:;">DDSLoader</a> 。
+    </p>
+
+
+    <h2>源代码</h2>
+
+    <p>
+      <a href="https://github.com/mrdoob/three.js/blob/master/src/Three.Legacy.js"  target="_blank">src/Three.Legacy.js</a>
+    </p>
+
+    
+
+
+            <!-- Yandex.Metrika counter -->
+            <script type="text/javascript">
+               (function(d, w, c) {
+                 if (document.domain === "www.soft8soft.com") {
+                   (w[c] = w[c] || []).push(function() {
+                       try {
+                           w.yaCounter46001298 = new Ya.Metrika({
+                               id:46001298,
+                               clickmap:true,
+                               trackLinks:true,
+                               accurateTrackBounce:true
+                           });
+                       } catch(e) { }
+                   });
+
+                   var n = d.getElementsByTagName("script")[0],
+                       s = d.createElement("script"),
+                       f = function() { n.parentNode.insertBefore(s, n); };
+                   s.type = "text/javascript";
+                   s.async = true;
+                   s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+                   if (w.opera == "[object Opera]") {
+                       d.addEventListener("DOMContentLoaded", f, false);
+                   } else { f(); }
+                 }
+               })(document, window, "yandex_metrika_callbacks");
+            </script>
+            <noscript><div><img src="https://mc.yandex.ru/watch/46001298" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+            <!-- /Yandex.Metrika counter -->
+        
+            <div class="copyright">© <a href="https://www.soft8soft.com/" target="_blank">Soft8Soft – 3D Solutions for the Web</a><div>Last updated on Tue Nov 24 2020</div></div>
+        </body></html>

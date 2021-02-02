@@ -1,0 +1,186 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="725" scrolly="431" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="720.0760086201074" scrolly="333.54037100811706" scale="0.7404322273126936">
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="Xde}hI[t8#[*$:Y%{4Px" x="-770" y="-390">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="mL-Nzftn1wN}jD%Bl[J%">
+          <field name="TEXT">anim01</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="playAnimationAdv" id="`SVJfKz2(KG?$;dZFDPm">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="true" enablewhenfinished="false"></mutation>
+          <field name="REVERSED">FALSE</field>
+          <field name="LOOP">LoopRepeat</field>
+          <value name="VALUE">
+            <block type="animationList" id="Ij{Y5MfSTi@AshxH`_[;">
+              <field name="FIELDNAME">1d23-001</field>
+            </block>
+          </value>
+          <value name="FROM">
+            <block type="math_number" id="IEr6;R~R/6i#YOoJQQQA">
+              <field name="NUM">2</field>
+            </block>
+          </value>
+          <value name="TO">
+            <block type="math_number" id="Rf7B}E4jM{C%Cxj)-MO5">
+              <field name="NUM">510</field>
+            </block>
+          </value>
+          <value name="SPEED">
+            <block type="math_number" id="P3oO3LhYo!`e7q$+bJwD">
+              <field name="NUM">1</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="N54F`FO7s/^8~$J/qayS" x="-750" y="-270">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="g,(%d.At[8A}!C-IeLdU">
+          <field name="TEXT">anim02</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="playAnimationAdv" id="N%U$Xxg6Z8dgKvl1Ic$M">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="true" enablewhenfinished="false"></mutation>
+          <field name="REVERSED">FALSE</field>
+          <field name="LOOP">LoopRepeat</field>
+          <value name="VALUE">
+            <block type="animationList" id="@%y3CsI9jbOfR_#Ott8Y">
+              <field name="FIELDNAME">1d23-001</field>
+            </block>
+          </value>
+          <value name="FROM">
+            <block type="math_number" id="D_(w!hrc*%yi~0P6F2yy">
+              <field name="NUM">530</field>
+            </block>
+          </value>
+          <value name="TO">
+            <block type="math_number" id="Akc}D|a5=R-O5@xA^%~N">
+              <field name="NUM">982</field>
+            </block>
+          </value>
+          <value name="SPEED">
+            <block type="math_number" id="y[Upgj2BZY0N4W+Q0Dzo">
+              <field name="NUM">1</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="iLZ1BYloK(m-lm^j]VIz" x="-790" y="-130">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="eO_23Sp^JP*uikYRv[CZ">
+          <field name="TEXT">anim03</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="playAnimationAdv" id="*~gd{Mnz-7K8yxQf2:JF">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="true" enablewhenfinished="false"></mutation>
+          <field name="REVERSED">FALSE</field>
+          <field name="LOOP">LoopRepeat</field>
+          <value name="VALUE">
+            <block type="animationList" id=";zx0i@n_#TmeHy2yI10Q">
+              <field name="FIELDNAME">1d23-001</field>
+            </block>
+          </value>
+          <value name="FROM">
+            <block type="math_number" id="W3`i9`rIFuzEmcoE}_+d">
+              <field name="NUM">983</field>
+            </block>
+          </value>
+          <value name="TO">
+            <block type="math_number" id="k.VJ[|c3N*E~oFjYXoL5">
+              <field name="NUM">1399</field>
+            </block>
+          </value>
+          <value name="SPEED">
+            <block type="math_number" id="RbBimYs0A)#3b0GY^Rr|">
+              <field name="NUM">1</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="E:uC.^(vw2WnP0$a-1zN" x="-770" y="10">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="4gTEp0-zUSdsX)-#JJTE">
+          <field name="TEXT">anim04</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="playAnimationAdv" id="qIs)x_Ef1ae3)6Hin`+V">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="true" enablewhenfinished="false"></mutation>
+          <field name="REVERSED">FALSE</field>
+          <field name="LOOP">LoopRepeat</field>
+          <value name="VALUE">
+            <block type="animationList" id="kG;N*36!-I|Aq*.+=/c[">
+              <field name="FIELDNAME">1d23-001</field>
+            </block>
+          </value>
+          <value name="FROM">
+            <block type="math_number" id="$d8S/nR`P6|[#`JI3K~G">
+              <field name="NUM">1430</field>
+            </block>
+          </value>
+          <value name="TO">
+            <block type="math_number" id="2a.Z9ofmNT97T}0sLJf%">
+              <field name="NUM">1906</field>
+            </block>
+          </value>
+          <value name="SPEED">
+            <block type="math_number" id="d{@*j2k^T!xOepUbs,J]">
+              <field name="NUM">1</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="N4:^{PeJu}*!P6X{tJND" x="-790" y="150">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="vW;g,#{pY_.!hwUhhYy3">
+          <field name="TEXT">anim05</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="playAnimationAdv" id="2E19QGJu/wmaE7Z~p79$">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="true" enablewhenfinished="false"></mutation>
+          <field name="REVERSED">FALSE</field>
+          <field name="LOOP">LoopRepeat</field>
+          <value name="VALUE">
+            <block type="animationList" id="S48Gx-j%$u@lMawJP[s_">
+              <field name="FIELDNAME">1d23-001</field>
+            </block>
+          </value>
+          <value name="FROM">
+            <block type="math_number" id="#3i}P_gG$7`v:eiF_551">
+              <field name="NUM">1915</field>
+            </block>
+          </value>
+          <value name="TO">
+            <block type="math_number" id="__m.v2Hk)1[c9*(TZ4Uj">
+              <field name="NUM">2443</field>
+            </block>
+          </value>
+          <value name="SPEED">
+            <block type="math_number" id="QgWTNk)(+7!{[wOEpLq)">
+              <field name="NUM">1</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="954" viewport-y="28" viewport-w="648" viewport-h="469" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

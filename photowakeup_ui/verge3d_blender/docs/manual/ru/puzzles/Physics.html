@@ -1,0 +1,584 @@
+<!DOCTYPE html><html lang="ru"><head>
+    <title>Physics Puzzles Reference - Soft8Soft</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Using puzzles to simulate physics behavior and restrict the movement of objects.">
+    <base href="../../../">
+    <script src="list.js"></script>
+    <script src="page.js"></script>
+    <link type="text/css" rel="stylesheet" href="page.css">
+  
+            <link rel="canonical" href="https://www.soft8soft.com/docs/manual/ru/puzzles/Physics.html">
+
+            <meta property="og:type" content="article">
+            <meta property="og:title" content="Physics Puzzles Reference - Soft8Soft">
+            <meta property="og:description" content="Using puzzles to simulate physics behavior and restrict the movement of objects.">
+            <meta property="og:image" content="https://cdn.soft8soft.com/images/manual.jpg">
+            <meta property="og:image:width" content="1200">
+            <meta property="og:image:height" content="630">
+            <meta property="og:url" content="https://www.soft8soft.com/docs/manual/ru/puzzles/Physics.html">
+            <meta property="og:site_name" content="Soft8Soft">
+            <meta property="og:locale" content="en_US">
+
+            <meta property="article:author" content="https://www.facebook.com/soft8soft">
+
+            <meta property="article:tag" content="Verge3D">
+            <meta property="article:tag" content="WebGL">
+            <meta property="article:tag" content="3D">
+            <meta property="article:tag" content="ThreeJS">
+            <meta property="article:tag" content="interactive">
+            <meta property="article:tag" content="realtime">
+            <meta property="article:tag" content="3dweb">
+            <meta property="article:tag" content="web3d">
+
+            <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:title" content="Physics Puzzles Reference - Soft8Soft">
+            <meta name="twitter:description" content="Using puzzles to simulate physics behavior and restrict the movement of objects.">
+            <meta name="twitter:image" content="https://cdn.soft8soft.com/images/manual.jpg">
+            <meta name="twitter:creator" content="@soft8soft">
+        
+            <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+            <!-- favicons from realfavicongenerator.net -->
+            <link rel="apple-touch-icon" sizes="180x180" href="files/icons/apple-touch-icon.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="files/icons/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="files/icons/favicon-16x16.png">
+            <link rel="manifest" href="files/icons/manifest.json">
+            <link rel="mask-icon" href="files/icons/safari-pinned-tab.svg" color="#5bbad5 ">
+        <script type="application/ld+json">[
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-physics.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-physics-create-physics-world.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-physics-create-physics-body.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-physics-remove-physics-body.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-physics-body-params.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-physics-body-params-example.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-physics-apply-vector.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-physics-set-body-state.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-physics-on-simulation-tick.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-physics-snap-body.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-physics-detect-collisions.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-physics-detect-collisions-info.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-constraints-limit-transform.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-constraints-copy-transform.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-constraints-remove-mute-unmute-constraint.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ]</script></head>
+  <body><nav id="panel" class="collapsed">
+          <h1><a href="manual/ru/index.html">Руководство пользователя Verge3D</a></h1>
+
+          <a id="expandButton" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+
+          <div class="filterBlock">
+            <input type="text" id="filterInput" placeholder="Type to filter" autocapitalize="off" spellcheck="false">
+            <a href="#" id="clearFilterButton">x</a>
+          </div>
+
+          <div id="content"><div><h2>Начало работы</h2><ul id="Начало_работы"><li><a href="manual/ru/introduction/Beginners-Guide.html" id="Начало_работы_Руководство_для_начинающих">Руководство для начинающих</a></li><li><a href="manual/ru/introduction/Workflow.html" id="Начало_работы_Рабочий_процесс">Рабочий процесс</a></li><li><a href="manual/ru/introduction/App-Manager.html" id="Начало_работы_App_Manager_(менеджер_проектов)">App Manager (менеджер проектов)</a></li><li><a href="manual/ru/introduction/Puzzles-Visual-Logic-Editor.html" id="Начало_работы_Puzzles">Puzzles</a></li><li><a href="manual/ru/introduction/Features.html" id="Начало_работы_Verge3D_Features">Verge3D Features</a></li><li><a href="manual/ru/introduction/Project-Structure.html" id="Начало_работы_Project_Structure">Project Structure</a></li><li><a href="manual/ru/introduction/Updating.html" id="Начало_работы_Updating_for_New_Versions">Updating for New Versions</a></li><li><a href="manual/ru/introduction/FAQ.html" id="Начало_работы_FAQ">FAQ</a></li><li><a href="manual/ru/introduction/Useful-links.html" id="Начало_работы_Useful_Links">Useful Links</a></li></ul></div><div><h2>General Topics</h2><ul id="General_Topics"><li><a href="manual/ru/introduction/Optimizing-WebGL-performance.html" id="General_Topics_Optimization_Techniques">Optimization Techniques</a></li><li><a href="manual/ru/introduction/Asset-compression.html" id="General_Topics_Asset_Compression">Asset Compression</a></li><li><a href="manual/ru/introduction/HTML-based-user-interfaces.html" id="General_Topics_HTML-Based_User_Interfaces">HTML-Based User Interfaces</a></li><li><a href="manual/ru/introduction/AR-VR-development.html" id="General_Topics_AR/VR_Development">AR/VR Development</a></li><li><a href="manual/ru/introduction/Physics-Guide.html" id="General_Topics_Physics_Guide">Physics Guide</a></li><li><a href="manual/ru/introduction/Styling-Verge3D-Apps.html" id="General_Topics_Styling_Verge3D_Apps">Styling Verge3D Apps</a></li><li><a href="manual/ru/introduction/Wordpress-Plugin.html" id="General_Topics_WordPress_Plugin">WordPress Plugin</a></li><li><a href="manual/ru/introduction/Using-JavaScript.html" id="General_Topics_Using_JavaScript">Using JavaScript</a></li><li><a href="manual/ru/introduction/Performance-Bottlenecks.html" id="General_Topics_Performance_Bottlenecks">Performance Bottlenecks</a></li><li><a href="manual/ru/introduction/Testing-Mobile-Browsers.html" id="General_Topics_Testing_on_Mobile_Browsers">Testing on Mobile Browsers</a></li></ul></div><div><h2>Blender Artist's Guide</h2><ul id="Blender_Artist_s_Guide"><li><a href="manual/ru/blender/Beginners-Guide.html" id="Blender_Artist_s_Guide_Beginner_s_Guide">Beginner's Guide</a></li><li><a href="manual/ru/blender/Installation.html" id="Blender_Artist_s_Guide_Installation">Installation</a></li><li><a href="manual/ru/blender/Material-System.html" id="Blender_Artist_s_Guide_Material_System_Overview">Material System Overview</a></li><li><a href="manual/ru/blender/Lighting-and-Rendering.html" id="Blender_Artist_s_Guide_Lighting_and_Rendering">Lighting and Rendering</a></li><li><a href="manual/ru/blender/Camera.html" id="Blender_Artist_s_Guide_Camera">Camera</a></li><li><a href="manual/ru/blender/Shader-Nodes-Reference.html" id="Blender_Artist_s_Guide_Shader_Nodes">Shader Nodes</a></li><li><a href="manual/ru/blender/Animation.html" id="Blender_Artist_s_Guide_Animation">Animation</a></li><li><a href="manual/ru/blender/Morphing.html" id="Blender_Artist_s_Guide_Shape_Keys_(Morphing)">Shape Keys (Morphing)</a></li><li><a href="manual/ru/blender/Shadows.html" id="Blender_Artist_s_Guide_Shadows">Shadows</a></li><li><a href="manual/ru/blender/Transparency.html" id="Blender_Artist_s_Guide_Transparency">Transparency</a></li><li><a href="manual/ru/blender/GLTF-Materials.html" id="Blender_Artist_s_Guide_glTF_Materials">glTF Materials</a></li><li><a href="manual/ru/blender/Object-Constraints.html" id="Blender_Artist_s_Guide_Object_Constraints">Object Constraints</a></li><li><a href="manual/ru/blender/Material-Library.html" id="Blender_Artist_s_Guide_Using_Material_Library">Using Material Library</a></li></ul></div><div><h2>3ds Max Artist's Guide</h2><ul id="3ds_Max_Artist_s_Guide"><li><a href="manual/ru/max/Beginners-Guide.html" id="3ds_Max_Artist_s_Guide_Beginner_s_Guide">Beginner's Guide</a></li><li><a href="manual/ru/max/Installation.html" id="3ds_Max_Artist_s_Guide_Installation">Installation</a></li><li><a href="manual/ru/max/Material-System.html" id="3ds_Max_Artist_s_Guide_Material_System_Overview">Material System Overview</a></li><li><a href="manual/ru/max/Lighting-and-Rendering.html" id="3ds_Max_Artist_s_Guide_Lighting_and_Rendering">Lighting and Rendering</a></li><li><a href="manual/ru/max/Camera.html" id="3ds_Max_Artist_s_Guide_Camera">Camera</a></li><li><a href="manual/ru/max/Materials-Maps-Reference.html" id="3ds_Max_Artist_s_Guide_Materials_and_Maps">Materials and Maps</a></li><li><a href="manual/ru/max/Morphing.html" id="3ds_Max_Artist_s_Guide_Morphing">Morphing</a></li><li><a href="manual/ru/max/Shadows.html" id="3ds_Max_Artist_s_Guide_Shadows">Shadows</a></li><li><a href="manual/ru/max/Transparency.html" id="3ds_Max_Artist_s_Guide_Transparency">Transparency</a></li><li><a href="manual/ru/max/Viewport-Render-Preview.html" id="3ds_Max_Artist_s_Guide_Viewport_and_Render_Preview">Viewport and Render Preview</a></li><li><a href="manual/ru/max/GLTF-Materials.html" id="3ds_Max_Artist_s_Guide_glTF_Materials">glTF Materials</a></li><li><a href="manual/ru/max/Animation-Constraints.html" id="3ds_Max_Artist_s_Guide_Animation_Constraints">Animation Constraints</a></li></ul></div><div><h2>Maya Artist's Guide</h2><ul id="Maya_Artist_s_Guide"><li><a href="manual/ru/maya/Beginners-Guide.html" id="Maya_Artist_s_Guide_Beginner_s_Guide">Beginner's Guide</a></li><li><a href="manual/ru/maya/Installation.html" id="Maya_Artist_s_Guide_Installation">Installation</a></li><li><a href="manual/ru/maya/Materials.html" id="Maya_Artist_s_Guide_Materials">Materials</a></li><li><a href="manual/ru/maya/Lighting-and-Rendering.html" id="Maya_Artist_s_Guide_Lighting_and_Rendering">Lighting and Rendering</a></li><li><a href="manual/ru/maya/Camera.html" id="Maya_Artist_s_Guide_Camera">Camera</a></li><li><a href="manual/ru/maya/Shadows.html" id="Maya_Artist_s_Guide_Shadows">Shadows</a></li><li><a href="manual/ru/maya/Animation.html" id="Maya_Artist_s_Guide_Animation">Animation</a></li><li><a href="manual/ru/maya/Blend-Shapes.html" id="Maya_Artist_s_Guide_Blend_Shapes_(Morphing)">Blend Shapes (Morphing)</a></li><li><a href="manual/ru/maya/GLTF-Materials.html" id="Maya_Artist_s_Guide_glTF_Materials">glTF Materials</a></li></ul></div><div><h2>Puzzles Reference</h2><ul id="Puzzles_Reference"><li><a href="manual/ru/puzzles/Initialization.html" id="Puzzles_Reference_Initialization">Initialization</a></li><li><a href="manual/ru/puzzles/Events.html" id="Puzzles_Reference_Events">Events</a></li><li><a href="manual/ru/puzzles/Selectors.html" id="Puzzles_Reference_Selectors">Selectors</a></li><li><a href="manual/ru/puzzles/Objects.html" id="Puzzles_Reference_Objects">Objects</a></li><li><a href="manual/ru/puzzles/Materials.html" id="Puzzles_Reference_Materials">Materials</a></li><li><a href="manual/ru/puzzles/Animation.html" id="Puzzles_Reference_Animation">Animation</a></li><li><a href="manual/ru/puzzles/Camera.html" id="Puzzles_Reference_Camera">Camera</a></li><li><a href="manual/ru/puzzles/Scenes.html" id="Puzzles_Reference_Scenes">Scenes</a></li><li><a href="manual/ru/puzzles/Time.html" id="Puzzles_Reference_Time">Time</a></li><li><a href="manual/ru/puzzles/HTML.html" id="Puzzles_Reference_HTML">HTML</a></li><li><a href="manual/ru/puzzles/AR_VR.html" id="Puzzles_Reference_AR/VR">AR/VR</a></li><li><a href="manual/ru/puzzles/Sound.html" id="Puzzles_Reference_Audio/Video">Audio/Video</a></li><li><a href="manual/ru/puzzles/Physics.html" id="Puzzles_Reference_Physics_(and_Constraints)">Physics (and Constraints)</a></li><li><a href="manual/ru/puzzles/Postprocessing.html" id="Puzzles_Reference_Post-processing">Post-processing</a></li><li><a href="manual/ru/puzzles/Logic.html" id="Puzzles_Reference_Logic">Logic</a></li><li><a href="manual/ru/puzzles/Loops.html" id="Puzzles_Reference_Loops">Loops</a></li><li><a href="manual/ru/puzzles/Text.html" id="Puzzles_Reference_Text">Text</a></li><li><a href="manual/ru/puzzles/Numbers.html" id="Puzzles_Reference_Numbers">Numbers</a></li><li><a href="manual/ru/puzzles/Lists.html" id="Puzzles_Reference_Lists">Lists</a></li><li><a href="manual/ru/puzzles/Dictionaries.html" id="Puzzles_Reference_Dictionaries">Dictionaries</a></li><li><a href="manual/ru/puzzles/Variables.html" id="Puzzles_Reference_Variables">Variables</a></li><li><a href="manual/ru/puzzles/Procedures.html" id="Puzzles_Reference_Procedures">Procedures</a></li><li><a href="manual/ru/puzzles/System.html" id="Puzzles_Reference_System">System</a></li><li><a href="manual/ru/puzzles/ECommerce.html" id="Puzzles_Reference_E-Commerce">E-Commerce</a></li><li><a href="manual/ru/puzzles/Advanced.html" id="Puzzles_Reference_Advanced">Advanced</a></li><li><a href="manual/ru/puzzles/Library.html" id="Puzzles_Reference_Library">Library</a></li></ul></div></div>
+        </nav><article>
+
+    <h1>Physics &amp; Constraints</h1>
+
+    <p>
+    These puzzles are used to simulate physics behavior and restrict the movement of objects.
+    </p>
+
+    <img src="files/puzzles/puzzles-physics.jpg" style="max-width: 1000px">
+
+    <h2>Contents</h2>
+
+    <!-- TOC -->
+<ul><li><a href="manual/ru/puzzles/Physics.html#puzzles_reference">Puzzles Reference</a><ul><li><a href="manual/ru/puzzles/Physics.html#create_physics_world">create physics world</a></li><li><a href="manual/ru/puzzles/Physics.html#create_physics_body">create physics body</a></li><li><a href="manual/ru/puzzles/Physics.html#remove_physics_body">remove physics body</a></li><li><a href="manual/ru/puzzles/Physics.html#physics_body_params">physics body params</a></li><li><a href="manual/ru/puzzles/Physics.html#apply_vector">apply vector</a></li><li><a href="manual/ru/puzzles/Physics.html#set_body_state">set body state</a></li><li><a href="manual/ru/puzzles/Physics.html#on_simulation_tick">on simulation tick</a></li><li><a href="manual/ru/puzzles/Physics.html#snap_body">snap body</a></li><li><a href="manual/ru/puzzles/Physics.html#limit_transform">limit transform</a></li><li><a href="manual/ru/puzzles/Physics.html#copy_transform">copy transform</a></li><li><a href="manual/ru/puzzles/Physics.html#remove_mute_unmute_constraint">remove / mute / unmute constraint</a></li></ul></li></ul><!-- /TOC -->
+
+
+    <p><a href="manual/ru/puzzles/Physics.html#puzzles_reference" id="puzzles_reference" class="permalink">#</a></p>
+
+    <h2>Puzzles Reference</h2>
+
+
+    <p><a href="manual/ru/puzzles/Physics.html#create_physics_world" id="create_physics_world" class="permalink">#</a></p>
+
+    <h3>create physics world</h3>
+
+    <p>
+    Initializes the physics engine using the specified <strong>gravity</strong> and <strong>frame-per-second</strong> parameters. The default <strong>gravity</strong> value of 9.8 corresponds to Earth surface conditions. Zero value means no gravity as in space. The higher <strong>fps</strong> value the better simulation quality at the expense of performance.
+    </p>
+
+    <img src="files/puzzles/puzzles-physics-create-physics-world.jpg">
+
+    <p>
+    Under the hood, this puzzle also enables collision detection and automatic synchronization with graphics.
+    </p>
+
+
+    <p><a href="manual/ru/puzzles/Physics.html#create_physics_body" id="create_physics_body" class="permalink">#</a></p>
+
+    <h3>create physics body</h3>
+
+    <p>
+    Creates a physics body from a specified object, of <strong>dynamic</strong>, <strong>kinematic</strong>, <strong>static</strong> or <strong>ghost</strong> type. Assigns the collision shape and sets the mass for the body (valid for <strong>dynamic</strong> bodies only). Also works for a list of objects, a group (or a list of groups) or with the <a href="manual/ru/puzzles/Selectors.html#all_objects">all objects</a> puzzle.
+    </p>
+
+    <img src="files/puzzles/puzzles-physics-create-physics-body.jpg">
+
+    <p>Physics body types:</p>
+
+    <ul>
+      <li>
+        <strong>dynamic</strong> - moved by the physics engine, influenced by collisions and collide with other bodies.
+      </li>
+      <li>
+        <strong>kinematic</strong> - moved by animation or user action. Dynamic objects will be pushed away but there is no influence from dynamics objects.
+      </li>
+      <li>
+        <strong>static</strong> - cannot move but collide with other bodies.
+      </li>
+      <li>
+        <strong>ghost</strong> - similar to <strong>kinematic</strong> but does not produce any collision response. Use it to <a href="manual/ru/puzzles/Physics.html#detect_collision">detect collision</a> between bodies (for example to implement proximity sensor).
+      </li>
+    </ul>
+
+    <p>Physics body shapes:</p>
+
+    <ul>
+      <li>
+        <strong>box</strong> - a box-shaped bounding.
+      </li>
+      <li>
+        <strong>sphere</strong> - a sphere-shaped bounding.
+      </li>
+      <li>
+        <strong>mesh</strong> - a mesh shape.
+      </li>
+      <li>
+        <strong>capsule</strong> - a capsule shape stretched along up-down axis.
+      </li>
+      <li>
+        <strong>cone</strong> - a cone shape stretched along up-down axis.
+      </li>
+      <li>
+        <strong>cylinder</strong> - a cylinder shape stretched along up-down axis.
+      </li>
+    </ul>
+
+    <p>
+      For performance reasons, give priority to primitive physics shapes (boxes, spheres, capsules, cones and cylinders) over mesh shapes. Also, <strong>static</strong> meshes have much better performance than <strong>dynamic</strong>, <strong>kinematic</strong> and <strong>ghost</strong>.
+    </p>
+
+
+    <p><a href="manual/ru/puzzles/Physics.html#remove_physics_body" id="remove_physics_body" class="permalink">#</a></p>
+
+    <h3>remove physics body</h3>
+
+    <p>
+    Removes physics from a specified object by destroying the physics body associated with it. Also works for a list of objects, a group (or a list of groups) or with the <a href="manual/ru/puzzles/Selectors.html#all_objects">all objects</a> puzzle.
+    </p>
+
+    <img src="files/puzzles/puzzles-physics-remove-physics-body.jpg">
+
+
+
+    <p><a href="manual/ru/puzzles/Physics.html#physics_body_params" id="physics_body_params" class="permalink">#</a></p>
+
+    <h3>physics body params</h3>
+
+    <p>
+    Sets parameters for the physics body associated with a specified object. Also works for a list of objects, a group (or a list of groups) or with the <a href="manual/ru/puzzles/Selectors.html#all_objects">all objects</a> puzzle.
+    </p>
+
+    <img src="files/puzzles/puzzles-physics-body-params.jpg">
+
+    <p>
+    Parameters:
+    </p>
+
+    <ul>
+      <li>
+        <strong>friction</strong> - coefficient of resistance of relative motion of solid bodies sliding against each other.
+      </li>
+      <li>
+        <strong>linear damping</strong> - coefficient of resistance that will slow down a moving object: 0 - no damping (e.g. free fall), 1 - maximum damping (e.g. object falls with no acceleration). Input values are clamped to [0, 1] range.
+      </li>
+      <li>
+        <strong>angular damping</strong> - coefficient of resistance that will slow down a rotating object: 0 - no damping, 1 - maximum damping. Input values are clamped to [0, 1] range.
+      </li>
+      <li>
+        <strong>restitution</strong> - coefficient of elasticity: 0 - body is not elastic like clay, 1 - body behaves like being made from rubber.
+      </li>
+    </ul>
+
+    <p>
+    When two bodies collide, friction and restitution parameters of both of them are taken into consideration.
+    </p>
+
+    <img src="files/puzzles/puzzles-physics-body-params-example.jpg" style="max-width: 903px">
+
+
+
+    <p><a href="manual/ru/puzzles/Physics.html#apply_vector" id="apply_vector" class="permalink">#</a></p>
+
+    <h3>apply vector</h3>
+
+    <p>
+    Applies <strong>Force</strong>, <strong>Gravity</strong>, <strong>Linear Velocity</strong>, <strong>Angular Velocity</strong>, <strong>Impulse</strong>, <strong>Torque</strong>, <strong>Torque Impulse</strong> or <strong>Position</strong> to the physics body associated with a specified object, in a specified direction in world space. Also works for a list of objects, a group (or a list of groups) or with the <a href="manual/ru/puzzles/Selectors.html#all_objects">all objects</a> puzzle.
+    </p>
+
+    <img src="files/puzzles/puzzles-physics-apply-vector.jpg">
+
+    <p>
+    Parameters:
+    </p>
+
+    <ul>
+      <li>
+        <strong>force</strong> - push a body in a specified direction.
+      </li>
+      <li>
+        <strong>gravity</strong> - assign gravity individually for a specified body.
+      </li>
+      <li>
+        <strong>linear velocity</strong> - set movement speed.
+      </li>
+      <li>
+        <strong>angular velocity</strong> - set rotation speed.
+      </li>
+      <li>
+        <strong>impulse</strong> - acts like <strong>Linear Velocity</strong> but also takes the body mass into account (heavier objects will acquire less speed).
+      </li>
+      <li>
+        <strong>torque</strong> - spin a body in a specified direction.
+      </li>
+      <li>
+        <strong>torque impulse</strong> - acts like <strong>Angular Velocity</strong> but also takes the body mass into account (heavier objects will acquire less rotation speed).
+      </li>
+      <li>
+        <strong>linear factor</strong> - set positional degrees of freedom for the specified body. For example by setting Z component to zero you can disable up-down (Blender, Max) or front-back (Maya) movement of the body.
+      </li>
+      <li>
+        <strong>angular factor</strong> - set rotational degrees of freedom for the specified body. For example by setting Z component to zero you can disable whirling the body around up-down (Blender, Max) or front-back (Maya) axis.
+      </li>
+      <li>
+        <strong>position</strong> - set body position (works like the <a href="manual/ru/puzzles/Physics.html#snap_body">snap body</a> puzzle).
+      </li>
+    </ul>
+
+
+    <p><a href="manual/ru/puzzles/Physics.html#set_body_state" id="set_body_state" class="permalink">#</a></p>
+
+    <h3>set body state</h3>
+
+    <p>
+      Change the state to the physics body associated with a specified object. Also works for a list of objects, a group (or a list of groups) or with the <a href="manual/ru/puzzles/Selectors.html#all_objects">all objects</a> puzzle.
+    </p>
+
+    <img src="files/puzzles/puzzles-physics-set-body-state.jpg" class="centered" style="max-width: 764px">
+
+    <p>Parameters:</p>
+
+    <ul>
+      <li>
+        <strong>activate</strong> - activate sleeping physics body.
+      </li>
+      <li>
+        <strong>sleep</strong> - force sleeping state for the body.
+      </li>
+      <li>
+        <strong>enable simulation</strong> - enable body simulation (enabled by default).
+      </li>
+      <li>
+        <strong>disable simulation</strong> - disable body simulation.
+      </li>
+      <li>
+        <strong>reset</strong> - clear all forces and velocities applied to the physics body.
+      </li>
+      <li>
+        <strong>enable contact response</strong> - allow body to collide with other bodies (enabled by default).
+      </li>
+      <li>
+        <strong>disable contact response</strong> - disable body colliding.
+      </li>
+      <li>
+        <strong>make dynamic</strong> - make body dynamic.
+      </li>
+      <li>
+        <strong>make kinematic</strong> - make body kinematic.
+      </li>
+      <li>
+        <strong>make static</strong> - make body static.
+      </li>
+      <li>
+        <strong>enable deactivation</strong> - allow body to turn into sleeping state after a period of inactivity (enabled by default).
+      </li>
+      <li>
+        <strong>disable deactivation</strong> - disable body sleeping.
+      </li>
+    </ul>
+
+
+    <p><a href="manual/ru/puzzles/Physics.html#on_simulation_tick" id="on_simulation_tick" class="permalink">#</a></p>
+
+    <h3>on simulation tick</h3>
+
+    <p>
+      Trigger puzzles specified in the *do" slot <em>just before</em> or <em>just after</em> the physics simulation tick.
+    </p>
+
+    <img src="files/puzzles/puzzles-physics-on-simulation-tick.jpg" class="centered" style="max-width: 817px">
+
+    <p>
+      Physics simulation tick corresponds to the FPS value specified when creating <a href="manual/ru/puzzles/Physics.html#create_physics_world">physics world</a> and does not coincide with rendering frame. As such, we recommend that you apply forces/velocities/impulses <strong>before</strong> simulation tick and detect collisions between your bodies <strong>after</strong> simulation tick. This way you can achieve more stable and realistic simulations.
+    </p>
+
+
+    <p><a href="manual/ru/puzzles/Physics.html#snap_body" id="snap_body" class="permalink">#</a></p>
+
+    <h3>snap body</h3>
+
+    <p>
+    Moves a physics body associated with a specified object, and the object itself, to the position of another object by copying its transform data. Also copies rotation. Does not work with lists, groups or the "all objects" puzzle.
+    </p>
+
+    <img src="files/puzzles/puzzles-physics-snap-body.jpg">
+
+    <p>
+    Works similar to <strong>apply vector / Position</strong> puzzle.
+    </p>
+
+
+
+    <p><a href="manual/ru/puzzles/Physics.html#detect_collisions" id="detect_collisions" class="permalink">#</a></p>
+
+    <!--for compatibility-->
+    <p><a href="manual/ru/puzzles/Physics.html#detect_collision" id="detect_collision" class="permalink"></a></p>
+
+    <h3>detect collisions and collision info</h3>
+
+    <p>
+    Detects if there is a collision at the moment of a specified body with another body (or any body from a list or a group). If there is a collision, the puzzles in the "if touching do" slot are triggered, otherwise - in the "if not touching do".
+    </p>
+
+    <p>
+    The "detect collisions" puzzle triggers either of its callback slots every rendering frame.
+    </p>
+
+    <img src="files/puzzles/puzzles-physics-detect-collisions.jpg">
+
+    <p>
+    The <strong>collision info</strong> puzzle outputs a <a href="manual/ru/puzzles/Dictionaries.html">dictionary</a> with the following fields:
+    </p>
+
+    <ul>
+      <li>
+        <strong>objectA</strong> - the name of the first colliding body.
+      </li>
+      <li>
+        <strong>objectB</strong> - the name of the second colliding body.
+      </li>
+      <li>
+        <strong>distance</strong> - distance between points of collisions.
+      </li>
+      <li>
+        <strong>positionOnA</strong> - XYZ coordinates of the collision point on the first object.
+      </li>
+      <li>
+        <strong>positionOnB</strong> - XYZ coordinates of the collision point on the second object.
+      </li>
+      <li>
+        <strong>normalOnB</strong> - XYZ components of the normal vector at the collision point on the second object.
+      </li>
+    </ul>
+
+    <img src="files/puzzles/puzzles-physics-detect-collisions-info.jpg">
+
+
+
+    <h2>Constraints Puzzles</h2>
+
+    <p>
+    If an object is not parented to another object, the constraints will work in world space. Otherwise they will work in the parent object's space - you can select the parent object in 3ds Max or Blender to show up the coordinate axes.
+    </p>
+
+
+    <p><a href="manual/ru/puzzles/Physics.html#limit_transform" id="limit_transform" class="permalink">#</a></p>
+
+    <h3>limit transform</h3>
+
+    <p>
+    Creates a constraint to limit object position, rotation or scale along a selected axis. Constraint <strong>id</strong> should be unique, otherwise an existing constraint with the same id will be replaced. The <strong>min</strong> and <strong>max</strong> slots specify the range between which the movement is allowed.
+    </p>
+
+    <img src="files/puzzles/puzzles-constraints-limit-transform.jpg">
+
+
+
+    <p><a href="manual/ru/puzzles/Physics.html#copy_transform" id="copy_transform" class="permalink">#</a></p>
+
+    <h3>copy transform</h3>
+
+    <p>
+    Creates a constraint to copy object position, rotation or scale from another object. Constraint <strong>id</strong> should be unique, otherwise an existing constraint with the same id will be replaced.
+    </p>
+
+    <img src="files/puzzles/puzzles-constraints-copy-transform.jpg">
+
+
+
+    <!--for compatibility-->
+    <p><a href="manual/ru/puzzles/Physics.html#operations" id="operations" class="permalink"></a></p>
+
+    <p><a href="manual/ru/puzzles/Physics.html#remove_mute_unmute_constraint" id="remove_mute_unmute_constraint" class="permalink">#</a></p>
+
+    <h3>remove / mute / unmute constraint</h3>
+
+    <p>
+    Removes, mutes or unmutes a constraint assigned to a specified object. Other constraints assigned to this object (if any) will remain intact.
+    </p>
+
+    <img src="files/puzzles/puzzles-constraints-remove-mute-unmute-constraint.jpg">
+
+
+    <h2>Having Troubles with Puzzles?</h2>
+
+    <p>Seek help on the <a href="https://www.soft8soft.com/forums/" target="_blank">forums</a>!</p>
+
+  </article>
+
+
+            <!-- Yandex.Metrika counter -->
+            <script type="text/javascript">
+               (function(d, w, c) {
+                 if (document.domain === "www.soft8soft.com") {
+                   (w[c] = w[c] || []).push(function() {
+                       try {
+                           w.yaCounter46001298 = new Ya.Metrika({
+                               id:46001298,
+                               clickmap:true,
+                               trackLinks:true,
+                               accurateTrackBounce:true
+                           });
+                       } catch(e) { }
+                   });
+
+                   var n = d.getElementsByTagName("script")[0],
+                       s = d.createElement("script"),
+                       f = function() { n.parentNode.insertBefore(s, n); };
+                   s.type = "text/javascript";
+                   s.async = true;
+                   s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+                   if (w.opera == "[object Opera]") {
+                       d.addEventListener("DOMContentLoaded", f, false);
+                   } else { f(); }
+                 }
+               })(document, window, "yandex_metrika_callbacks");
+            </script>
+            <noscript><div><img src="https://mc.yandex.ru/watch/46001298" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+            <!-- /Yandex.Metrika counter -->
+        
+            <div class="copyright">© <a href="https://www.soft8soft.com/" target="_blank">Soft8Soft – 3D Solutions for the Web</a><div>Last updated on Tue Nov 24 2020</div></div>
+        </body></html>

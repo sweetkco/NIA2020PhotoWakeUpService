@@ -1,0 +1,571 @@
+<!DOCTYPE html><html lang="zh"><head>
+    <title>HTML - Verge3D Puzzles Reference - Soft8Soft</title>
+    <meta charset="utf-8">
+    <meta name="description" content="How to use Verge3D Puzzles to manipulate HTML DOM elements.">
+    <base href="../../../">
+    <script src="list.js"></script>
+    <script src="page.js"></script>
+    <link type="text/css" rel="stylesheet" href="page.css">
+  
+            <link rel="canonical" href="https://www.soft8soft.com/docs/manual/zh/puzzles/HTML.html">
+
+            <meta property="og:type" content="article">
+            <meta property="og:title" content="HTML - Verge3D Puzzles Reference - Soft8Soft">
+            <meta property="og:description" content="How to use Verge3D Puzzles to manipulate HTML DOM elements.">
+            <meta property="og:image" content="https://cdn.soft8soft.com/images/manual.jpg">
+            <meta property="og:image:width" content="1200">
+            <meta property="og:image:height" content="630">
+            <meta property="og:url" content="https://www.soft8soft.com/docs/manual/zh/puzzles/HTML.html">
+            <meta property="og:site_name" content="Soft8Soft">
+            <meta property="og:locale" content="en_US">
+
+            <meta property="article:author" content="https://www.facebook.com/soft8soft">
+
+            <meta property="article:tag" content="Verge3D">
+            <meta property="article:tag" content="WebGL">
+            <meta property="article:tag" content="3D">
+            <meta property="article:tag" content="ThreeJS">
+            <meta property="article:tag" content="interactive">
+            <meta property="article:tag" content="realtime">
+            <meta property="article:tag" content="3dweb">
+            <meta property="article:tag" content="web3d">
+
+            <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:title" content="HTML - Verge3D Puzzles Reference - Soft8Soft">
+            <meta name="twitter:description" content="How to use Verge3D Puzzles to manipulate HTML DOM elements.">
+            <meta name="twitter:image" content="https://cdn.soft8soft.com/images/manual.jpg">
+            <meta name="twitter:creator" content="@soft8soft">
+        
+            <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+            <!-- favicons from realfavicongenerator.net -->
+            <link rel="apple-touch-icon" sizes="180x180" href="files/icons/apple-touch-icon.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="files/icons/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="files/icons/favicon-16x16.png">
+            <link rel="manifest" href="files/icons/manifest.json">
+            <link rel="mask-icon" href="files/icons/safari-pinned-tab.svg" color="#5bbad5 ">
+        <script type="application/ld+json">[
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-html.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-html-add-html-elem.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-html-get-attr.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-html-set-attr.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-html-set-style.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-html-set-css-rule.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-html-on-event.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-html-get-event-property.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-html-DOM-object-selector.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-html-draw-line.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-html-remove-line.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-html-bind-element.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-html-init-fullscreen.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-html-get-url-data.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-html-get-url-data-example.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-html-set-url-param.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-html-set-url-param-example.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-html-take-screenshot.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-html-download-file.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-html-download-file-example.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ,
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "ImageObject",
+                    "url": "https://www.soft8soft.com/docs/files/puzzles/puzzles-html-open-file.jpg",
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
+                    "acquireLicensePage": "https://www.soft8soft.com/contact/"
+                }
+            ]</script></head>
+  <body><nav id="panel" class="collapsed">
+          <h1><a href="manual/zh/index.html">Verge3D用户手册</a></h1>
+
+          <a id="expandButton" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+
+          <div class="filterBlock">
+            <input type="text" id="filterInput" placeholder="Type to filter" autocapitalize="off" spellcheck="false">
+            <a href="#" id="clearFilterButton">x</a>
+          </div>
+
+          <div id="content"><div><h2>Getting Started</h2><ul id="Getting_Started"><li><a href="manual/zh/introduction/Beginners-Guide.html" id="Getting_Started_Beginner_s_Guide">Beginner's Guide</a></li><li><a href="manual/zh/introduction/Workflow.html" id="Getting_Started_Workflow">Workflow</a></li><li><a href="manual/zh/introduction/App-Manager.html" id="Getting_Started_App_Manager">App Manager</a></li><li><a href="manual/zh/introduction/Puzzles-Visual-Logic-Editor.html" id="Getting_Started_Puzzles">Puzzles</a></li><li><a href="manual/zh/introduction/Features.html" id="Getting_Started_Verge3D_Features">Verge3D Features</a></li><li><a href="manual/zh/introduction/Project-Structure.html" id="Getting_Started_Project_Structure">Project Structure</a></li><li><a href="manual/zh/introduction/Updating.html" id="Getting_Started_Updating_for_New_Versions">Updating for New Versions</a></li><li><a href="manual/zh/introduction/FAQ.html" id="Getting_Started_FAQ">FAQ</a></li><li><a href="manual/zh/introduction/Useful-links.html" id="Getting_Started_Useful_Links">Useful Links</a></li></ul></div><div><h2>General Topics</h2><ul id="General_Topics"><li><a href="manual/zh/introduction/Optimizing-WebGL-performance.html" id="General_Topics_Optimization_Techniques">Optimization Techniques</a></li><li><a href="manual/zh/introduction/Asset-compression.html" id="General_Topics_Asset_Compression">Asset Compression</a></li><li><a href="manual/zh/introduction/HTML-based-user-interfaces.html" id="General_Topics_HTML-Based_User_Interfaces">HTML-Based User Interfaces</a></li><li><a href="manual/zh/introduction/AR-VR-development.html" id="General_Topics_AR/VR_Development">AR/VR Development</a></li><li><a href="manual/zh/introduction/Styling-Verge3D-Apps.html" id="General_Topics_Styling_Verge3D_Apps">Styling Verge3D Apps</a></li><li><a href="manual/zh/introduction/Wordpress-Plugin.html" id="General_Topics_Wordpress_Plugin">Wordpress Plugin</a></li><li><a href="manual/zh/introduction/Using-JavaScript.html" id="General_Topics_Using_JavaScript">Using JavaScript</a></li><li><a href="manual/zh/introduction/Testing-Mobile-Browsers.html" id="General_Topics_Testing_on_Mobile_Browsers">Testing on Mobile Browsers</a></li></ul></div><div><h2>Blender Artist's Guide</h2><ul id="Blender_Artist_s_Guide"><li><a href="manual/zh/blender/Beginners-Guide.html" id="Blender_Artist_s_Guide_Beginner_s_Guide">Beginner's Guide</a></li><li><a href="manual/zh/blender/Installation.html" id="Blender_Artist_s_Guide_Installation">Installation</a></li><li><a href="manual/zh/blender/Material-System.html" id="Blender_Artist_s_Guide_Material_System_Overview">Material System Overview</a></li><li><a href="manual/zh/blender/Shader-Nodes-Reference.html" id="Blender_Artist_s_Guide_Shader_Nodes">Shader Nodes</a></li><li><a href="manual/zh/blender/Animation.html" id="Blender_Artist_s_Guide_Animation">Animation</a></li><li><a href="manual/zh/blender/Morphing.html" id="Blender_Artist_s_Guide_Shape_Keys_(Morphing)">Shape Keys (Morphing)</a></li><li><a href="manual/zh/blender/Shadows.html" id="Blender_Artist_s_Guide_Shadows">Shadows</a></li><li><a href="manual/zh/blender/Transparency.html" id="Blender_Artist_s_Guide_Transparency">Transparency</a></li><li><a href="manual/zh/blender/GLTF-Materials.html" id="Blender_Artist_s_Guide_glTF_Materials">glTF Materials</a></li><li><a href="manual/zh/blender/Object-Constraints.html" id="Blender_Artist_s_Guide_Object_Constraints">Object Constraints</a></li><li><a href="manual/zh/blender/Material-Library.html" id="Blender_Artist_s_Guide_Using_Material_Library">Using Material Library</a></li></ul></div><div><h2>3ds Max Artist's Guide</h2><ul id="3ds_Max_Artist_s_Guide"><li><a href="manual/zh/max/Beginners-Guide.html" id="3ds_Max_Artist_s_Guide_Beginner_s_Guide">Beginner's Guide</a></li><li><a href="manual/zh/max/Installation.html" id="3ds_Max_Artist_s_Guide_Installation">Installation</a></li><li><a href="manual/zh/max/Material-System.html" id="3ds_Max_Artist_s_Guide_Material_System_Overview">Material System Overview</a></li><li><a href="manual/zh/max/Lighting-and-Rendering.html" id="3ds_Max_Artist_s_Guide_Lighting_and_Rendering">Lighting and Rendering</a></li><li><a href="manual/zh/max/Materials-Maps-Reference.html" id="3ds_Max_Artist_s_Guide_Materials_and_Maps">Materials and Maps</a></li><li><a href="manual/zh/max/Morphing.html" id="3ds_Max_Artist_s_Guide_Morphing">Morphing</a></li><li><a href="manual/zh/max/Shadows.html" id="3ds_Max_Artist_s_Guide_Shadows">Shadows</a></li><li><a href="manual/zh/max/Transparency.html" id="3ds_Max_Artist_s_Guide_Transparency">Transparency</a></li><li><a href="manual/zh/max/Viewport-Render-Preview.html" id="3ds_Max_Artist_s_Guide_Viewport_and_Render_Preview">Viewport and Render Preview</a></li><li><a href="manual/zh/max/GLTF-Materials.html" id="3ds_Max_Artist_s_Guide_glTF_Materials">glTF Materials</a></li><li><a href="manual/zh/max/Animation-Constraints.html" id="3ds_Max_Artist_s_Guide_Animation_Constraints">Animation Constraints</a></li></ul></div><div><h2>Maya Artist's Guide</h2><ul id="Maya_Artist_s_Guide"><li><a href="manual/zh/maya/Beginners-Guide.html" id="Maya_Artist_s_Guide_Beginner_s_Guide">Beginner's Guide</a></li><li><a href="manual/zh/maya/Installation.html" id="Maya_Artist_s_Guide_Installation">Installation</a></li><li><a href="manual/zh/maya/Materials.html" id="Maya_Artist_s_Guide_Materials">Materials</a></li><li><a href="manual/zh/maya/Lighting-and-Rendering.html" id="Maya_Artist_s_Guide_Lighting_and_Rendering">Lighting and Rendering</a></li><li><a href="manual/zh/maya/Shadows.html" id="Maya_Artist_s_Guide_Shadows">Shadows</a></li><li><a href="manual/zh/maya/Camera.html" id="Maya_Artist_s_Guide_Camera">Camera</a></li><li><a href="manual/zh/maya/Animation.html" id="Maya_Artist_s_Guide_Animation">Animation</a></li><li><a href="manual/zh/maya/Blend-Shapes.html" id="Maya_Artist_s_Guide_Blend_Shapes_(Morphing)">Blend Shapes (Morphing)</a></li></ul></div><div><h2>Puzzles Reference</h2><ul id="Puzzles_Reference"><li><a href="manual/zh/puzzles/Initialization.html" id="Puzzles_Reference_Initialization">Initialization</a></li><li><a href="manual/zh/puzzles/Events.html" id="Puzzles_Reference_Events">Events</a></li><li><a href="manual/zh/puzzles/Selectors.html" id="Puzzles_Reference_Selectors">Selectors</a></li><li><a href="manual/zh/puzzles/Objects.html" id="Puzzles_Reference_Objects">Objects</a></li><li><a href="manual/zh/puzzles/Materials.html" id="Puzzles_Reference_Materials">Materials</a></li><li><a href="manual/zh/puzzles/Animation.html" id="Puzzles_Reference_Animation">Animation</a></li><li><a href="manual/zh/puzzles/Camera.html" id="Puzzles_Reference_Camera">Camera</a></li><li><a href="manual/zh/puzzles/Scenes.html" id="Puzzles_Reference_Scenes">Scenes</a></li><li><a href="manual/zh/puzzles/Time.html" id="Puzzles_Reference_Time">Time</a></li><li><a href="manual/zh/puzzles/HTML.html" id="Puzzles_Reference_HTML">HTML</a></li><li><a href="manual/zh/puzzles/AR_VR.html" id="Puzzles_Reference_AR/VR">AR/VR</a></li><li><a href="manual/zh/puzzles/Sound.html" id="Puzzles_Reference_Audio/Video">Audio/Video</a></li><li><a href="manual/zh/puzzles/Physics.html" id="Puzzles_Reference_Physics_(and_Constraints)">Physics (and Constraints)</a></li><li><a href="manual/zh/puzzles/Postprocessing.html" id="Puzzles_Reference_Post-processing">Post-processing</a></li><li><a href="manual/zh/puzzles/Logic.html" id="Puzzles_Reference_Logic">Logic</a></li><li><a href="manual/zh/puzzles/Loops.html" id="Puzzles_Reference_Loops">Loops</a></li><li><a href="manual/zh/puzzles/Text.html" id="Puzzles_Reference_Text">Text</a></li><li><a href="manual/zh/puzzles/Numbers.html" id="Puzzles_Reference_Numbers">Numbers</a></li><li><a href="manual/zh/puzzles/Lists.html" id="Puzzles_Reference_Lists">Lists</a></li><li><a href="manual/zh/puzzles/Dictionaries.html" id="Puzzles_Reference_Dictionaries">Dictionaries</a></li><li><a href="manual/zh/puzzles/Variables.html" id="Puzzles_Reference_Variables">Variables</a></li><li><a href="manual/zh/puzzles/Procedures.html" id="Puzzles_Reference_Procedures">Procedures</a></li><li><a href="manual/zh/puzzles/System.html" id="Puzzles_Reference_System">System</a></li><li><a href="manual/zh/puzzles/ECommerce.html" id="Puzzles_Reference_E-Commerce">E-Commerce</a></li><li><a href="manual/zh/puzzles/Advanced.html" id="Puzzles_Reference_Advanced">Advanced</a></li><li><a href="manual/zh/puzzles/Library.html" id="Puzzles_Reference_Library">Library</a></li></ul></div></div>
+        </nav><article>
+    <h1>HTML Puzzles</h1>
+
+    <p>These puzzles manipulate HTML DOM elements.</p>
+
+    <img src="files/puzzles/puzzles-html.jpg">
+
+
+    <p><a href="manual/zh/puzzles/HTML.html#add_HTML_element" id="add_HTML_element" class="permalink">#</a></p>
+
+    <h4>"add HTML element"</h4>
+
+    <p>
+      Creates an HTML element with a specified <a href="https://www.w3schools.com/tags/default.asp" target="_blank">type</a>
+      and identifier (corresponds to "id" attribute) and adds it to, right before
+      or right after the specified existing HTML element.
+    </p>
+
+    <img src="files/puzzles/puzzles-html-add-html-elem.jpg">
+
+
+    <p>
+    <strong>Notes</strong>:
+    </p>
+
+    <p>
+    Besides creating an HTML element, this puzzle also sets its CSS property <strong>position</strong> to "absolute". If you don't need this thing, you can set this CSS property to "initial" with a <a href="manual/zh/puzzles/HTML.html#set_style">set style</a> puzzle.
+    </p>
+
+
+
+    <p><a href="manual/zh/puzzles/HTML.html#get_attribute" id="get_attribute" class="permalink">#</a></p>
+
+    <h4>"get attribute"</h4>
+
+    <p>
+    Gets an <a href="https://www.w3schools.com/tags/ref_attributes.asp" target="_blank">attribute</a> from an HTML element with a specified id. The "in parent doc" checkbox should be enabled if the HTML element is located in an external HTML document (in which Verge3D application's <strong>.html</strong> file is embedded using <strong>iframe</strong>).
+    </p>
+
+    <img src="files/puzzles/puzzles-html-get-attr.jpg">
+
+
+
+    <p><a href="manual/zh/puzzles/HTML.html#set_attribute" id="set_attribute" class="permalink">#</a></p>
+
+    <h4>"set attribute"</h4>
+
+    <p>
+    Sets an <a href="https://www.w3schools.com/tags/ref_attributes.asp" target="_blank">attribute</a> for an HTML element with a specified id. The "in parent doc" checkbox should be enabled if the HTML element is located in an external HTML document (in which Verge3D application's <strong>.html</strong> file is embedded using <strong>iframe</strong>). Also works with lists of element ids.
+    </p>
+
+    <img src="files/puzzles/puzzles-html-set-attr.jpg">
+
+
+
+    <p><a href="manual/zh/puzzles/HTML.html#set_style" id="set_style" class="permalink">#</a></p>
+
+    <h4>"set style"</h4>
+
+    <p>
+    Sets a <a href="https://www.w3schools.com/cssref/default.asp" target="_blank">CSS property</a> for an HTML element with a specified id. The "in parent doc" checkbox should be enabled if the HTML element is located in an external HTML document (in which Verge3D application's <strong>.html</strong> file is embedded using <strong>iframe</strong>). Also works with lists of element ids.
+    </p>
+
+    <img src="files/puzzles/puzzles-html-set-style.jpg">
+
+
+
+    <p><a href="manual/zh/puzzles/HTML.html#set_css_rule" id="set_css_rule" class="permalink">#</a></p>
+
+    <h4>"set css rule"</h4>
+
+    <p>
+    Sets a <a href="https://www.w3schools.com/cssref/default.asp" target="_blank">CSS property</a> for a specified CSS rule (found in <strong>.css</strong> files of an application). The "in parent doc" checkbox should be enabled if the style sheets belong to an external HTML document (in which Verge3D application's <strong>.html</strong> file is embedded using <strong>iframe</strong>).
+    </p>
+
+    <img src="files/puzzles/puzzles-html-set-css-rule.jpg">
+
+
+
+    <p><a href="manual/zh/puzzles/HTML.html#event" id="event" class="permalink">#</a></p>
+
+    <h4>"event"</h4>
+
+    <p>
+    Registers an <a href="https://www.w3schools.com/jsref/dom_obj_event.asp" target="_blank">event listener</a> for an HTML element with a specified id. The "in parent doc" checkbox should be enabled if the HTML element is located in an external HTML document (in which Verge3D application's <strong>.html</strong> file is embedded using <strong>iframe</strong>). Once an event occurs, the puzzles placed in the "do" slot are triggered. Also works with lists of element ids.
+    </p>
+
+    <img src="files/puzzles/puzzles-html-on-event.jpg">
+
+
+
+    <p><a href="manual/zh/puzzles/HTML.html#get_event_property" id="get_event_property" class="permalink">#</a></p>
+
+    <h4>"get event property"</h4>
+
+    <p>
+    Outputs the value of a <a href="https://www.w3schools.com/jsref/obj_events.asp" target="_blank">property</a> of an event generated by the "event" puzzle.
+    </p>
+
+    <img src="files/puzzles/puzzles-html-get-event-property.jpg">
+
+
+    <p><a href="manual/zh/puzzles/HTML.html#DOM_object_selector" id="DOM_object_selector" class="permalink">#</a></p>
+
+    <!--COMPAT-->
+    <p><a href="manual/zh/puzzles/HTML.html#window" id="window" class="permalink"></a></p>
+    <p><a href="manual/zh/puzzles/HTML.html#document" id="document" class="permalink"></a></p>
+    <p><a href="manual/zh/puzzles/HTML.html#body" id="body" class="permalink"></a></p>
+
+    <h4>"DOM object selector"</h4>
+
+    <p>
+    Represents the canvas container element - an HTML element which contains a rendered scene, <a href="https://www.w3schools.com/jsref/obj_window.asp" target="_blank">DOM window object</a> - a browser tab or an iframe to which an HTML document is loaded, <a href="https://www.w3schools.com/jsref/dom_obj_document.asp" target="_blank">DOM document object</a> - the root node of an HTML document, or <a href="https://www.w3schools.com/jsref/dom_obj_body.asp" target="_blank">DOM body object</a> - the &lt;body&gt; element of an HTML document.
+    </p>
+
+    <img src="files/puzzles/puzzles-html-DOM-object-selector.jpg">
+
+
+    <p><a href="manual/zh/puzzles/HTML.html#query_selector" id="query_selector" class="permalink">#</a></p>
+
+    <h4>"query selector"</h4>
+
+    <p>Returns the first HTML element that matches a specified CSS selector.</p>
+
+
+    <p><a href="manual/zh/puzzles/HTML.html#draw_line" id="draw_line" class="permalink">#</a></p>
+
+    <h4>"draw line"</h4>
+
+    <p>
+    Connects a specified 3D object with a specified HTML element by a dynamically updated line. The "in parent doc" checkbox should be enabled if the HTML element is located in an external HTML document (in which Verge3D application's <strong>.html</strong> file is embedded using <strong>iframe</strong>). You can also set the width, color and offset for the line.
+    </p>
+
+    <img src="files/puzzles/puzzles-html-draw-line.jpg">
+
+
+
+    <p><a href="manual/zh/puzzles/HTML.html#remove_line" id="remove_line" class="permalink">#</a></p>
+
+    <h4>"remove line"</h4>
+
+    <p>
+    Removes a previously created line from a specified object.
+    </p>
+
+    <img src="files/puzzles/puzzles-html-remove-line.jpg">
+
+
+
+    <p><a href="manual/zh/puzzles/HTML.html#bind_element" id="bind_element" class="permalink">#</a></p>
+
+    <h4>"bind element"</h4>
+
+    <p>
+    Makes a specified HTML element follow the center of a specified 3D object in screen space. The "in parent doc" checkbox should be enabled if the HTML element is located in an external HTML document (in which Verge3D application's <strong>.html</strong> file is embedded using <strong>iframe</strong>).
+    </p>
+
+    <img src="files/puzzles/puzzles-html-bind-element.jpg">
+
+    <p>
+    <strong>Notes</strong>:
+    </p>
+
+    <p>
+    You can use the <a href="manual/zh/puzzles/Objects.html#add_annotation">add annotation</a> puzzle instead and customize the look of the annotations as described <a href="manual/zh/introduction/Styling-Verge3D-Apps.html#Annotations" target="_parent">here</a>.
+    </p>
+
+
+
+    <p><a href="manual/zh/puzzles/HTML.html#init_fullscreen" id="init_fullscreen" class="permalink">#</a></p>
+
+    <h4>"init fullscreen"</h4>
+
+    <p>
+    Makes a specified HTML element behave as a fullscreen mode button - the first click on it triggers entering the fullscreen mode, the second click exits fullscreen. Puzzles placed in the "on enter do" and "on exit do" slots are triggered upon entering or exiting the fullscreen mode. Puzzles placed in the "if unavailable do" are triggered if fullscreen is not supported by the browser (e.g. iOS Safari).
+    </p>
+
+    <img src="files/puzzles/puzzles-html-init-fullscreen.jpg">
+
+
+
+    <p><a href="manual/zh/puzzles/HTML.html#get_url_data" id="get_url_data" class="permalink">#</a></p>
+
+    <h4>"get URL data"</h4>
+
+    <p>
+    Retrieves URL data of the window to which an application is loaded:
+    </p>
+
+    <p>
+    </p><ul>
+    <li>
+    <strong>Entire URL</strong> - text, e.g. "https://www.example.com/my_awesome_app.html?image_url=https://www.uploadserver.com/path/to/image.jpg"
+    </li>
+    <li>
+    <strong>Parameters</strong> - dictionary, e.g. {"image_url": "https://www.uploadserver.com/path/to/image.jpg"}
+    </li>
+    <li>
+    <strong>Host name</strong> - text, e.g. "www.example.com"
+    </li>
+    </ul>
+    The "in parent doc" checkbox should be enabled if the window of an external HTML document is required (in which Verge3D application's <strong>.html</strong> file is embedded using <strong>iframe</strong>).
+    <p></p>
+
+    <img src="files/puzzles/puzzles-html-get-url-data.jpg">
+
+    <p>
+    This puzzle may be useful in situations when the configuration data of an application are stored in its URL. For example, you can specify an image to be used as a texture in the following way:
+    </p>
+
+    <pre class="prettyprint"><code class="language-html">
+    https://www.example.com/my_awesome_app.html?image_url=https://www.uploadserver.com/path/to/image.jpg
+    </code></pre>
+
+    <p>
+    Then you can retrieve the <strong>image_url</strong> parameter, load and apply the texture as follows:
+    </p>
+
+    <img src="files/puzzles/puzzles-html-get-url-data-example.jpg">
+
+    <p>
+    See the <strong>Custom Image</strong> demo in your Verge3D distribution for a working example.
+    </p>
+
+
+
+    <p><a href="manual/zh/puzzles/HTML.html#set_url_param" id="set_url_param" class="permalink">#</a></p>
+
+    <h4>"set URL param"</h4>
+
+    <p>
+    Assigns or updates a value of a parameter in a specified URL by automatically forming a valid <a href="https://en.wikipedia.org/wiki/Query_string" target="_blank">query string</a> if necessary, and returns the updated URL.
+    </p>
+
+    <img src="files/puzzles/puzzles-html-set-url-param.jpg">
+
+    <p>
+    This puzzle may be useful in situations when the configuration data of an application are stored in its URL. For example, you can specify an image to be used as a texture in the following way:
+    </p>
+
+    <pre class="prettyprint"><code class="language-html">
+    https://www.example.com/my_awesome_app.html?image_url=https://www.uploadserver.com/path/to/image.jpg
+    </code></pre>
+
+    <p>
+    You can upload a texture, retrieve its server-side path and save it to the <strong>image_url</strong> parameter of the app URL as follows:
+    </p>
+
+    <img src="files/puzzles/puzzles-html-set-url-param-example.jpg">
+
+    <p>
+    See the <strong>Custom Image</strong> demo in your Verge3D distribution for a working example.
+    </p>
+
+
+
+    <p><a href="manual/zh/puzzles/HTML.html#take_screenshot" id="take_screenshot" class="permalink">#</a></p>
+
+    <h4>"take screenshot"</h4>
+
+    <p>
+    Takes a screenshot of the viewport and outputs it in <a href="https://en.wikipedia.org/wiki/Data_URI_scheme#Examples_of_use" target="_blank">Data URI</a> format.
+    </p>
+
+    <img src="files/puzzles/puzzles-html-take-screenshot.jpg">
+
+    <p>
+    <strong>Notes</strong>:
+    </p>
+
+    <p>
+    You should also enable screenshots for your app using the <a href="manual/zh/puzzles/Initialization.html#configure_application">configure application</a> puzzle, otherwise black images will be produced.
+    </p>
+
+
+
+    <p><a href="manual/zh/puzzles/HTML.html#download_file" id="download_file" class="permalink">#</a></p>
+
+    <h4>"download file"</h4>
+
+    <p>
+    Downloads content specified in <a href="https://en.wikipedia.org/wiki/Data_URI_scheme#Examples_of_use" target="_blank">Data URI</a> format to a file.
+    </p>
+
+    <img src="files/puzzles/puzzles-html-download-file.jpg">
+
+    <p>
+    This puzzle can be used, for example, to save previously taken screenshots, or to save some information in a text file:
+    </p>
+
+    <img src="files/puzzles/puzzles-html-download-file-example.jpg">
+
+
+
+    <p><a href="manual/zh/puzzles/HTML.html#open_file" id="open_file" class="permalink">#</a></p>
+
+    <h4>"open file" and "opened file"</h4>
+
+    <p>
+    Invokes the browser's native dialog window for selecting files from the user's device. Once the user have selected a file, returns the file's contents in <a href="https://en.wikipedia.org/wiki/Data_URI_scheme#Examples_of_use" target="_blank">Data URI</a> format.
+    </p>
+
+    <img src="files/puzzles/puzzles-html-open-file.jpg">
+
+
+  </article>
+
+
+            <!-- Yandex.Metrika counter -->
+            <script type="text/javascript">
+               (function(d, w, c) {
+                 if (document.domain === "www.soft8soft.com") {
+                   (w[c] = w[c] || []).push(function() {
+                       try {
+                           w.yaCounter46001298 = new Ya.Metrika({
+                               id:46001298,
+                               clickmap:true,
+                               trackLinks:true,
+                               accurateTrackBounce:true
+                           });
+                       } catch(e) { }
+                   });
+
+                   var n = d.getElementsByTagName("script")[0],
+                       s = d.createElement("script"),
+                       f = function() { n.parentNode.insertBefore(s, n); };
+                   s.type = "text/javascript";
+                   s.async = true;
+                   s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+                   if (w.opera == "[object Opera]") {
+                       d.addEventListener("DOMContentLoaded", f, false);
+                   } else { f(); }
+                 }
+               })(document, window, "yandex_metrika_callbacks");
+            </script>
+            <noscript><div><img src="https://mc.yandex.ru/watch/46001298" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+            <!-- /Yandex.Metrika counter -->
+        
+            <div class="copyright">© <a href="https://www.soft8soft.com/" target="_blank">Soft8Soft – 3D Solutions for the Web</a><div>Last updated on Tue Nov 24 2020</div></div>
+        </body></html>

@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/*layout*/
+.wrap{background-color: #eff1f7; width: 1900px; margin: 0 auto; position: relative;}
+.container{padding: 40px 200px 0 0; box-sizing: border-box;}
+.container .top{height: 570px;}
+.container .bottom{background: url(../img/illust.svg) 45px bottom no-repeat; padding: 24px 0;}
+.container .top .flot_wrap{float: right;}
+
+/*navi*/
+.wrap nav{position: fixed; left: 0; top: 0; width: 100px; height: 100%; background-color: #fff; padding: 40px 30px 40px 30px; box-sizing: border-box; transition: width 0.2s ease; z-index: 1000;}
+.wrap nav.active{width: 250px; transition: width .3s ease;}
+.wrap nav .logo{position: relative;}
+.wrap nav .login{position: absolute; bottom: 40px; left: 30px;}
+.wrap nav .logo_img{width: 40px; height: 40px; display: block; float: left;}
+.wrap nav .login_img{width: 40px; height: 40px; border-radius: 3px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08); background-color: #fff; display: block; float: left; background: url(../img/ic_login.svg) center no-repeat; background-size: 16px 16px;}
+.wrap .navi .navi_txt{display: block; height: 0; line-height: 0; font-size: 16px; font-weight: 400; font-stretch: normal; font-style: normal; letter-spacing: normal; color: #35384d; float: left; margin-left: 24px; width: 0; opacity: 0;}
+.wrap .navi.active .navi_txt{width: auto; height: 40px; line-height: 40px; opacity: 1; transition: all .3s ease .2s;}
+.wrap nav a{position: absolute; top: 0; bottom: 0; left: 0; right: 0;}
+
+/*top*/
+.container .top .txt_wrap{width: 280px; float: left; margin-right: 24px;}
+.container .top .txt_wrap h2{font-size: 16px; font-weight: 400; font-stretch: normal; font-style: normal; line-height: 1.5; letter-spacing: normal; text-align: left; color: #35384d;}
+.container .top .txt_wrap h3{font-size: 32px; font-weight: 700; font-stretch: normal; font-style: normal; line-height: 1.5; letter-spacing: normal; text-align: left; color: #6b75ca; margin-top: 20px;}
+.container .top .txt_wrap p{font-size: 14px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: 2; letter-spacing: normal; text-align: left; color: #b7bacf; margin-top: 25px;}
+.container .top .load_wrap{width: 960px; height: 540px; float: left; position: relative;}
+.container .top .detail{position: absolute; top: 16px; left: -16px; box-shadow: 0 2px 10px 0 rgba(0, 7, 62, 0.1); border: solid 2px #ffffff; width: 960px; height: 540px; z-index: 0;}
+
+
+.container .top .detail span{width: 10px; height: 10px; background-color: #fff; border: 4px solid rgba(190, 190, 190, 0.3); border-radius: 15px; box-shadow: 0 2px 10px 0 rgba(0, 7, 62, 0.1); position: absolute;}
+.container .top .detail span.tl{top: -9px; left: -9px;}
+.container .top .detail span.bl{bottom: -9px; left: -9px;}
+.container .top .detail span.br{bottom: -9px; right: -9px;}
+
+
+
+/*bottom*/
+.bottom .line{float: right;}
+.bottom .select_txt{float: left; margin-right: 48px; text-align: right; margin-top: 29px;}
+.bottom .select_txt .select_tit{font-size: 16px; font-weight: bold; font-stretch: normal; font-style: normal; letter-spacing: normal; color: #35384d;}
+.bottom .select_txt .select_btn{width: 48px; height: 48px; border-radius: 24px; box-shadow: 0 2px 6px 0 rgba(0, 7, 62, 0.1);background: #868dc9 url(../img/ic_upload.svg) center no-repeat; transition: all .2s ease; cursor: pointer; text-indent: -99999px; margin-top: 45px;}
+.bottom .select_txt .select_btn:hover{background: #6b75ca url(../img/ic_upload.svg) center no-repeat;}
+.bottom .select_wrap{float: left; margin: auto; width: 960px;}
+.bottom .select_wrap_sec{margin-top: 16px;}
+.bottom .select_wrap ul{padding: 0 0 16px 0; min-width: 960px;}
+.bottom .select_wrap ul li{width: 160px;height: 160px;margin-left: 24px;border-radius: 4px; background-color: #b7bacf; position: relative; float: left;}
+.bottom .select_wrap ul li:first-child{margin-left: 0;}
+.bottom .select_wrap ul li img{width: auto; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.select_wrap ul li .mask {width: 160px; height: 80px; border-radius: 4px; background-image: linear-gradient(to bottom, rgba(183, 186, 207, 0), #00073e); position: absolute; bottom: 0; left: 0; z-index: 50;}
+.select_wrap ul li .box_txt{position: absolute; bottom: 16px; left: 0; right: 0; font-size: 14px; font-weight: 800; font-stretch: normal; font-style: normal; line-height: 1.71; letter-spacing: -0.28px; text-align: center;  color: #ffffff; z-index: 51;}
+.bottom .select_wrap ul li a{position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: 55;}
+.bottom .select_wrap ul li .select_bg{position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-color: rgba(255,255,255,0.6); display: none;}
+.bottom .select_wrap ul li.active .select_bg{display: block;}
+
+
+.swiper-slide {text-align: center; font-size: 18px; background: #fff;
+ display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center;}
+.swiper-container-horizontal > .swiper-scrollbar {position: absolute;
+left: 0; bottom: 0; z-index: 50; width: 100%; height: 8px; border-radius: 0; background-color: #eff1f7;}
+.swiper-scrollbar-drag {border-radius: 4px; background-color: #c3c6dc;}
+
+
+
+
+/*load*/
+.file-upload {width: 960px; height: 540px; margin: 0 auto; position: relative; z-index: 49;}
+.file-upload-btn {position: absolute; right: 50px; bottom: 50px; width: 48px; height: 48px; margin: 0; background: rgba(255, 255, 255, 0.76) url(../img/ico_uploasd.svg) center no-repeat; background-size: 48px 48px; border: none; padding: 10px;
+border-radius: 24px; transition: all .2s ease; outline: none; text-transform: uppercase; cursor: pointer; z-index: 50;}
+.file-upload-btn:hover {background: #fff url(../img/ico_uploasd.svg) center no-repeat; background-size: 48px 48px; transition: all .2s ease; cursor: pointer;}
+.file-upload-btn:active {border: 0; transition: all .2s ease;}
+.file-select-btn{width: 180px; height: 48px; border-radius: 24px; box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1); background-color: rgba(107, 117, 202, 0.7);letter-spacing: normal; text-align: center; color: #fff; font-size: 14px; font-weight: 400; position: absolute; bottom: 50px; left: 50%; transform: translateX(-50%); z-index: 50; transition: all .2s ease;}
+.file-select-btn:hover{background-color: #6b75ca; transition: all .2s ease;}
+.file-upload-content {display: none;text-align: center;}
+.file-upload-input {position: absolute; margin: 0; padding: 0; width: 100%; height: 100%; outline: none; opacity: 0; cursor: pointer;}
+.image-upload-wrap {position: relative; height: 100%;width: 100%;}
+.image-dropping, .image-upload-wrap:hover {background-color: rgba(237, 237, 237, 0.18); z-index: 48;}
+/*.image-title-wrap {
+    padding: 0 15px 15px 15px;
+    color: #222;
+}*/
+.file-upload-image {max-height: 200px; max-width: 200px; margin: auto;
+padding: 20px;}
+.remove-image {width: 200px; margin: 0; color: #fff; background: #cd4535; border: none; padding: 10px; border-radius: 4px; border-bottom: 4px solid #b02818; transition: all .2s ease; outline: none; text-transform: uppercase;font-weight: 700;}
+.remove-image:hover {background: #c13b2a; color: #ffffff; transition: all .2s ease; cursor: pointer;}
+.remove-image:active {border: 0; transition: all .2s ease;}
+
+/*scroll-bar*/
+/*
+.select_wrap {scrollbar-3dLight-Color: #efefef; scrollbar-arrow: none; scrollbar-base-color: #efefef; scrollbar-Face-Color: #dfdfdf; scrollbar-Track-Color: #efefef; scrollbar-DarkShadow-Color: #efefef; scrollbar-Highlight-Color: #efefef; scrollbar-Shadow-Color: #efefef}
+
+.select_wrap::-webkit-scrollbar {width: 8px; height: 8px; border: 3px solid #fff; }
+.select_wrap::-webkit-scrollbar-button:start:decrement, .select_wrap::-webkit-scrollbar-button:end:increment {display: none;}
+.select_wrap::-webkit-scrollbar-track {background: #efefef; -webkit-border-radius: 10px; border-radius:10px; -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.2)}
+.select_wrap::-webkit-scrollbar-thumb {height: 50px; width: 50px; background: rgba(0,0,0,.2); -webkit-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.1)}
+
+*/
+
+
+    

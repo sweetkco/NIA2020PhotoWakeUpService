@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- addcode -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+  <!-- Search Engines -->
+  <meta name="description" content="Interactive 3D Web application made with Verge3D. Immerse yourself in amazing graphics experience offered by state-of-the WebGL and HTML5 technologies.">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Verge3D Web Interactive">
+  <meta name="twitter:description" content="Interactive 3D Web application made with Verge3D. Immerse yourself in amazing graphics experience offered by state-of-the WebGL and HTML5 technologies.">
+  <meta name="twitter:image:src" content="https://cdn.soft8soft.com/images/player_socials.jpg">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Verge3D Web Interactive">
+  <meta property="og:description" content="Interactive 3D Web application made with Verge3D. Immerse yourself in amazing graphics experience offered by state-of-the WebGL and HTML5 technologies.">
+  <meta property="og:image" content="https://cdn.soft8soft.com/images/player_socials.jpg">
+  <meta property="og:type" content="website">
+
+  <meta name="generator" content="Verge3D 3.3.0">
+
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+  <link rel="manifest" href="media/manifest.json">
+  <link rel="mask-icon" href="media/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+
+  <script src="v3d.js"></script>
+  <script src="sweetk.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="sweetk.css">
+
+
+
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+    <script src="script/jquery-3.5.1.min.js"></script>
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="script/load.js"></script>
+    <script src="script/common.js"></script>
+    
+</head>
+<body>
+    <div class="wrap">
+        <div class="contents">
+           <nav class="navi">
+               <div class="logo clearfix">
+                   <span class="logo_img">
+                       <img src="img/Logo.svg" alt="Photo Wake-up">
+                   </span>
+                   <span class="navi_txt">
+                       Photo Wake-up
+                   </span>
+                   <a href="#" title="메뉴창 열기"></a>
+               </div>
+               <div class="login clearfix">
+                   <span class="login_img">
+                   </span>
+                   <span class="navi_txt">
+                       Sign in
+                   </span>
+                   <a href="#" title="로그인"></a>
+               </div>
+           </nav>
+            <div class="container">
+                <div class="top clearfix">
+                  <div class="flot_wrap">
+                      <div class="txt_wrap">
+                          <h2>Photo Wake-up</h2>
+                          <h3>원하는<br>동작과 배경을<br>선택해주세요.</h3>
+                          <p>
+                              상세 설명 및 사용법에 대한 설명은 여기에 써주세요.길게 쓰면 이렇게 보입니다. 길게 쓰면 이렇게 보입니다. 길게 쓰면 이렇게 보입니다. 길게 쓰면 이렇게 보입니다. 여러줄을 쓰면 이렇게 보입니다. 여러줄을 쓰면 이렇게 보입니다. 상세 설명 및 사용법에 대한 설명은 여기에 써주세요.길게 쓰면 이렇게 보입니다. 길게 쓰면 이렇게 보입니다. 길게 쓰면 이렇게 보입니다. 길게 쓰면 이렇게 보입니다. 여러줄을 쓰면 이렇게 보입니다. 여러줄을 쓰면 이렇게 보입니다.
+                          </p>
+                      </div>
+                      <div class="load_wrap" >
+                          <div id="back" class="file-upload" style="background: url(img/MOV.png) center no-repeat;">
+                             <form method="POST" enctype="multipart/form-data" action="uploadFile" id="sendFileForm">
+                              <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )"></button>
+                              
+                                  
+                              <div class="image-upload-wrap">
+                                  <input class="file-upload-input" type='file' name="files" onchange="fire_ajax_submit();" accept="image/*" />
+                                  
+                              </div>
+                            </form>
+                              <div id="v3d-container" style="background-image: url(img/Back_01.png);">
+
+    								<div id="fullscreen_button" class="fullscreen-button fullscreen-open" title="Toggle fullscreen mode" >
+    								</div>
+  							  </div>
+                              <!-- <div class="file-upload-content">
+                                  <img class="file-upload-image" src="#" alt="your image" />
+                                  <div class="image-title-wrap">
+                                      <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+                                  </div>
+                              </div> -->
+                          </div>
+                          <div class="detail">
+                                <span class="tl">
+                                </span>
+                                <span class="bl">
+                                </span>
+                                <span class="br">
+                                </span>
+                            </div>
+                      </div>
+                      <!--//load_wrap-->
+                  </div>
+                </div>
+                <!--//top-->
+                <div class="bottom clearfix">
+                   
+                   <div class="line clearfix">
+                       <!--<div class="select_txt">
+                           <div class="select_tit">
+                               동작선택
+                           </div>
+                           <button class="select_btn" type="button" onclick="">동작선택</button>
+                       </div>-->
+                       <div class="select_wrap select_wrap_fir swiper-container">
+                           <ul class="select_motion swiper-wrapper clearfix">
+                               <li id="anim01" class="swiper-slide">
+                                   <img src="img/illu_greeting.svg" alt="손흔들기">
+                                   <span class="mask"></span>
+                                   <span class="box_txt">손흔들기</span>
+                                   <a href="#" title="손흔들기"></a>
+                                   <div class="select_bg"></div>
+                               </li>
+                               <li id="anim02" class="swiper-slide">
+                                   <img src="img/illu_teak.svg" alt="정권찌르기">
+                                   <span class="mask"></span>
+                                   <span class="box_txt">정권찌르기</span>
+                                   <a href="#" title="정권찌르기"></a>
+                                   <div class="select_bg"></div>
+                               </li>
+                               <li id="anim03" class="swiper-slide">
+                                   <img src="img/illu_super.svg" alt="슈퍼맨">
+                                   <span class="mask"></span>
+                                   <span class="box_txt">슈퍼맨</span>
+                                   <a href="#" title="슈퍼맨"></a>
+                                   <div class="select_bg"></div>
+                               </li>
+                               <li id="anim04" class="swiper-slide">
+                                   <img src="img/illu_break.svg" alt="브레이크댄스">
+                                   <span class="mask"></span>
+                                   <span class="box_txt">브레이크댄스</span>
+                                   <a href="#" title="브레이크댄스"></a>
+                                   <div class="select_bg"></div>
+                               </li>
+                               <li id="anim05" class="swiper-slide">
+                                   <img src="img/illu_dance.svg" alt="탱고댄스">
+                                   <span class="mask"></span>
+                                   <span class="box_txt">탱고댄스</span>
+                                   <a href="#" title="탱고댄스"></a>
+                                   <div class="select_bg"></div>
+                               </li>
+                               <li id="anim06" class="swiper-slide">
+                                   <img src="img/illu_greeting.svg" alt="손흔들기">
+                                   <span class="mask"></span>
+                                   <span class="box_txt">손흔들기</span>
+                                   <a href="#" title="손흔들기"></a>
+                                   <div class="select_bg"></div>
+                               </li>
+                               <li id="anim07" class="swiper-slide">
+                                   <img src="img/illu_greeting.svg" alt="손흔들기">
+                                   <span class="mask"></span>
+                                   <span class="box_txt">손흔들기</span>
+                                   <a href="#" title="손흔들기"></a>
+                                   <div class="select_bg"></div>
+                               </li>
+                               <li id="anim08" class="swiper-slide">
+                                   <img src="img/illu_greeting.svg" alt="손흔들기">
+                                   <span class="mask"></span>
+                                   <span class="box_txt">손흔들기</span>
+                                   <a href="#" title="손흔들기"></a>
+                                   <div class="select_bg"></div>
+                               </li>
+                           </ul>
+                           <div class="swiper-scrollbar"></div>
+                       </div>
+                       <!--//select_wrap-->
+                   </div><!--//line-->
+                    
+                    <div class="line">
+                       <!--<div class="select_txt">
+                           <div class="select_tit">
+                               배경선택
+                           </div>
+                           <button class="select_btn" type="button" onclick="">배경선택</button>
+                       </div>-->
+                        <div class="select_wrap select_wrap_sec swiper-container">
+                            <ul class="select_bg swiper-wrapper clearfix">
+                                <li id="back01" class="swiper-slide">
+                                    <img src="img/background1.png" alt="배경1">
+                                   <a href="#" title="배경1"></a>
+                                   <div class="select_bg"></div>
+                                </li>
+                                <li id="back02" class="swiper-slide">
+                                    <img src="img/background2.png" alt="배경2">
+                                   <a href="#" title="배경2"></a>
+                                   <div class="select_bg"></div>
+                                </li>
+                                <li id="back03" class="swiper-slide">
+                                    <img src="img/background3.png" alt="배경3">
+                                   <a href="#" title="배경3"></a>
+                                   <div class="select_bg"></div>
+                                </li>
+                                <li id="back04" class="swiper-slide">
+                                    <img src="img/background4.png" alt="배경4">
+                                   <a href="#" title="배경4"></a>
+                                   <div class="select_bg"></div>
+                                </li>
+                                <li id="back05" class="swiper-slide">
+                                    <img src="img/background5.png" alt="배경1">
+                                   <a href="#" title="배경1"></a>
+                                   <div class="select_bg"></div>
+                                </li>
+                                <li id="back06" class="swiper-slide">
+                                    <img src="img/background6.png" alt="배경2">
+                                   <a href="#" title="배경2"></a>
+                                   <div class="select_bg"></div>
+                                </li>
+                                <!-- <li id="back07" class="swiper-slide">
+                                    <img src="img/background6.png" alt="배경3">
+                                   <a href="#" title="배경3"></a>
+                                   <div class="select_bg"></div>
+                                </li> -->
+                            </ul>
+                            <div class="swiper-scrollbar"></div>
+                        </div><!--//select_wrap-->
+                    </div>
+                    <!--//line-->
+                </div>
+                <!--//bottom-->
+            </div>
+        </div>
+    </div>
+    <script src="script/swiper.min.js"></script>
+    <script>
+        var swiper1 = new Swiper('.select_wrap_fir', {
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+            freeMode: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                draggable: true,
+            },
+        });
+        
+        var swiper2 = new Swiper('.select_wrap_sec', {
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+            freeMode: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                draggable: true,
+            },
+        });
+    </script>
+</body>
+</html>

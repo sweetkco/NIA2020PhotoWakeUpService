@@ -1,0 +1,27 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="725" scrolly="431" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="712" scrolly="439" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="Xde}hI[t8#[*$:Y%{4Px" x="-650" y="-50">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="mL-Nzftn1wN}jD%Bl[J%">
+          <field name="TEXT">hand_shake</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="playAnimationAdv" id="`SVJfKz2(KG?$;dZFDPm">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
+          <field name="REVERSED">FALSE</field>
+          <field name="LOOP">AUTO</field>
+          <value name="VALUE">
+            <block type="animationList" id="Ij{Y5MfSTi@AshxH`_[;">
+              <field name="FIELDNAME">Cube</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="954" viewport-y="28" viewport-w="648" viewport-h="469" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

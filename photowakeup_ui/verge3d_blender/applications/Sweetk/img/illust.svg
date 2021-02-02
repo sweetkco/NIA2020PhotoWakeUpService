@@ -1,0 +1,380 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="689.436" height="404.88" viewBox="0 0 689.436 404.88">
+    <defs>
+        <filter id="패스_1" width="12.098" height="99.098" x="489.497" y="89.502" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur" stdDeviation="1"/>
+            <feFlood flood-color="#00073e" flood-opacity=".302"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="패스_3" width="62.191" height="126.243" x="440.306" y="179.391" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur-2" stdDeviation="1"/>
+            <feFlood flood-color="#00073e" flood-opacity=".302"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="패스_2" width="91.345" height="46.2" x="460.281" y="122.514" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur-3" stdDeviation="1"/>
+            <feFlood flood-color="#00073e" flood-opacity=".302"/>
+            <feComposite in2="blur-3" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="타원_3" width="10" height="10" x="542.997" y="136.1" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur-4" stdDeviation="1"/>
+            <feFlood flood-color="#00073e" flood-opacity=".302"/>
+            <feComposite in2="blur-4" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="타원_7" width="10" height="10" x="492.997" y="88.1" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur-5" stdDeviation="1"/>
+            <feFlood flood-color="#00073e" flood-opacity=".302"/>
+            <feComposite in2="blur-5" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="타원_8" width="10" height="10" x="468.997" y="128.1" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur-6" stdDeviation="1"/>
+            <feFlood flood-color="#00073e" flood-opacity=".302"/>
+            <feComposite in2="blur-6" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="타원_9" width="10" height="10" x="498.997" y="121.1" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur-7" stdDeviation="1"/>
+            <feFlood flood-color="#00073e" flood-opacity=".302"/>
+            <feComposite in2="blur-7" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="타원_10" width="10" height="10" x="508.997" y="147.1" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur-8" stdDeviation="1"/>
+            <feFlood flood-color="#00073e" flood-opacity=".302"/>
+            <feComposite in2="blur-8" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="타원_11" width="10" height="10" x="491.997" y="155.1" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur-9" stdDeviation="1"/>
+            <feFlood flood-color="#00073e" flood-opacity=".302"/>
+            <feComposite in2="blur-9" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="타원_12" width="10" height="10" x="458.997" y="160.1" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur-10" stdDeviation="1"/>
+            <feFlood flood-color="#00073e" flood-opacity=".302"/>
+            <feComposite in2="blur-10" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="타원_13" width="10" height="10" x="487.997" y="109.1" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur-11" stdDeviation="1"/>
+            <feFlood flood-color="#00073e" flood-opacity=".302"/>
+            <feComposite in2="blur-11" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="타원_14" width="10" height="10" x="493.997" y="178.1" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur-12" stdDeviation="1"/>
+            <feFlood flood-color="#00073e" flood-opacity=".302"/>
+            <feComposite in2="blur-12" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="타원_15" width="10" height="10" x="479.997" y="183.1" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur-13" stdDeviation="1"/>
+            <feFlood flood-color="#00073e" flood-opacity=".302"/>
+            <feComposite in2="blur-13" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="타원_16" width="10" height="10" x="438.997" y="282.1" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur-14" stdDeviation="1"/>
+            <feFlood flood-color="#00073e" flood-opacity=".302"/>
+            <feComposite in2="blur-14" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="타원_17" width="10" height="10" x="474.997" y="226.1" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur-15" stdDeviation="1"/>
+            <feFlood flood-color="#00073e" flood-opacity=".302"/>
+            <feComposite in2="blur-15" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="타원_18" width="10" height="10" x="493.997" y="226.1" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur-16" stdDeviation="1"/>
+            <feFlood flood-color="#00073e" flood-opacity=".302"/>
+            <feComposite in2="blur-16" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="타원_19" width="10" height="10" x="488.997" y="297.1" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur-17" stdDeviation="1"/>
+            <feFlood flood-color="#00073e" flood-opacity=".302"/>
+            <feComposite in2="blur-17" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <linearGradient id="linear-gradient" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ffc982"/>
+            <stop offset="1" stop-color="#ff8532"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-3" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#33caba"/>
+            <stop offset="1" stop-color="#2baa5d"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-11" x1=".959" x2="-.17" y1=".06" y2="1.176" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#f44b69"/>
+            <stop offset="1" stop-color="#ffa59d"/>
+        </linearGradient>
+        <radialGradient id="radial-gradient" cx=".86" cy=".072" r="1.14" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#2da164"/>
+            <stop offset="1" stop-color="#1e864e"/>
+        </radialGradient>
+        <radialGradient id="radial-gradient-2" cx=".14" cy=".072" r="1.14" gradientTransform="matrix(-1 0 0 1 .28 0)" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#1e1c37"/>
+            <stop offset="1" stop-color="#26243f"/>
+        </radialGradient>
+        <style>
+            .cls-2{fill:url(#linear-gradient)}.cls-16,.cls-20,.cls-23,.cls-3,.cls-7{fill:none}.cls-23,.cls-3{stroke:#fff}.cls-16,.cls-23,.cls-3{stroke-linecap:round}.cls-16,.cls-20,.cls-3,.cls-7{stroke-miterlimit:10}.cls-3{stroke-width:1.6px}.cls-5{fill:url(#radial-gradient-2)}.cls-6{fill:url(#linear-gradient-3)}.cls-7{stroke:#3f312d;stroke-width:.507px}.cls-8{fill:#ecaca1}.cls-9{fill:#f44b69}.cls-10,.cls-22{fill:#fff}.cls-11{fill:#7a39fa}.cls-20{stroke-width:.5px}.cls-13{fill:#eaeaea}.cls-15{fill:#03041f}.cls-16{stroke:#1d0a05;stroke-linejoin:round;stroke-width:.604px}.cls-17{fill:#e3e0e0}.cls-18{fill:url(#linear-gradient-11)}.cls-19{fill:#edac9f}.cls-20{stroke:#dd3d5a}.cls-22{opacity:.5}
+        </style>
+    </defs>
+    <g id="illust" transform="translate(392.997 149.1)">
+        <g id="그룹_33">
+            <path id="Path_5_Copy" fill="#2f2d45" d="M67.214 23.458s-7.443 5.8-16.125 3.633c-4.207-1.052-7.441 6.068-15.462 6.068s-12.12-7.121-16.027-6.068c-7.582 2.044-22.455-.381-18.158-13.2S22.1 9.485 22.1 9.485s9.361-14.748 16.788-6.536C44.719 9.4 44.142-.718 52.855 1.7c5.215 1.449 2.453 6.019 9.288 7.781 13.757 3.55 5.071 13.977 5.071 13.977z" transform="translate(-126.676 -99)"/>
+            <g id="Group_Copy" transform="translate(-175.33 -2.243)">
+                <path id="Path" d="M-16 43.429a1.264 1.264 0 0 0-.277-.366c-5.917-7.68-4.068-18.926-3.513-21.394 0-.183.092-.274.092-.457v-.092a19.774 19.774 0 0 0 .277-3.291A17.952 17.952 0 0 0-37.452 0a17.952 17.952 0 0 0-18.027 17.829 13.319 13.319 0 0 0 .37 3.291v.091c0 .183.092.274.092.457.555 2.56 2.311 13.806-3.513 21.394-.092.091-.092.183-.185.274v.091a25.316 25.316 0 0 0-4.253 14.08 25.466 25.466 0 0 0 25.609 25.327 25.466 25.466 0 0 0 25.608-25.325A23.932 23.932 0 0 0-16 43.429z" class="cls-2" transform="translate(62.968)"/>
+                <g id="Group" transform="translate(12.388 20.571)">
+                    <path id="Path-2" d="M-.941 0v127.545" class="cls-3" transform="translate(14.624)"/>
+                    <path id="Path-3" d="M-16.82 0l13.682 21.394" class="cls-3" transform="translate(16.82 26.057)"/>
+                    <path id="Path-4" d="M-2.1 0l-9.152 11.886" class="cls-3" transform="translate(24.934 12.16)"/>
+                </g>
+            </g>
+            <g id="Group-2" transform="translate(-5.545 15.159)">
+                <path id="Path-5" fill="url(#radial-gradient)" d="M-18.26 41.522a1.208 1.208 0 0 0-.264-.35c-5.632-7.343-3.872-18.095-3.344-20.455 0-.175.088-.262.088-.437v-.087a18.986 18.986 0 0 0 .264-3.147A17.126 17.126 0 0 0-38.678 0a17.126 17.126 0 0 0-17.161 17.046 12.787 12.787 0 0 0 .352 3.147v.087c0 .175.088.262.088.437.528 2.448 2.2 13.2-3.344 20.455-.088.087-.088.175-.176.262v.087a24.28 24.28 0 0 0-4.048 13.462A24.294 24.294 0 0 0-38.59 79.2a24.294 24.294 0 0 0 24.378-24.216 22.951 22.951 0 0 0-4.048-13.462z" transform="translate(62.968)"/>
+                <g id="Group-3" transform="translate(11.793 19.668)">
+                    <path id="Path-6" d="M-.941 0v81.119" class="cls-3" transform="translate(13.966)"/>
+                    <path id="Path-7" d="M-16.82 0L-3.8 20.455" class="cls-3" transform="translate(16.82 24.913)"/>
+                    <path id="Path-8" d="M-2.539 0l-8.713 11.364" class="cls-3" transform="translate(24.277 11.626)"/>
+                </g>
+            </g>
+            <path id="Path-9" d="M251.219-6.3C44.645-1.589-27.663 191.394-27.663 191.394h563.42S457.793-11.019 251.219-6.3z" class="cls-5" transform="translate(-365.333 64.385)"/>
+            <g id="Group_Copy-2" transform="translate(-60.545 -26)">
+                <path id="Path-10" d="M7.383 65.055a1.893 1.893 0 0 0-.415-.548C-1.9 53 .874 36.157 1.7 32.459c0-.274.138-.411.138-.685v-.137a29.62 29.62 0 0 0 .415-4.93A26.891 26.891 0 0 0-24.746 0a26.892 26.892 0 0 0-27 26.707 19.951 19.951 0 0 0 .554 4.93v.137c0 .274.138.411.138.685.831 3.835 3.462 20.681-5.262 32.048-.138.137-.138.274-.277.411v.137a37.923 37.923 0 0 0-6.37 21.091 38.147 38.147 0 0 0 38.36 37.937 38.147 38.147 0 0 0 38.36-37.937 35.849 35.849 0 0 0-6.374-21.091z" class="cls-2" transform="translate(62.968)"/>
+                <g id="Group-4" transform="translate(18.557 30.815)">
+                    <path id="Path-11" d="M-.941 0v191.058" class="cls-3" transform="translate(21.437)"/>
+                    <path id="Path-12" d="M-16.82 0l20.5 32.048" class="cls-3" transform="translate(16.82 39.033)"/>
+                    <path id="Path-13" d="M2.459 0l-13.71 17.8" class="cls-3" transform="translate(31.747 18.215)"/>
+                </g>
+            </g>
+            <path id="Path-14" d="M174.167-6.333c-149.5 3-201.83 125.779-201.83 125.779h407.754S323.667-9.333 174.167-6.333z" class="cls-5" transform="translate(-129.667 136.333)"/>
+        </g>
+        <g id="Group-5" transform="translate(1.599 -127.5)">
+            <g id="Group-6" transform="translate(150.001 197.7)">
+                <path id="Path-15" d="M4.176 10.8a2.854 2.854 0 0 1-1.3 0c-1.2-.3-3.3-1.1-2.8-4 .7-3.9 10.5-4.2 14.2-6.8.1 0-2.3 8.9-10.1 10.8z" class="cls-6" transform="translate(3.724)"/>
+                <path id="Path-16" d="M0 5.3A17.172 17.172 0 0 0 9.6 0" class="cls-7" transform="translate(0 6.5)"/>
+            </g>
+            <g id="Group-7" transform="translate(10 20)">
+                <path id="Path-17" d="M12.5 7.8a2.768 2.768 0 0 1 .3 1.3 3.229 3.229 0 0 1-3.3 3.5C5.6 12.7 3.4 3.1 0 0c-.1 0 9.1.6 12.5 7.8z" class="cls-6"/>
+                <path id="Path-18" d="M7.1 8.3A16.933 16.933 0 0 0 0 0" class="cls-7" transform="translate(7.901 7.1)"/>
+            </g>
+            <g id="Group-8" transform="translate(279.601 203.691)">
+                <path id="Path-19" d="M12.5 7.809a2.768 2.768 0 0 1 .3 1.3 3.229 3.229 0 0 1-3.3 3.5c-3.9.1-6.1-9.5-9.5-12.6 0-.1 9.1.5 12.5 7.8z" class="cls-6"/>
+                <path id="Path-20" d="M7.1 8.3A16.933 16.933 0 0 0 0 0" class="cls-7" transform="translate(7.9 7.109)"/>
+            </g>
+            <g id="Group_16_Copy" transform="translate(260.801 55.7)">
+                <path id="Path-21" d="M4.1 10.3L3.6 3l4.5 4.1L13.5 0l-.8 8.9h6.1L13.5 14l2.5 3.2c-6.1.8-8.1-3.3-8.1-3.3S3.9 15.7 0 11z" class="cls-2"/>
+                <path id="Path-22" d="M0 7.7S5 8.4 7.8 0" class="cls-7" transform="translate(1.7 10.9)"/>
+            </g>
+            <g id="Group-9" transform="translate(196.301 172.4)">
+                <path id="Path-23" d="M4.1 10.3L3.6 3l4.5 4.1L13.5 0l-.8 8.9h6.1L13.5 14l2.5 3.2c-6.1.8-8.1-3.3-8.1-3.3S3.9 15.7 0 11z" class="cls-2"/>
+                <path id="Path-24" d="M0 7.7S5 8.4 7.8 0" class="cls-7" transform="translate(1.7 10.9)"/>
+            </g>
+            <g id="Group-10" transform="translate(-262.999 93.7)">
+                <path id="Path-25" d="M4.176 10.8a2.854 2.854 0 0 1-1.3 0c-1.2-.3-3.3-1.1-2.8-4 .7-3.9 10.5-4.2 14.2-6.8.1 0-2.3 8.9-10.1 10.8z" class="cls-6" transform="translate(3.724)"/>
+                <path id="Path-26" d="M0 5.3A17.172 17.172 0 0 0 9.6 0" class="cls-7" transform="translate(0 6.5)"/>
+            </g>
+            <g id="Group-11" transform="translate(-83.399 139.691)">
+                <path id="Path-27" d="M12.5 7.809a2.768 2.768 0 0 1 .3 1.3 3.229 3.229 0 0 1-3.3 3.5c-3.9.1-6.1-9.5-9.5-12.6 0-.1 9.1.5 12.5 7.8z" class="cls-6"/>
+                <path id="Path-28" d="M7.1 8.3A16.933 16.933 0 0 0 0 0" class="cls-7" transform="translate(7.9 7.109)"/>
+            </g>
+            <g id="Group-12" transform="translate(-186.699 -21.6)">
+                <path id="Path-29" d="M4.1 10.3L3.6 3l4.5 4.1L13.5 0l-.8 8.9h6.1L13.5 14l2.5 3.2c-6.1.8-8.1-3.3-8.1-3.3S3.9 15.7 0 11z" class="cls-2"/>
+                <path id="Path-30" d="M0 7.7S5 8.4 7.8 0" class="cls-7" transform="translate(1.7 10.9)"/>
+            </g>
+        </g>
+        <g id="girl" transform="translate(40.405 -79.998)">
+            <g id="Group_12" transform="translate(.181 .665)">
+                <g id="Group-13" transform="translate(.219 96.056)">
+                    <g id="Group-14" transform="translate(50.295)">
+                        <g id="Group-15" transform="translate(1.093 115.311)">
+                            <path id="Path-31" d="M9.075 18.923L11.371 0 1.312 1.66 0 21.579l9.622-2.1z" class="cls-8" transform="translate(3.717)"/>
+                            <g id="Group-16" transform="translate(0 14.386)">
+                                <path id="Path-32" d="M2.187 2.324S10.278 5.312 13.886 0L31.6 9.3 0 10.4z" class="cls-9"/>
+                                <path id="Path-33" d="M31.708 2.877L.109 4.095 0 1.217 31.6 0z" class="cls-10" transform="translate(0 9.296)"/>
+                            </g>
+                        </g>
+                        <path id="Path-34" d="M22.524 0s4.376 17.153 1.749 66.287l-3.936 56.328H0L5.795.885z" class="cls-11"/>
+                    </g>
+                    <g id="Group-17" transform="translate(0 5.312)">
+                        <g id="Group-18" transform="translate(0 97.605)">
+                            <path id="Path-35" d="M8.528 21.137L19.353 5.423 10.715 0 0 17.042l8.528 4.869z" class="cls-8" transform="translate(6.779)"/>
+                            <g id="Group-19" transform="translate(0 12.394)">
+                                <path id="Path-36" d="M6.888 0s4.155 7.746 10.387 6.086L24.492 24.9 0 4.648z" class="cls-9" transform="translate(1.859)"/>
+                                <path id="Path-37" d="M24.492 22.575L0 2.213 1.749 0l24.492 20.362z" class="cls-10" transform="translate(0 4.537)"/>
+                            </g>
+                        </g>
+                        <g id="Group-20" transform="translate(3.827)">
+                            <path id="Path-38" d="M12.574 0s-7 6.75-6.779 26.117S0 65.623 0 65.623l21.977 2.324S34.441 41.5 38.6 1.66z" class="cls-11" transform="translate(28.1)"/>
+                            <path id="Path-39" d="M33.129 0S7.544 26.449 0 45.261l20.118 10.4 29.74-43.6z" class="cls-11" transform="translate(0 55.996)"/>
+                            <path id="Path-40" fill="none" stroke="#b2acc7" stroke-miterlimit="10" stroke-width="0.5px" d="M0 48.8s4.811-3.873 7.326-14.5c2.405-10.618 6.123-28.767 6.123-28.767L17.822 0" transform="translate(48.327 21.69)"/>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-21" transform="translate(36.409)">
+                    <g id="Group-22">
+                        <ellipse id="Oval" cx="10.168" cy="10.292" class="cls-13" rx="10.168" ry="10.292"/>
+                        <ellipse id="Oval-2" cx="8.419" cy="8.521" class="cls-9" rx="8.419" ry="8.521" transform="translate(11.262 10.513)"/>
+                    </g>
+                    <path id="Path-41" d="M16.073 11.4l-4.265 13.057L0 19.587 6.56 0z" class="cls-8" transform="translate(15.963 29.658)"/>
+                    <path id="Path-42" fill="#ed9083" d="M2.187 8.189C2.3 7.968 0 0 0 0l4.92 2.213z" transform="translate(27.334 40.503)"/>
+                    <path id="Path-43" d="M15.944.238s6.123 1 6.451 8.853c0 0 .219 5.644.328 13.833a6.667 6.667 0 0 1-7.872 6.861 19.429 19.429 0 0 1-7.872-3.652l-3.5-3.32C-4.83 13.407 2.823-1.533 15.069.127a2.687 2.687 0 0 1 .875.111z" class="cls-8" transform="translate(19.7 13.706)"/>
+                    <path id="Path-44" d="M0 0l2.952 3.1c.547.443.437 1.549-.109 1.549L.109 4.98V0z" class="cls-8" transform="translate(41.002 29.99)"/>
+                    <g id="Group-23" transform="translate(37.477 24.838)">
+                        <path id="Path-45" d="M1.994.061s2.078-.332 2.187.553c0 0 .109.664-1.64.885S.245 1.61.026 1.057 1.01.172 1.994.061z" class="cls-15"/>
+                        <path id="Oval-3" d="M.877 1.77A.875.875 0 0 0 1.75.887.885.885 0 0 0 .873 0 .875.875 0 0 0 0 .883a.885.885 0 0 0 .877.887z" class="cls-15" transform="rotate(-169.252 1.9 3.037)"/>
+                        <path id="Path-46" d="M2.405.759A1.825 1.825 0 0 1 0 .095" class="cls-16" transform="translate(1.586 11.354)"/>
+                    </g>
+                    <path id="Path-47" d="M14.7 17.413S11.092-1.511 27.274 6.125c0 0-6.232-10.4-20.446-4.095a13.083 13.083 0 0 0-6.67 8.19c-.875 5.2 1.968 9.738 6.56 17.927l5.467-6.418c.215-1.107 2.515-4.316 2.515-4.316z" class="cls-13" transform="translate(12.744 10.474)"/>
+                    <path id="Path-48" d="M.2 9.453l3.28 7.857C24.142 10.781 14.739.932 14.739.932S-1.99-4.158.2 9.453z" class="cls-13" transform="translate(21.998 12.901)"/>
+                    <path id="Path-49" d="M6.969 1.617L2.843 5.423 0 0z" class="cls-17" transform="translate(26.132 25.342)"/>
+                    <path id="Path-50" d="M1.171 2.478S8.278 3.7 9.262 8.675c0 0 1.2-5.423-5.467-7.857-6.56-2.545-2.624 1.66-2.624 1.66z" class="cls-17" transform="translate(32.614 12.351)"/>
+                    <g id="Group-24" transform="translate(21.43 25.342)">
+                        <ellipse id="Oval-4" cx="4.045" cy="4.095" class="cls-8" rx="4.045" ry="4.095"/>
+                        <path id="Path-51" d="M2.624 2.778S2.843-.21 0 .012" class="cls-16" transform="translate(2.733 2.866)"/>
+                    </g>
+                </g>
+                <g id="Group-25" transform="translate(0 40.97)">
+                    <path id="Path-52" d="M19.046 0c.2.16-16.5 10.377-19.018 42.138a6.958 6.958 0 0 0 6.014 7.525c3.5.553 7.982-1.66 8.966-5.091l10.933-32.645z" class="cls-18" transform="translate(22.933 12.616)"/>
+                    <g id="Group-26" transform="translate(58.434 10.816)">
+                        <path id="Path-53" d="M16.244 5.095l11.918 23.46a7.943 7.943 0 0 1-3.389 10.07 7.678 7.678 0 0 1-10.387-3.209L1.046 12.73A8.594 8.594 0 0 1 3.123 2a8.394 8.394 0 0 1 13.121 3.095z" class="cls-18"/>
+                        <g id="Group-27" transform="translate(14.445 9.629)">
+                            <g id="Group-28" transform="translate(22.135)">
+                                <ellipse id="Oval-5" cx="7.326" cy="7.414" class="cls-8" rx="7.326" ry="7.414" transform="translate(14.433 1.663)"/>
+                                <path id="Path-54" d="M8.812 1.884S8.484-1.1 4.986.446c-2.952 1.328-7.107 5.976-3.717 12.5z" class="cls-8" transform="translate(14.367)"/>
+                                <path id="Path-55" d="M0 4.205L16.182 0l3.608 9.738-17.385 4.98z" class="cls-19" transform="translate(0 6.421)"/>
+                            </g>
+                            <path id="Path-56" d="M4.86 10.07L34.053 0 36.9 13.833 9.89 23.461a7.064 7.064 0 0 1-9.731-5.312A6.95 6.95 0 0 1 4.86 10.07z" class="cls-18" transform="translate(0 5.979)"/>
+                        </g>
+                        <path id="Path-57" d="M.109 5.815L0 3.38 3.936.282a1.465 1.465 0 0 1 1.859.11c.328.332.547.885-.109 1.66L.437 6.147" class="cls-8" transform="translate(53.856 8.133)"/>
+                    </g>
+                    <g id="Group-29" transform="translate(38.687 9.93)">
+                        <path id="Path-58" d="M31.727 4.1a36.045 36.045 0 0 1 6.451 20.03v.77c-.219 2.1.437 17.927.765 26.117.109 2.1-.984 6.2-2.733 7.193-3.717 2.1-19.79 3.984-33.129.221A3.664 3.664 0 0 1 .675 53.9C2.1 48.918 7.126 37.077 3.627 27.671-4.792 5.206 3.3 1.112 9.2 0c.765-.111 3.608 1.66 4.374 1.66l14 .221A4.72 4.72 0 0 1 31.727 4.1z" class="cls-18"/>
+                        <path id="Path-59" d="M0 0s4.7 4.427 4.045 16.931c0 0 .328 5.976.328 12.616" class="cls-20" transform="translate(34.023 10.407)"/>
+                    </g>
+                    <g id="Group-30">
+                        <g id="Group-31" transform="translate(0 5.287)">
+                            <path id="Path-60" d="M52.373 0s-5.358 17.6-23.289 19.7C12.246 21.69 14 16.71 0 18.259c0 0 2.187 4.759 10.278 12.726 4.483 4.316 4.264 7.525 4.264 7.525s26.35 1 36.738-12.726c7.435-9.738 9.184-22.243 9.184-22.243z" class="cls-11" transform="translate(3.061)"/>
+                            <g id="Group-32" transform="translate(0 20.251)">
+                                <path id="Path-61" d="M.547 2.435C.328 2.435 0 2.213 0 1.992a.607.607 0 0 1 .437-.664L8.747 0A.6.6 0 0 1 9.4.443a.607.607 0 0 1-.437.664L.547 2.435z" class="cls-9"/>
+                                <path id="Path-62" d="M.547 2.463C.328 2.463 0 2.242 0 2.021a.607.607 0 0 1 .437-.664L8.747.029c.328-.111.547.111.656.443a.607.607 0 0 1-.437.664L.547 2.463z" class="cls-9" transform="translate(3.061 3.955)"/>
+                                <path id="Path-63" d="M.547 2.435C.328 2.435 0 2.213 0 1.992a.607.607 0 0 1 .437-.664L8.747 0A.6.6 0 0 1 9.4.443a.607.607 0 0 1-.437.664L.547 2.435z" class="cls-9" transform="translate(6.998 8.3)"/>
+                                <path id="Path-64" d="M.547 2.463C.328 2.463 0 2.242 0 2.021a.607.607 0 0 1 .437-.664L8.747.029c.328-.111.547.111.656.443a.607.607 0 0 1-.437.664L.547 2.463z" class="cls-9" transform="translate(10.715 13.361)"/>
+                            </g>
+                        </g>
+                        <path id="Path-65" fill="#6822f2" d="M22.747 3.185c-3.39.664-11.59 1.77-17.494-2.878A1.146 1.146 0 0 0 3.394.75l-3.28 8.3a1.218 1.218 0 0 0 .219 1.328C2.41 12.812 10.938 21.555 23.4 11.816a1.011 1.011 0 0 0 .437-.885l.328-6.418a1.3 1.3 0 0 0-1.418-1.328z" transform="translate(47.558)"/>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-33" transform="translate(30.577 83.131)">
+                <g id="Group-34" transform="translate(19.681)">
+                    <g id="Group-35" transform="translate(7.544)">
+                        <ellipse id="Oval-6" cx="6.56" cy="6.64" class="cls-8" rx="6.56" ry="6.64" transform="translate(0 .752)"/>
+                        <path id="Path-66" d="M11.918 5.621s2.182-1.991-.547-3.983S3.936-1.461 0 3.962z" class="cls-8" transform="translate(.875)"/>
+                    </g>
+                    <path id="Path-67" d="M10.5 0L0 2.213l2.3 8.521 9.4-2.656z" class="cls-19" transform="translate(0 3.851)"/>
+                </g>
+                <path id="Path-68" d="M7.216 2.988C7.872 2.767 25.148 0 25.148 0L26.9 12.284 0 16.931z" class="cls-18" transform="translate(0 3.962)"/>
+                <path id="Path-69" d="M0 3.431L21.54 0" class="cls-20" transform="translate(3.608 3.962)"/>
+                <path id="Path-70" d="M0 5.644l16.729-2.656L16.4 0" class="cls-20" transform="translate(10.059 13.257)"/>
+            </g>
+        </g>
+        <g id="dot_line" transform="translate(-428 -649)">
+            <g id="그룹_3">
+                <circle id="타원_3-2" cx="4" cy="4" r="4" class="cls-22" transform="translate(579 637)"/>
+                <circle id="타원_7-2" cx="4" cy="4" r="4" class="cls-22" transform="translate(529 589)"/>
+                <circle id="타원_8-2" cx="4" cy="4" r="4" class="cls-22" transform="translate(505 629)"/>
+                <circle id="타원_9-2" cx="4" cy="4" r="4" class="cls-22" transform="translate(535 622)"/>
+                <circle id="타원_10-2" cx="4" cy="4" r="4" class="cls-22" transform="translate(545 648)"/>
+                <circle id="타원_11-2" cx="4" cy="4" r="4" class="cls-22" transform="translate(528 656)"/>
+                <circle id="타원_12-2" cx="4" cy="4" r="4" class="cls-22" transform="translate(495 661)"/>
+                <circle id="타원_13-2" cx="4" cy="4" r="4" class="cls-22" transform="translate(524 610)"/>
+                <circle id="타원_14-2" cx="4" cy="4" r="4" class="cls-22" transform="translate(530 679)"/>
+                <circle id="타원_15-2" cx="4" cy="4" r="4" class="cls-22" transform="translate(516 684)"/>
+                <circle id="타원_16-2" cx="4" cy="4" r="4" class="cls-22" transform="translate(475 783)"/>
+                <circle id="타원_17-2" cx="4" cy="4" r="4" class="cls-22" transform="translate(511 727)"/>
+                <circle id="타원_18-2" cx="4" cy="4" r="4" class="cls-22" transform="translate(530 727)"/>
+                <circle id="타원_19-2" cx="4" cy="4" r="4" class="cls-22" transform="translate(525 798)"/>
+            </g>
+            <g id="그룹_1">
+                <g filter="url(#패스_1)" transform="translate(35 499.9)">
+                    <path id="패스_1-2" d="M108 443v-70l5-22" class="cls-23" transform="translate(385 -257.9)"/>
+                </g>
+                <g filter="url(#패스_3)" transform="translate(35 499.9)">
+                    <path id="패스_3-2" d="M529 802l5-71v-48l-14 5-5 43-36 56" class="cls-23" transform="translate(-35 -499.9)"/>
+                </g>
+                <g filter="url(#패스_2)" transform="translate(35 499.9)">
+                    <path id="패스_2-2" d="M112 418l-33 5 10-32 30-7 10 26 34-11" class="cls-23" transform="translate(385 -257.9)"/>
+                </g>
+            </g>
+            <g id="그룹_2">
+                <g filter="url(#타원_3)" transform="translate(35 499.9)">
+                    <circle id="타원_3-3" cx="2" cy="2" r="2" class="cls-10" transform="translate(546 139.1)"/>
+                </g>
+                <g filter="url(#타원_7)" transform="translate(35 499.9)">
+                    <circle id="타원_7-3" cx="2" cy="2" r="2" class="cls-10" transform="translate(496 91.1)"/>
+                </g>
+                <g filter="url(#타원_8)" transform="translate(35 499.9)">
+                    <circle id="타원_8-3" cx="2" cy="2" r="2" class="cls-10" transform="translate(472 131.1)"/>
+                </g>
+                <g filter="url(#타원_9)" transform="translate(35 499.9)">
+                    <circle id="타원_9-3" cx="2" cy="2" r="2" class="cls-10" transform="translate(502 124.1)"/>
+                </g>
+                <g filter="url(#타원_10)" transform="translate(35 499.9)">
+                    <circle id="타원_10-3" cx="2" cy="2" r="2" class="cls-10" transform="translate(512 150.1)"/>
+                </g>
+                <g filter="url(#타원_11)" transform="translate(35 499.9)">
+                    <circle id="타원_11-3" cx="2" cy="2" r="2" class="cls-10" transform="translate(495 158.1)"/>
+                </g>
+                <g filter="url(#타원_12)" transform="translate(35 499.9)">
+                    <circle id="타원_12-3" cx="2" cy="2" r="2" class="cls-10" transform="translate(462 163.1)"/>
+                </g>
+                <g filter="url(#타원_13)" transform="translate(35 499.9)">
+                    <circle id="타원_13-3" cx="2" cy="2" r="2" class="cls-10" transform="translate(491 112.1)"/>
+                </g>
+                <g filter="url(#타원_14)" transform="translate(35 499.9)">
+                    <circle id="타원_14-3" cx="2" cy="2" r="2" class="cls-10" transform="translate(497 181.1)"/>
+                </g>
+                <g filter="url(#타원_15)" transform="translate(35 499.9)">
+                    <circle id="타원_15-3" cx="2" cy="2" r="2" class="cls-10" transform="translate(483 186.1)"/>
+                </g>
+                <g filter="url(#타원_16)" transform="translate(35 499.9)">
+                    <circle id="타원_16-3" cx="2" cy="2" r="2" class="cls-10" transform="translate(442 285.1)"/>
+                </g>
+                <g filter="url(#타원_17)" transform="translate(35 499.9)">
+                    <circle id="타원_17-3" cx="2" cy="2" r="2" class="cls-10" transform="translate(478 229.1)"/>
+                </g>
+                <g filter="url(#타원_18)" transform="translate(35 499.9)">
+                    <circle id="타원_18-3" cx="2" cy="2" r="2" class="cls-10" transform="translate(497 229.1)"/>
+                </g>
+                <g filter="url(#타원_19)" transform="translate(35 499.9)">
+                    <circle id="타원_19-3" cx="2" cy="2" r="2" class="cls-10" transform="translate(492 300.1)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

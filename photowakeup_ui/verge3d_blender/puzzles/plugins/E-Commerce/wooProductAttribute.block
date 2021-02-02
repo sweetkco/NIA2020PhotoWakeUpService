@@ -1,0 +1,28 @@
+<script>
+function template(block) {
+    this.appendValueInput('NAME')
+    .setCheck('String')
+    .appendField('product attribute');
+
+    this.setInputsInline(true);
+    this.setOutput(true, 'String');
+    this.setColour('#d4af37');
+    this.setTooltip(`Get WooCommerce product attribute.`);
+    this.setHelpUrl('https://www.soft8soft.com/docs/manual/en/puzzles/ECommerce.html#woo_product_attribute');
+}
+
+function code(block) {
+    var name = Blockly.JavaScript.valueToCode(block, 'NAME',
+            Blockly.JavaScript.ORDER_NONE) || '\'\'';
+
+    var fun = Blockly.JavaScript.provideFunction_('wooProductAttribute', [`
+// wooProductAttribute puzzle
+function ${Blockly.JavaScript.FUNCTION_NAME_PLACEHOLDER_}(name) {
+    var attr = name.toLowerCase().replace(' ', '-');
+    return _pGlob.wooProductInfo.attributes[attr];
+}
+    `]);
+
+    return [`${fun}(${name})`, Blockly.JavaScript.ORDER_FUNCTION_CALL];
+}
+</script>

@@ -31,8 +31,6 @@ python manage.py migrate
 python manage.py runserver 0.0.0.0:{Port} --noreload
 ```
 
-```
-```
 ## Inputs
 - T포즈에 가까운 1024x1024 이상 사이즈의 고해상도 사람 이미지 앞 뒤(.jpeg)<br>
 > 완전히 T포즈의 이미지를 넣을 경우 3d mesh가 불완전하게 형성 될 수 있음.<br>
@@ -79,6 +77,12 @@ http://해당 윈도우 아이피:8668/applications/Sweetk/index.html
 hyeokmin_front.jpeg
 로 명명한 정면 이미지 사진을 업로드
 ```
+
+### 이밎 업로드 시 주의사항
+- T포즈에 가까운 1024x1024 이상 사이즈의 고해상도 사람 이미지 앞 뒤(.jpeg)<br>
+> 완전히 T포즈의 이미지를 넣을 경우 3d mesh가 불완전하게 형성 될 수 있음.<br>
+> 인물 주변에 옷가지들이 들어 있으면 안됨<br>
+> 배경은 깨끗할수록 좋음
 
 ## Citations
 ```

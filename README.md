@@ -9,9 +9,9 @@
 git https://github.com/sweetkco/NIA2020PhotoWakeUpService.git
 ```
 
-## Installation and running
+# Model Part (only Linux)
 
-### Model Part
+## Installation and running
 
 photowakeup 폴더 안에서
 
@@ -30,19 +30,7 @@ python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver 0.0.0.0:{Port} --noreload
 ```
-이미지 업로드
-```
-http://{ip}:{port}/input_images로 이미지 앞면과 뒷면을 각각 업로드
-이미지 이름과 형식은
-hyeokmin_front.jpeg
-로 해주세요.
-```
-산출물 다운로드
-```
-http://{ip}:{port}/photo_wake_up에 접속하면 산출물이 photowakeup.zip으로 다운 받아짐
-```
 
-추후 나머지 프로세스 업데이트 예정
 ```
 ```
 ## Inputs
@@ -55,6 +43,42 @@ http://{ip}:{port}/photo_wake_up에 접속하면 산출물이 photowakeup.zip으
 - 3D 인체 mesh(.obj)
 - 3d상의 24개 keypoints(.npy)
 - 512x512 사이즈의 사람이미지 앞 뒤(.png)
+
+# User Interface Part (only Windows)
+
+## Setting and running
+
+photowakeup_ui 폴더 안에서
+
+app.properties 수정 
+
+내용을 다음과 같이 해당 경로 수정
+```sh
+ai_upload_url=http://"ip_address from model part":19020/input_images/
+ai_download_url=http://"ip_address from model part:19020/photo_wake_up/
+ui_exec_path=C:\\your directory\\photowakeup_ui\\sweek_test_03.bat
+download_dir=C:\\your directory\\Desktop\\photowakeup_ui\\verge3d_blender
+```
+
+war 파일 실행
+
+커맨드 창에서
+```sh
+java -jar photowakeup-1.0.jar
+```
+실행
+
+웹페이지 접속
+```sh
+http://해당 윈도우 아이피:8668/applications/Sweetk/index.html
+```
+
+이미지 업로드
+```
+이미지 업로드 버튼을 누른후 
+hyeokmin_front.jpeg
+로 명명한 정면 이미지 사진을 업로드
+```
 
 ## Citations
 ```

@@ -1,6 +1,8 @@
+import argparse
 import os
 from hpe import get_rect
 from hpe.models.with_mobilenet import PoseEstimationWithMobileNet
+from hpe.modules.keypoints import extract_keypoints, group_keypoints
 from hpe.modules.load_state import load_state
 import torch
 from hpe.get_rect import get_rect
@@ -9,9 +11,16 @@ from pifuhd.apps.clean_mesh import meshcleaning
 from HMR.hmr import HMR
 from HMR.smpl import SMPL
 import numpy as np
+from pifuhd.lib.options import BaseOptions
 from image_proc import image_processing,blurring
 import cv2
 from segmentation import segmentation
+import trimesh
+
+class ToNameSpace(object):
+  def __init__(self, dict):
+    self.__dict__.update(dict)
+
 
 class Options(object):
     def __init__(self):
@@ -49,13 +58,8 @@ class Options(object):
                      'end_id': -1}
 
     def initialize(self):
-        dict = self.ToNameSpace(self.dict)
+        dict = ToNameSpace(self.dict)
         return dict
-
-    class ToNameSpace(object):
-        def __init__(self, dict):
-            self.__dict__.update(dict)
-
 
 config = Options().initialize()
 
@@ -67,7 +71,6 @@ class PhotoWakeUp(object):
         else:
             print(config.device)
             self.device = config.device
-        self.input_lists = [list for list in os.listdir(config.input_folder)]
         self.PoseEstimationWithMobileNet = PoseEstimationWithMobileNet().to(self.device)
         self.pose_checkpoint = torch.load(config.pose_checkpoint, map_location=self.device)
         load_state(self.PoseEstimationWithMobileNet, self.pose_checkpoint)
@@ -75,6 +78,8 @@ class PhotoWakeUp(object):
         self.smpl = SMPL(config.smpl_params,config.out_path)
 
     def PoseEstimation(self):
+        
+        self.input_lists = [list for list in os.listdir(config.input_folder)]
         file_lists = [file for file in self.input_lists if file.split('.')[-1] in ['png', 'jpeg', 'jpg', 'PNG', 'JPG', 'JPEG']]
         for idx ,file in enumerate(file_lists):
             print(file)
@@ -83,7 +88,6 @@ class PhotoWakeUp(object):
             result_512,result_1024 = image_processing(file_path)
             print("./results/{}.png".format(file.split(".")[0]))
             cv2.imwrite("./results/{}_512.png".format(file.split(".")[0]), np.array(result_512))
-            cv2.imwrite("./results/{}_1024.png".format(file.split(".")[0]), np.array(result_1024))
 
     def Reconstruction(self):
         recon(config,config.use_rect)
@@ -100,10 +104,24 @@ class PhotoWakeUp(object):
             file_path = os.path.join(config.input_folder, file)
             if 'front' in file:
                 pred1 = self.HMR.predict(file_path)[0]
+                #pred = pred1['theta']
                 print("joints",pred1['joints'].shape)
                 print("joints 3d" , pred1['joints3d'].shape)
+                #poses = pred[:,3:(3+72)][0]
+                #shapes = pred[:,(3+72):][0]
                 joints3d = np.dot(pred1['joints3d'].reshape(-1,3), np.array([[1, 0, 0], [0, 1, 0], [0, 0, 1]]))
                 np.save(os.path.join(config.out_path, '{}_joints.npy'.format(file.split('.')[0])), joints3d)
+                #self.smpl.set_params(beta=shapes,pose=poses,trans=np.array([0, 0, 0]))
+                #self.smpl.save_to_obj(os.path.join(config.out_path, 'test_smpl.obj'))
+                #mesh = trimesh.load(os.path.join(config.out_path, 'test_smpl.obj'))
+                #print(os.path.join(config.out_path, 'test_smpl.obj'))
+                #scale_matrix = trimesh.transformations.scale_matrix(100)
+                #change_axis = [[1, 0, 0, 0], [0, 0, -1, 0], [0, 1, 0, 0], [0, 0, 0, 1]]
+                #mesh = mesh.apply_transform(scale_matrix)
+                #mesh = mesh.apply_transform(change_axis)
+
+                #self.save_obj(mesh.vertices, mesh.faces,file_name=os.path.join(config.out_path, 'test_smpl.obj'))
+                #self.smpl.save_keypoints(file.split('.')[0])
             else:
                 continue
     def Segmentation(self):
@@ -117,3 +135,9 @@ class PhotoWakeUp(object):
             obj_file.write('f ' + str(f[i][0] + 1) + '/' + str(f[i][0] + 1) + ' ' + str(f[i][1] + 1) + '/' + str(
                 f[i][1] + 1) + ' ' + str(f[i][2] + 1) + '/' + str(f[i][2] + 1) + '\n')
         obj_file.close()
+
+#pwu=PhotoWakeUp()
+#pwu.PoseEstimation()
+#pwu.Reconstruction()
+#pwu.KeyPoints()
+#pwu.Segmentation()

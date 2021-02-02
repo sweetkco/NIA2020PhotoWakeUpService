@@ -1,4 +1,6 @@
 import cv2
+import os
+from PIL import Image
 import numpy as np
 
 def crop_image(img, rect):

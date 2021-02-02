@@ -23,8 +23,8 @@ class HMR:
         input_size = (self.batch_size, self.img_size, self.img_size, 3)
         self.images = tf.placeholder(tf.float32, shape=input_size)
         self.thetas = tf.placeholder(tf.float32, shape=(1,85))
-        self.load_path = config.hmr_checkpoint
-        self.smpl = SMPL(config.smpl_params)
+        self.load_path = config.hmr_checkpoint#'/Users/choehanjoon/PycharmProjects/HMR/models/model.ckpt-667589'
+        self.smpl = SMPL(config.smpl_params)#SMPL('/Users/choehanjoon/PycharmProjects/HMR/neutral_smpl_with_cocoplus_reg.pkl')#SMPL('neutral_smpl_with_cocoplus_reg.pkl')
 
         self.ext = Image_extractor()
 
@@ -74,6 +74,9 @@ class HMR:
             shapes = theta[:, (3 + 72):]
 
             verts, Js, weights = self.smpl(shapes, poses)
+            print("-"*80)
+            print(Js)
+            print("-" * 80)
 
 
             pred_kp = batch_orth_proj_idrot(Js,cams)
@@ -116,6 +119,9 @@ class HMR:
         }
 
         results = self.sess.run(fetch_dict,feed_dict)
+
+        #joints = results['joints']
+        #results['joints'] = ((joints + 1) * 0.5) * self.img_size
 
         return results
 

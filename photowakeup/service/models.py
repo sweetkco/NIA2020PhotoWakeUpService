@@ -3,7 +3,7 @@ from django.core.files.storage import FileSystemStorage
 import os
 from django.conf import settings
 from .apps import ServiceConfig as pwu
-#from Modules import PhotoWakeUp
+from Modules import PhotoWakeUp
 
 # Create your models here.
 
@@ -24,5 +24,5 @@ class Post(models.Model):
     def __str__(self):
         return self.name
 
-# class PhotoWakeUp(models.Model):
-#     pwu = PhotoWakeUp()
+class PhotoWakeUp(models.Model):
+    pwu = PhotoWakeUp()

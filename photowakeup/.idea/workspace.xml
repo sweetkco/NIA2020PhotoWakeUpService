@@ -19,7 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b0bef91-5497-4a67-92c1-dabdd11fc39d" name="Default Changelist" comment="" />
+    <list default="true" id="92eb17f6-75de-40ef-a668-c38c35954e7a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Modules.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_images/yeon_back_rect.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_images/yeon_front_rect.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photowakeup/Modules.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pifuhd/apps/recon.py" beforeDir="false" afterPath="$PROJECT_DIR$/pifuhd/apps/recon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/segmentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/segmentation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,29 +38,11 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
-  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
-    <envs>
-      <env key="FLASK_APP" value="app" />
-    </envs>
-    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
-    <option name="myEnvs">
-      <map>
-        <entry key="FLASK_APP" value="app" />
-      </map>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="JupyterTrust" id="93038f97-f0c0-4d8f-b008-dc571f8a87a5" />
-  <component name="ProjectId" id="1lj8gnrDVpSRf9M1agvZRfbVk3p" />
+  <component name="ProjectId" id="1nYFQM2Fy08WBEoRH04EXyJCcMI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -58,7 +50,6 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -66,6 +57,9 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -101,13 +95,14 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0b0bef91-5497-4a67-92c1-dabdd11fc39d" name="Default Changelist" comment="" />
-      <created>1608099254558</created>
+      <changelist id="92eb17f6-75de-40ef-a668-c38c35954e7a" name="Default Changelist" comment="" />
+      <created>1611559100236</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1608099254558</updated>
-      <workItem from="1608099255687" duration="152000" />
-      <workItem from="1608190159876" duration="9620000" />
+      <updated>1611559100236</updated>
+      <workItem from="1611559101535" duration="9171000" />
+      <workItem from="1611887191831" duration="5803000" />
+      <workItem from="1612152917693" duration="2242000" />
     </task>
     <servers />
   </component>
@@ -127,42 +122,30 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="514" y="223" key="#Deployment" timestamp="1608207427529">
-      <screen x="0" y="23" width="1792" height="1028" />
+    <state x="496" y="202" key="#Deployment" timestamp="1611627433793">
+      <screen x="0" y="23" width="1792" height="1030" />
     </state>
-    <state x="514" y="223" key="#Deployment/0.23.1792.1028@0.23.1792.1028" timestamp="1608207427529" />
-    <state x="539" y="237" key="#Options" timestamp="1608207398756">
-      <screen x="0" y="23" width="1792" height="1028" />
+    <state x="496" y="202" key="#Deployment/0.23.1792.1030@0.23.1792.1030" timestamp="1611627433793" />
+    <state x="480" y="189" key="#SSH_Configurations" timestamp="1611627431457">
+      <screen x="0" y="23" width="1792" height="1030" />
     </state>
-    <state x="539" y="237" key="#Options/0.23.1792.1028@0.23.1792.1028" timestamp="1608207398756" />
-    <state x="498" y="210" key="#SSH_Configurations" timestamp="1608207410460">
-      <screen x="0" y="23" width="1792" height="1028" />
+    <state x="480" y="189" key="#SSH_Configurations/0.23.1792.1030@0.23.1792.1030" timestamp="1611627431457" />
+    <state x="264" y="144" key="SettingsEditor" timestamp="1612240602893">
+      <screen x="0" y="23" width="1792" height="1033" />
     </state>
-    <state x="498" y="210" key="#SSH_Configurations/0.23.1792.1028@0.23.1792.1028" timestamp="1608207410460" />
-    <state x="427" y="204" key="SettingsEditor" timestamp="1608207381401">
-      <screen x="0" y="23" width="1792" height="1028" />
+    <state x="264" y="143" key="SettingsEditor/0.23.1792.1030@0.23.1792.1030" timestamp="1611627464472" />
+    <state x="264" y="144" key="SettingsEditor/0.23.1792.1033@0.23.1792.1033" timestamp="1612240602893" />
+    <state x="264" y="144" key="SettingsEditor/0.23.1792.1036@0.23.1792.1036" timestamp="1611887224439" />
+    <state x="2075" y="186" key="SettingsEditor/1792.63.1920.1057/0.23.1792.1028@1792.63.1920.1057" timestamp="1611559960112" />
+    <state x="597" y="294" width="598" height="493" key="find.popup" timestamp="1611888717798">
+      <screen x="0" y="23" width="1792" height="1036" />
     </state>
-    <state x="427" y="204" key="SettingsEditor/0.23.1792.1026@0.23.1792.1026" timestamp="1608206691844" />
-    <state x="427" y="204" key="SettingsEditor/0.23.1792.1028@0.23.1792.1028" timestamp="1608207381401" />
-    <state x="711" y="449" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration" timestamp="1608207112134">
-      <screen x="0" y="23" width="1792" height="1028" />
+    <state x="597" y="292" width="598" height="490" key="find.popup/0.23.1792.1030@0.23.1792.1030" timestamp="1611626947082" />
+    <state x="597" y="294" width="598" height="493" key="find.popup/0.23.1792.1036@0.23.1792.1036" timestamp="1611888717798" />
+    <state x="636" y="238" key="ftp.server.browser" timestamp="1611623869259">
+      <screen x="0" y="23" width="1792" height="1030" />
     </state>
-    <state x="711" y="448" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration/0.23.1792.1026@0.23.1792.1026" timestamp="1608206689565" />
-    <state x="711" y="449" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration/0.23.1792.1028@0.23.1792.1028" timestamp="1608207112134" />
-    <state x="832" y="303" key="ftp.server.browser" timestamp="1608207111430">
-      <screen x="0" y="23" width="1792" height="1028" />
-    </state>
-    <state x="832" y="302" key="ftp.server.browser/0.23.1792.1026@0.23.1792.1026" timestamp="1608206684166" />
-    <state x="832" y="303" key="ftp.server.browser/0.23.1792.1028@0.23.1792.1028" timestamp="1608207111430" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/seg/networks/__init__.py</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="636" y="238" key="ftp.server.browser/0.23.1792.1030@0.23.1792.1030" timestamp="1611623869259" />
+    <state x="2473" y="284" key="ftp.server.browser/1792.63.1920.1057/0.23.1792.1028@1792.63.1920.1057" timestamp="1611559952413" />
   </component>
 </project>

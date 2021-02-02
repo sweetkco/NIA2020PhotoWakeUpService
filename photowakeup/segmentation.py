@@ -15,7 +15,7 @@ import cv2
 from seg import gaussianBlur
 from image_proc import blurring
 
-
+print("SD")
 dataset_settings = {
     'lip': {
         'input_size': [473, 473],
@@ -147,6 +147,8 @@ def segmentation():
             rgba[:, :, 3] = a
             rgb = cv2.cvtColor(img, cv2.COLOR_RGBA2RGB)
 
-            cv2.imwrite(os.path.join(args.output_dir, img_name[:-4] + '.png'),rgb)
+            cv2.imwrite(os.path.join(args.output_dir, img_name.split('.')[0] + '.png'),rgb)
+
+           # cv2.imwrite(os.path.join(args.output_dir, img_name[:-4] + '.png'),rgb)
 
             gaussianBlur.main(rgb, rgba, img_path, os.path.join(args.output_dir, img_name[:-4] + '.png'))

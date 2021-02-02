@@ -4,6 +4,7 @@ import zipfile
 import os
 
 def inform(check):
+    print('flag : {}'.format(check.flag))
     if check.flag == 1:
         check.checker = -1
         check.success = -1

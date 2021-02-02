@@ -10,6 +10,11 @@ git https://github.com/sweetkco/NIA2020PhotoWakeUpService.git
 ```
 
 ## Installation and running
+
+### Model Part
+
+photowakeup 폴더 안에서
+
 라이브러리 설치
 ```sh
 pip install -r requirements.txt

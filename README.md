@@ -51,7 +51,7 @@ download_dir=C:\\your directory\\photowakeup_ui\\verge3d_blender
 
 커맨드 창에서
 ```sh
-java -jar photowakeup-1.0.jar
+java -jar photowakeup-1.0.war
 ```
 실행
 

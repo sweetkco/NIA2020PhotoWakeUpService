@@ -61,7 +61,7 @@ Verge3D for Blender 아이콘의 속성에 들어가서 대상(T)을
 ```sh
 C:₩로컬 위치₩photowakeup_ui₩verge3d_blender₩python₩windows₩python.exe "C:₩로컬 위치₩verg3d_blender₩manager₩server.py" BLENDER RUN_BROWSER
 ```
-로 수정 후 저장 실해 시킨다.
+로 수정 후 저장 실행 시킨다.
 
 ### 웹페이지 접속
 ```sh

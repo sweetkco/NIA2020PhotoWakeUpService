@@ -55,6 +55,8 @@ java -jar photowakeup-1.0.war
 ```
 실행
 
+### Verge 3d for Blender 실행
+
 ### 웹페이지 접속
 ```sh
 http://해당 윈도우 아이피:8668/applications/Sweetk/index.html
